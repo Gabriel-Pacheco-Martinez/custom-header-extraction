@@ -17,13 +17,22 @@ def filter_headers(events, hostname, driver, output_folder):
 
     # Flags to enable desired filters
     apply_pre_processing = True
-    apply_heuristic_1 = False
+    apply_heuristic_1 = True
     apply_heuristic_2 = True
     apply_heuristic_3 = True
     apply_heuristic_4 = True
 
     # Heuristic filter-out counters
-    filter_stats = {
+    individual_filtering_counter = {
+        "standard_headers": 0,
+        "third_party": 0,
+        "min_length": 0,
+        "inconsistent": 0,
+        "not_in_storage": 0
+    }
+
+    group_filtering_stats = {
+        "standard_headers": 0,
         "third_party": 0,
         "min_length": 0,
         "inconsistent": 0,
@@ -71,32 +80,36 @@ def filter_headers(events, hostname, driver, output_folder):
         for header_name, header_value in headers.items():
             n_total_headers += 1
 
+            # ===
+            # Statistics
+            filtering_stats_standard(individual_filtering_counter, "standard_headers", header_name, standard_headers_set, standard_headers)
+            filtering_stats_heuristic_1(individual_filtering_counter, "third_party", method_domain, hostname_domain)
+            filtering_stats_heuristic_2(individual_filtering_counter, "min_length", header_value)
+            filtering_stats_heuristic_3(individual_filtering_counter, "inconsistent", header_name, header_value, seen_headers)
+            filtering_stats_heuristic_4(individual_filtering_counter, "not_in_storage", header_value, stored_values)
+
+            # ====
+            # Pipeline
             # === Preprocessing: Standard header check
             if apply_pre_processing:
                 standard_headers, is_custom = check_if_custom_header(
                     header_name, standard_headers_set, standard_headers)
                 if not is_custom:
+                    group_filtering_stats["standard_headers"] += 1
                     continue
 
-            # ===
-            # Statistics
-            filtering_stats_heuristic_1(filter_stats, "third_party", method_domain, hostname_domain)
-            filtering_stats_heuristic_2(filter_stats, "min_length", header_value)
-            filtering_stats_heuristic_3(filter_stats, "inconsistent", header_name, header_value, seen_headers)
-            filtering_stats_heuristic_4(filter_stats, "not_in_storage", header_value, stored_values)
-
-            # ====
-            # Pipeline
             # === Heuristic 1: Third-party association
             if apply_heuristic_1:
                 is_third_party = check_if_third_party_associated(method_domain,hostname_domain)
                 if not is_third_party:
+                    group_filtering_stats["third_party"] += 1
                     continue
 
             # === Heuristic 2: Minimum value length
             if apply_heuristic_2:
                 is_min_val = check_if_min_value_length(header_value)
                 if not is_min_val:
+                    group_filtering_stats["min_length"] += 1
                     continue
 
             # === Heuristic 3: Consistent value
@@ -104,12 +117,14 @@ def filter_headers(events, hostname, driver, output_folder):
                 seen_headers, is_consistent = check_if_consistent_value(
                     header_name, header_value, seen_headers)
                 if not is_consistent:
+                    group_filtering_stats["inconsistent"] += 1
                     continue
 
             # === Heuristic 4: Stored in cookies/local
             if apply_heuristic_4:
                 is_in_cookies_local = check_if_in_storage(header_value, stored_values)
                 if not is_in_cookies_local:
+                    group_filtering_stats["not_in_storage"] += 1
                     continue
 
             # === Passed all
@@ -125,7 +140,8 @@ def filter_headers(events, hostname, driver, output_folder):
     # Output
     print("Total headers:", n_total_headers)
     print("Final headers:", n_final_headers)
-    build_filter_report(filter_stats, n_total_headers, output_folder)
+    build_individual_filtering_report(individual_filtering_counter, n_total_headers, output_folder)
+    build_group_filtering_report(group_filtering_stats, n_total_headers, output_folder)
 
     # return custom_headers, stored_values
     return custom_headers, standard_headers, stored_values
@@ -185,30 +201,16 @@ def save_json(data, path):
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
 
-def build_filter_report(filter_stats, total_headers, output_folder):
-
-    heuristic_names = {
-        "third_party": "Third-party association",
-        "min_length": "Mininum-Value Length",
-        "inconsistent": "Consistent-Value",
-        "not_in_storage": "Retreived C/S"
-    }
-
-    report = {"Headers retrieved post filtering": {}}
-
-    for key, filtered_out in filter_stats.items():
-        heuristic_name = heuristic_names.get(key, key)
-        retrieved = total_headers - filtered_out
-        report["Headers retrieved post filtering"][heuristic_name] = {
-            "Total headers": total_headers,
-            "Retrieved headers": retrieved
-        }
-
-    save_json(report, os.path.join(output_folder, "filter_stats.json"))
 
 #####################################
 # Filtering Stats
 #####################################
+def filtering_stats_standard(map, key, name, set_standard_headers, seen_standard_headers):
+    standard_headers, is_custom = check_if_custom_header(
+        name, set_standard_headers, seen_standard_headers)
+    if not is_custom:
+        map[key] += 1
+
 def filtering_stats_heuristic_1(map, key, method, host):
     is_third_party = check_if_third_party_associated(method, host)
     if not is_third_party:
@@ -229,3 +231,27 @@ def filtering_stats_heuristic_4(map, key, value, stored_values):
     is_in_cookies_local = check_if_in_storage(value, stored_values)
     if not is_in_cookies_local:
         map[key] += 1
+
+#####################################
+# Reports
+#####################################
+def build_individual_filtering_report(stats, total_headers, output_folder):
+    report = {"Individual filtering statistics" : {}}
+    for key, value in stats.items():
+        report["Individual filtering statistics"][key] = {
+            "Headers into filter" : total_headers,
+            "Headers removed": value
+        }
+
+    save_json(report, os.path.join(output_folder, "individual_filter_stats.json"))
+
+def build_group_filtering_report(stats, total_headers, output_folder):
+    report = {"Group filtering statistics": {}}
+    for key, value in stats.items():
+        report["Group filtering statistics"][key] = {
+            "Headers into filter": total_headers,
+            "Headers removed": value
+        }
+        total_headers = total_headers-value
+
+    save_json(report, os.path.join(output_folder, "group_filter_stats.json"))
