@@ -13,11 +13,12 @@ The `results/` folder has the following structure:
 
 <pre> 
 results/ 
-├── all_custom_headers.json     # Custom headers found across all websites 
+├── all_custom_headers.json         # Custom headers found across all websites 
 ├── website1/ 
-│ ├── custom_headers.json       # Custom headers found for this website 
-│ ├── filter_stats.json         # Heuristic-based filtering attribution 
-│ ├── network.json              # Raw network request/response events 
-│ └── seen_std_headers.json     # Count of seen standard headers 
+│ ├── custom_headers.json           # Custom headers found for this website 
+│ ├── group_filter_stats.json       # Filtering when pipeline applied
+│ ├── individual_filter_stats.json  # Filtering when heuristics applied individually
+│ ├── network.json                  # Raw network request/response events 
+│ └── seen_std_headers.json         # Count of seen standard headers 
 ├── website2/ 
 │ ├── ... </pre>
