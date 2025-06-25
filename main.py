@@ -12,7 +12,7 @@ from filter import filter_headers
 
 def setup_driver():
     options = Options()
-    options.add_argument("--headless=new")
+    #options.add_argument("--headless=new")
     options.add_argument("--start-maximized")
     options.add_argument("--auto-open-devtools-for-tabs")
     options.add_argument("--disable-gpu")
@@ -24,7 +24,7 @@ def setup_driver():
     service = Service(ChromeDriverManager().install())
     return webdriver.Chrome(service=service, options=options)
 
-def visit_url(driver, url, wait_time=20):
+def visit_url(driver, url, wait_time=60):
     driver.get(url)
     time.sleep(wait_time)
 
@@ -49,6 +49,13 @@ def save_json(data, path):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
+
+def save_text(data, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        content = str(data)
+        for part in content.split(','):
+            f.write(part.strip() + "\n")
 
 def get_hostname(url):
     try:
@@ -77,9 +84,10 @@ def capture_site_data(url, base_output_folder):
         save_json(network_events, os.path.join(output_folder, "network.json"))
         save_json(custom_headers, os.path.join(output_folder, "custom_headers.json"))
         save_json(standard_headers, os.path.join(output_folder, "seen_std_headers.json"))
-        # save_json(cookies, os.path.join(output_folder, "cookie.json"))
-        # save_json(local_storage, os.path.join(output_folder, "storage.json"))
-        # save_json(session_storage, os.path.join(output_folder, "session.json"))
+
+        # ======
+        # Print local/cookies
+        save_text(stored_values, os.path.join(output_folder, "stored_values.txt"))
 
         print(f"[✓] Captured: {hostname}")
 
@@ -101,6 +109,28 @@ def capture_multiple_sites(urls, result_base_folder="results"):
 # Example usage
 if __name__ == "__main__":
     websites = [
-        "https://news.google.com",
+        # =====
+        "https://www.cloudflare.com/",
+        "https://www.bbcamerica.com/", #✅
+        "https://onedrive.com", #✅
+        "https://www.nytimes.com/", #✅
+        "https://www.businesstimes.com.sg/",
+        "https://www.tiktok.com/explore", #✅
+        "https://www.jasatel.net",
+        "https://www.booking.com", #🔸
+        "https://www.planfix.com", #✅
+        "https://bedbathandbeyond.com",
+        "https://www.bnnbloomberg.ca", #✅
+        "https://www.amazon.com/", #✅
+        "https://grand-stream.com/", #✅
+        "https://www.eatthis.com/", #✅
+        "https://www.orlandosentinel.com/",
+        "https://www.foodandwine.com/", #✅
+        "https://www.excite.co.jp/", #✅
+        "https://response.jp/", #✅
+
+        # =====
+        # "https://news.google.com","https://bbc.co.uk","https://usatoday.com",
+        # "https://bloomberg.com","https://time.com"
     ]
     capture_multiple_sites(websites)

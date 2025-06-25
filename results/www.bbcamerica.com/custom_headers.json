@@ -1,0 +1,44 @@
+[
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-DEVICE-AD-ID",
+    "header_value": "fcab5147-200a-4618-a5dd-e719b6bae51f",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-DEVICE-ID",
+    "header_value": "fcab5147-200a-4618-a5dd-e719b6bae51f",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-CACHE-HASH",
+    "header_value": "dD1hbWNuO249YmJjYTtwPXdlYjtlPXVuYXV0aDtjPWJvO2w9ZW4tdXM7YXY9My41Ny40O2ZmPWV5SmhiV053YkhWekxXMTJjR1FpT25zaVkyaGhjblJsY2kxdGRuQXRaVzVoWW14bFpDSTZabUZzYzJWOUxDSmhiV053YkhWekxYUnBlbVZ1TFdOM0lqcDdJbVZ1WVdKc1pXUWlPblJ5ZFdWOUxDSmhiV053YkhWekxXRmtMWFJwWlhJaU9uc2lZV1F0ZEdsbGNpMXdkWEpqYUdGelpTMXZiaUk2Wm1Gc2MyVjlMQ0poYldOd2JIVnpMWE5yYVhBdGNISnZiVzh0WVdSeklqcDdJbk5yYVhBdGNISnZiVzh0WVdSekxXVnVZV0pzWldRaU9tWmhiSE5sTENKMllYSnBZWFJwYjI0aU9pSkJUVU1ySUZkcGRHZ2dRV1J6SW4wc0ltRnRZeTEwWlhKdGN5MWpZWEIwZFhKbElqcG1ZV3h6WlN3aVkyOXRZMkZ6ZEMxaFpDMWliRzlqYTJWeUxYTmpjbVZsYmlJNmV5SnpkV0owYVhSc1pTSTZJa1p2Y2lCb1pXeHdMQ0JsYldGcGJDQmpkWE4wYjIxbGNuTmxjblpwWTJWQVlXMWpjR3gxY3k1amIyMHVJaXdpZEdsMGJHVWlPaUpVYUdVZ1RXOXVkR2hzZVNCM2FYUm9JRUZrY3lCd2JHRnVJR2x6SUc1dmRDQmpkWEp5Wlc1MGJIa2djM1Z3Y0c5eWRHVmtJRzl1SUZobWFXNXBkSGtnWkdWMmFXTmxjeTRpTENKbGJtRmliR1ZrSWpwMGNuVmxmU3dpWVcxamNHeDFjeTEyYVhwcGJ5MXdjbTl0YjNScGIyNGlPbnNpWTI5MWNHOXVYMk52WkdVaU9pSnlaWFJoYVd3eElpd2lZMjkxY0c5dVgyTnZaR1ZmYlc5dWRHaHNlU0k2SW5KbGRHRnBiRE1pTENKbGJtRmliR1ZrSWpwMGNuVmxmWDA9",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-DEVICE-AD-ID",
+    "header_value": "fcab5147-200a-4618-a5dd-e719b6bae51f",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-DEVICE-ID",
+    "header_value": "fcab5147-200a-4618-a5dd-e719b6bae51f",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-USER-CACHE-HASH",
+    "header_value": "ZD1mY2FiNTE0Ny0yMDBhLTQ2MTgtYTVkZC1lNzE5YjZiYWU1MWY7Yz1ibztsPWVuLXVzO2F2PTMuNTcuNDtmZj1leUpoYldOd2JIVnpMVzEyY0dRaU9uc2lZMmhoY25SbGNpMXRkbkF0Wlc1aFlteGxaQ0k2Wm1Gc2MyVjlMQ0poYldOd2JIVnpMWFJwZW1WdUxXTjNJanA3SW1WdVlXSnNaV1FpT25SeWRXVjlMQ0poYldOd2JIVnpMV0ZrTFhScFpYSWlPbnNpWVdRdGRHbGxjaTF3ZFhKamFHRnpaUzF2YmlJNlptRnNjMlY5TENKaGJXTndiSFZ6TFhOcmFYQXRjSEp2Ylc4dFlXUnpJanA3SW5OcmFYQXRjSEp2Ylc4dFlXUnpMV1Z1WVdKc1pXUWlPbVpoYkhObExDSjJZWEpwWVhScGIyNGlPaUpCVFVNcklGZHBkR2dnUVdSekluMHNJbUZ0WXkxMFpYSnRjeTFqWVhCMGRYSmxJanBtWVd4elpTd2lZMjl0WTJGemRDMWhaQzFpYkc5amEyVnlMWE5qY21WbGJpSTZleUp6ZFdKMGFYUnNaU0k2SWtadmNpQm9aV3h3TENCbGJXRnBiQ0JqZFhOMGIyMWxjbk5sY25acFkyVkFZVzFqY0d4MWN5NWpiMjB1SWl3aWRHbDBiR1VpT2lKVWFHVWdUVzl1ZEdoc2VTQjNhWFJvSUVGa2N5QndiR0Z1SUdseklHNXZkQ0JqZFhKeVpXNTBiSGtnYzNWd2NHOXlkR1ZrSUc5dUlGaG1hVzVwZEhrZ1pHVjJhV05sY3k0aUxDSmxibUZpYkdWa0lqcDBjblZsZlN3aVlXMWpjR3gxY3kxMmFYcHBieTF3Y205dGIzUnBiMjRpT25zaVkyOTFjRzl1WDJOdlpHVWlPaUp5WlhSaGFXd3hJaXdpWTI5MWNHOXVYMk52WkdWZmJXOXVkR2hzZVNJNkluSmxkR0ZwYkRNaUxDSmxibUZpYkdWa0lqcDBjblZsZlgwPQ==",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  }
+]
