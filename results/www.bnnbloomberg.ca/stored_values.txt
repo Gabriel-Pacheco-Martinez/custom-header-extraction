@@ -1,0 +1,307 @@
+{86400000
+0
+''
+2
+True
+'e4a5b8242656522b'
+3
+0.6087548220337475
+0.5
+0.75
+1.25
+1.5
+'Bolivia'
+10
+5
+1750687504399
+15
+8
+"Output is being obscured because of insufficient external protection. It could be caused by an attempt to record the screen
+a bad HDMI cable
+a sound bar interfering with HDCP verification or any other condition which doesn't ensures that the video is not tampered. Retry once your setup is compliant."
+20
+4
+24
+'desktop_laptop'
+30
+'short'
+None
+7200
+6
+'70449854-f4f3-4433-b72e-e6049aae06c3'
+'xml_vast4'
+'ID5*hORO9-PmZ7pCG5Fu3ghkF3w5Q-wpSkW_WaP6h9s4LZ8oYKc0UezU3P9rkDdHKZGe'
+50
+'a42b6de5-c976-4bdc-b349-edec471c249e'
+'%7B%22signature%22%3A%22ID5_AqGrnEqXhIJLPqKKoLj_06z3JuYBixVgQz7W_YEWpsNnQisZD1dc7RjN6SxDJPAfPq5LQLNlVC6zYXt5XPYVfC3Vr1ROBJETfbKAy_2AikRwmzE_zP-u0BBVBTCXUmrKQVlXYvABvm3rDYIWbrNo1u0OnBbnFEvHKiiu2VxsfDOCBLZyHeo%22%2C%22created_at%22%3A%222025-06-23T10%3A05%3A03.668Z%22%2C%22id5_consent%22%3Atrue%2C%22original_uid%22%3A%22ID5*cmjCJv_EYYUjhx3aVoEsQOODof3LBZE4oDH7f0ctq5coYL9B15jJyTdW3Y6a86ZR%22%2C%22universal_uid%22%3A%22ID5*hORO9-PmZ7pCG5Fu3ghkF3w5Q-wpSkW_WaP6h9s4LZ8oYKc0UezU3P9rkDdHKZGe%22%2C%22link_type%22%3A2%2C%22cascade_needed%22%3Afalse%2C%22privacy%22%3A%7B%22jurisdiction%22%3A%22other%22%2C%22id5_consent%22%3Atrue%7D%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22k9eBM0QXwaoOW%2BZ5Ij4ZXhXUVPAH3UkyFokai6fwx24aqfbbb4bjemcaveApwYiE%22%7D%2C%22cache_control%22%3A%7B%22max_age_sec%22%3A7200%7D%2C%22ids%22%3A%7B%22id5id%22%3A%7B%22eid%22%3A%7B%22source%22%3A%22id5-sync.com%22%2C%22uids%22%3A%5B%7B%22id%22%3A%22ID5*hORO9-PmZ7pCG5Fu3ghkF3w5Q-wpSkW_WaP6h9s4LZ8oYKc0UezU3P9rkDdHKZGe%22%2C%22atype%22%3A1%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22k9eBM0QXwaoOW%2BZ5Ij4ZXhXUVPAH3UkyFokai6fwx24aqfbbb4bjemcaveApwYiE%22%7D%7D%5D%7D%7D%7D%7D'
+'An error has occurred during playback. Please try again later.'
+60
+64
+1750673104962
+'The current device failed to decode the content. The media codec may not be supported
+or the device may not have sufficient resources available. To solve the issue
+you may restart your device or
+if the problem persists
+use another device.'
+'Pour permettre le visionnement via les données mobiles
+veuillez mettre à jour vos préférences.'
+2119
+'zix7LPQsHA%3D%3D'
+'Ce contenu est présentement indisponible pour être visionné dans votre navigateur. Pour une expérience vidéo optimale
+nous vous recommandons d’utiliser un navigateur pris en charge par votre plateforme. Merci de visiter la FAQ pour obtenir plus d’information.'
+80
+1750673102938
+1750676702302
+100
+'Une erreur est survenue lors du chargement du média. Veuillez réessayer plus tard.'
+'Your account is restricted from watching this content by parental controls.'
+'https://account.bellmedia.ca/config/prod/interval.json'
+120
+137
+'direct'
+'BNN Bloomberg - Canada Business News
+TSX Today
+Oil and Energy Prices'
+'Sun
+21 Sep 2025 10:05:05 GMT'
+'shokbexgo49j'
+5307
+'AirPlay is not available for downloaded content.'
+'modal'
+'An error has occurred. Please ensure your web browser is up to date before trying again. If applicable
+disable any virtual private network (VPN) and ad blocker.'
+1750673105097
+'nP3oFdv_npJfyVC57FyRoDZRqmdx3Ozzh3vhDO7jx1O4cVnFSLzxMDjndmMH9jij6dOfQGqKfbGii4-wO0Fw6g'
+'f30df826-eee8-4f4f-97d4-00322108c0d2'
+'openx'
+'https://capi.9c9media.com'
+'La Paz Department'
+'e30f2163-7379-40a7-b51c-51cb2f108dd0'
+'Nous sommes désolés
+ce contenu n’est pas disponible dans votre pays.'
+'Google Chrome'
+'The stream is taking too long to load. Check your internet connection and try again.'
+27882
+'rubicon'
+'6a059137-93bd-447f-980d-4d16b59c49a0'
+'South America'
+'never'
+'2025-06-23T10:05:06.850Z'
+'ix'
+'AirPlay n’est pas disponible pour le contenu téléchargé.'
+'This content is not currently available for viewing in your browser. For the best video experience
+we recommend using a supported browser for your platform. Please visit our FAQ for more info.'
+300
+'eqHCxF9ka1RSS24lMkJobUhDWHFrTk85eExTMXhNd292bXFlSFNWcHRCNVBOeGR1TFFtcDVmNzJldnJMcjI5SE1CNEVSTDNSMFRNcU9ENGRCMURwSXJaUW81WUR2eWdWMURtcFI1NjQ4Z1BFaVdWNXpaT3UlMkJ1b29HZXZzQkloY3podmNJUnBReTFuVmFwT2dUY1lvQk1KVDg3VXRWdmFxYmVpdHJoeU5MJTJGNEtVOXZ6ZTFVYUhSdVZFdVNIbSUyQiUyRlluNzdEM25rYjVsVVRoN2V6MURYTjJ4OVh4aDRHUSUzRCUzRA'
+'ID5_AqGrnEqXhIJLPqKKoLj_06z3JuYBixVgQz7W_YEWpsNnQisZD1dc7RjN6SxDJPAfPq5LQLNlVC6zYXt5XPYVfC3Vr1ROBJETfbKAy_2AikRwmzE_zP-u0BBVBTCXUmrKQVlXYvABvm3rDYIWbrNo1u0OnBbnFEvHKiiu2VxsfDOCBLZyHeo'
+315
+'eyJpZCI6IjZmNzE3ZWQ4LWUyNjYtNGJhNS1iOGU4LWFkNzBmZmYwZWQyZSIsInN0YXJ0IjoxNzUwNjczMTA0MzgyLCJleHBpcmVzIjoxNzUwNjk0NzA0MzgyLCJsYXN0U2VlbiI6MTc1MDY3MzEwNDM4MiwiZnBrdnMiOnt9LCJwdmlkIjoiOGE4YjJiM2YifQ=='
+1750674904399
+'You are not connected to the Internet. Please check your Internet connection and try again.'
+'c4ddea83-f669-465d-ab0b-2ae1b1f73b22'
+"We're sorry
+this content is not available for live streaming."
+'uidapi.com'
+'https://dlar-dev-events.global.ssl.fastly.net/intake'
+5479
+-663
+'2025-06-23T10:05:03'
+'B9Q5QyCDRPOrFYntL'
+'anonymous'
+'web'
+'1750759503410'
+'Vous n’êtes pas connecté à Internet. Veuillez vérifier votre connexion et réessayez.'
+'Veuillez vous connecter pour voir ce contenu.'
+'www.bnnbloomberg.ca'
+'You are currently streaming content on too many devices. Ensure you do not exceed the number of devices allowed in your plan.'
+'The AirPlay device seems to be temporarily unavailable. Please check your connection and ensure the device is awake and ready to receive media.'
+"We've detected you are using a proxy to access this content. You must disable the proxy to watch."
+'La Paz'
+400
+'permutive-secure-signal'
+'Le contenu est restreint en raison du contrôle parental.'
+'gc'
+'a029d6013c8479789f3672de66a29c08cef86ee8f2a82b2cbe3993b8746254ff'
+'137.0.0.0'
+'6e250845-f22e-4e9a-b07e-1273772cf5c2'
+'https://www.bnnbloomberg.ca'
+'a0a88023-074b-444a-9e2a-719470d4f10b'
+'5ce80516be3f4888a7009c8e40b1cece'
+'This video will not play on rooted or jailbroken devices. Please see our FAQs for more information.'
+'Une erreur de système de gestion des droits numériques (DRM) s’est produite.'
+'Please sign in to view this content.'
+'eyJnU3hiZDVxQjN3TllEIjp7ImNob3NlblZhcmlhbnQiOiJCIiwic3BlY2lmaWNMb2NhdGlvbiI6WyJCLThNOVEiXX0sImxpZnRfZXhwIjoibSJ9'
+"L'image dans l'image n’est pas supporté pour ce contenu"
+'adv'
+1750673102290
+1750673102292
+1750673102293
+'other'
+'s'
+1750673105389
+1751969105390
+'external'
+'Picture in picture is not supported for this content.'
+'A digital rights management system (DRM) error has occurred.'
+'Telefonica Celular de Bolivia S.A.'
+'Une erreur est survenue. Veuillez vous assurer que votre navigateur web est à jour avant de réessayer. Si applicable
+désactivez tout réseau virtuel privé (VPN) et bloqueur de publicités.'
+32255
+'AirPlay n’est pas supporté pour ce contenu. Pour arrêter la diffusion
+touchez le bouton AirPlay
+puis touchez votre iPhone ou iPad dans la liste.'
+'application/javascript'
+20000
+'Vous diffusez actuellement du contenu sur trop d’appareils. Veuillez vous assurer de ne pas dépasser le nombre d’appareils inclus dans votre forfait.'
+'video/webm'
+'k9eBM0QXwaoOW+Z5Ij4ZXhXUVPAH3UkyFokai6fwx24aqfbbb4bjemcaveApwYiE'
+'The server is taking too much time to fulfill your request. Check your internet connection or try again later.'
+'zix7LPQsHA=='
+1750759503410
+"We're sorry
+the video player failed to load due to an invalid configuration."
+'id5-sync.com'
+'BBxTSCDnAwg_BpLfUT'
+'f7b72c3a-fe85-4924-8649-bd2a95e723b5_2025-06-23T10:05:04.243Z'
+'300x250'
+32335
+'Wed
+23 Jul 2025 10:05:05 GMT'
+600
+20074
+'appnexus'
+1750674906736
+'video/mp4'
+'L’appareil AirPlay semble être temporairement indisponible. Veuillez vérifier votre connexion et assurez-vous que l’appareil est activé et prêt à recevoir du média.'
+'To enable video streaming over mobile data
+update your preferences.'
+3600000
+'PageviewComplete'
+'.1750673101724.1750673101724.1.Dz4ZwnaAB7zCuwxcLDTsMUsDFdW3a.1'
+"{'gs':{'ie':1|'dt':'us1-42c7bf7b21a03d479b372347c506a331'|'cgid':'00486d53-d151-49cd-2966-d42aa6fc64fb'|'das':'ef583a8b-1f8a-4aff-470e-99e0a7ad7467'|'csm':'WyItNzY2OTg1NjkyNDI4ODEwOTI4NiJd'|'sid':'2041E178-12E7-419E-CA4A-061AAD59DAC9'|'les':1750673110132|'ssd':1750673102799}|'l':0|'-7669856924288109286':{'fst':1750673103929}|'cu':'-7669856924288109286'}"
+2700
+'permutive-consent'
+'https://recodata.shared-svc.bellmedia.ca/api'
+'Votre compte ne vous autorise pas à consulter ce contenu. Veuillez vérifier votre compte.'
+'Service is temporarily unavailable. Please try again later.'
+'21227c25-6cf9-479b-b775-8c8283cd8c53
+6a059137-93bd-447f-980d-4d16b59c49a0'
+1750759504543
+'eaa0a00e9872257df298bec73e358535'
+'Le serveur met trop de temps à répondre à votre demande. Vérifiez votre connexion Internet ou réessayez plus tard.'
+1750759502502
+'Mon
+23 Jun 2025 10:05:05 GMT'
+"La vidéo ne jouera pas sur les appareils ayant été débridés (jailbroken). Veuillez vous référer à notre foire aux questions pour plus d'informations."
+'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML
+like Gecko) Chrome/137.0.0.0 Safari/537.36 PermutiveWebSDK/v20.39.3'
+'name'
+'869e41ef-5d00-4d36-bb9b-863f708b6775'
+'bnn'
+'playerpage'
+'disabled'
+'secret'
+'Not/A)Brand'
+'bottom-right'
+'desktop'
+'2025-06-23T10:05:01.799Z'
+'PageviewComplete-f30df826-eee8-4f4f-97d4-00322108c0d2'
+'L’écoute en direct est actuellement indisponible. Vérifiez votre connexion Internet et réessayez. Si le problème persiste
+l’écoute en direct est soit en panne ou la diffusion est terminée.'
+'This live stream is currently unavailable. Check your internet connection and try again. If the problem persists
+this live stream is either down or has ended.'
+'"z=1&dm=www.bnnbloomberg.ca&si=1964ebe1-5aa1-46c8-9766-74d49383514d&ss=mc8xk9c6&sl=1&tt=364&rl=1&ld=365"'
+'Chromium'
+10000
+'https://instream.casalemedia.com/playlist'
+'Mon
+30 Jun 2025 10:05:02 GMT'
+'Le contenu prend trop de temps à se charger. Vérifiez votre connexion Internet et réessayez.'
+'bnnbloomberg:homepage'
+9000
+9001
+9002
+9003
+1784801106734
+'pubcid.org'
+"We're sorry
+this content is not available in your country."
+'production'
+1750673101625
+825
+8000
+1750673102663
+'arm'
+'v2/bnn/web-prod.json'
+'YvRmLF9hMGpKYlRveCUyRmpNYklNJTJCb0dTb1ZGSFBOTXolMkYxbml3cDhqYWRXa2s3bXNmZTMxUkZTS3ZFRTBVVERKQTJ4b3JhSXNzNmdzY1I2N1dIcHo3ZHdVVURQRExrSWE3byUyQmxlYWVtOEU0dzhQUUN6UyUyRkxIVno5V0llbUhscVolMkZ3c1Z2UQ'
+'L’appareil actuel n’a pas pu décoder le contenu. Le codec média peut ne pas être pris en charge ou l’appareil peut ne pas disposer de ressources suffisantes. Pour résoudre le problème
+vous pouvez redémarrer votre appareil ou
+si le problème persiste
+utiliser un autre appareil.'
+'5.x.x'
+7000
+7001
+'Nous sommes désolés
+impossible de charger la configuration de départ du lecteur vidéo.'
+'A'
+6000
+'oeu1750673101624r0.3123692909511976'
+'homepage'
+'Nous sommes désolés
+ce contenu n’est pas disponible pour la diffusion en direct.'
+'hierarchy'
+5000
+'21227c25-6cf9-479b-b775-8c8283cd8c53'
+5001
+5002
+5003
+5004
+5005
+5006
+'e447e1c6-2507-4dba-8a54-21097a24a015'
+5007
+5008
+5009
+"Sorry
+we're having trouble with this video. Please try again later."
+'FALSE'
+'ID5*cmjCJv_EYYUjhx3aVoEsQOODof3LBZE4oDH7f0ctq5coYL9B15jJyTdW3Y6a86ZR'
+1784801101726
+'macOS'
+'bnnbloomberg'
+'AirPlay is not supported for this content. To stop streaming
+tap the AirPlay button
+then tap your iPhone or iPad from the list.'
+930
+4000
+4002
+4001
+'float'
+'pubmatic'
+197558
+3000
+3001
+3002
+"La vidéo est masquée en raison d'une protection externe insuffisante. Cela peut être dû à une tentative d'enregistrement de l'écran
+à un câble HDMI défectueux
+à une barre de son qui interfère avec la vérification HDCP ou à toute autre condition qui ne garantit pas que la vidéo n'est pas altérée. Réessayez lorsque votre installation est conforme."
+3003
+3004
+'Le service est temporairement indisponible. Veuillez réessayer plus tard.'
+600000
+'https://license.9c9media.ca'
+'Your account does not authorize you to view this content. Please check your account to confirm your subscription allows this type of content.'
+'Nous sommes désolés
+nous rencontrons des problèmes avec cette vidéo. Veuillez réessayer plus tard.'
+'640x480'
+'masterTag'
+2000
+'d77ecc23-2320-49d7-a66b-34de01d03601'
+'eyItNzY2OTg1NjkyNDI4ODEwOTI4NiI6eyJjcCI6W119fQ=='
+'2ba35bcf-0a65-48aa-ad02-6e508501e361'
+999
+1000
+'Nous avons détecté que vous utilisez un proxy pour accéder à ce contenu. Vous devez le désactiver pour accéder au contenu.'
+7151
+'always'
+'2025-06-23T10:05:03.668Z'}

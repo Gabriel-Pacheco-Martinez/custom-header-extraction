@@ -1,0 +1,24 @@
+{
+  "Individual filtering statistics": {
+    "standard_headers": {
+      "Headers into filter": 3626,
+      "Headers removed": 2816
+    },
+    "third_party": {
+      "Headers into filter": 3626,
+      "Headers removed": 5
+    },
+    "min_length": {
+      "Headers into filter": 3626,
+      "Headers removed": 1176
+    },
+    "inconsistent": {
+      "Headers into filter": 3626,
+      "Headers removed": 1488
+    },
+    "not_in_storage": {
+      "Headers into filter": 3626,
+      "Headers removed": 3478
+    }
+  }
+}

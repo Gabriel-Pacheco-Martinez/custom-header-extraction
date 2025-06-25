@@ -129,13 +129,16 @@ def filter_headers(events, hostname, driver, output_folder):
 
             # === Passed all
             n_final_headers += 1
-            custom_headers.append({
-                "method": method_type,
-                "header_name": header_name,
-                "header_value": header_value,
-                "host_domain": hostname_domain,
-                "method_domain": method_domain
-            })
+            try:
+                custom_headers.append({
+                    "method": method_type,
+                    "header_name": header_name,
+                    "header_value": header_value,
+                    "host_domain": hostname_domain,
+                    "method_domain": method_domain
+                })
+            except Exception as e:
+                print(f"Failed to append header due to: {e}")
 
     # Output
     print("Total headers:", n_total_headers)

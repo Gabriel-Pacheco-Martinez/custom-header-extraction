@@ -1,0 +1,154 @@
+{86400000
+False
+True
+''
+'Tue
+23 Jun 2026 10:26:36 GMT'
+2
+'67376aa701449411b27d61ac62e5bef26e0a6372ade24cce3831fc360dc881b8'
+4
+3
+'1-Step 2023'
+'https://www.foodandwine.com/'
+'enabled'
+'arm'
+8717
+15
+'neee08b5102314b948fc1e74c6ed6109210'
+'seconds'
+'eyJzdWIiOnsidWRyIjowLCJpZCI6IklBZlc4TGJGbXZaQm42YW9tQUNYa3ltd1NGdVRjbTFSIiwic3MiOjB9LCJsdWEiOjE3NTA2NzQ0MDUzNDJ9'
+'1750674397'
+1750674395157
+'43b0cf9e-63aa-4612-aad1-b501c8d497d0'
+1750674399000
+24
+'GA1.1.1998530573.1750674395'
+1750760796958
+'page load (control)'
+None
+7200
+'id5-sync.com'
+'e7c3af08-8186-4de2-b6a5-257ffa9be1e5'
+'S2_qy195YzZRWDFGcG90RjA4dDFqeSUyRmcyeEFZbjA1RDQwSFhLOUZUTU8zMjNOZTdHSFBNTnh6MldYM1dQcHIlMkZGN3UwM1Vrc1VEWVlRUzZMOW9GdXMlMkI0dnY1UkQ1d09wMEJoVSUyQlRrUXlhUEROc0VQWmw1YVE1M1lsaWZEZCUyQmY1dDNDWXkxVW14VWFmQ21zJTJGS3J4R3lER1gwU1kzSUxRbm9tUzAwV053TTQxdUV5Q0klM0Q'
+48
+50
+'search'
+'GS2.1.s1750674395$o1$g1$t1750674395$j60$l0$h0'
+'cpL7Xl80eFluRDNra2RGV1prNEp2cCUyRnJUMmNKVEJ2WEZxWDh3V3MwNDFDcG5QRGxmZmZkZHd4RjRLTDY0djQxY0puR2x3SnpLOSUyRmFTOEJ2YjBGZXZtRGlPWHhOZDFoNFRsdWRQM3NtdDBtUXR0OVZuNU96aU1mNHMwWEFvalFxRUwyZEs'
+'BO'
+1750674395962
+'AA-AfjZsQU0X7lLUsh_eR2KyLulO'
+64
+'foodandwine.com/$'
+'external'
+1750674395977
+1750674394953
+1750674396490
+'Mon
+23 Jun 2025 10:26:38 GMT'
+1750674453328
+'FuawCWDk-22Qaf0THB-979c53535a'
+1750760797522
+'macOS'
+'Wed
+23 Jul 2025 10:26:38 GMT'
+'u:8803953031414359000
+s:17661082
+t:1750674398238
+c:1
+k:www.foodandwine.com/28/28/67
+f:0'
+1750674697308
+'foodandwine.com$'
+100
+1750674410343
+'eyJpIjoidnpXemVxSCtRb2loa3o0OFFPTTd1dz09In0='
+'ALNI_Ma2vLgdhy8-nEKdziHc-1BBFpYUag'
+'290812a62552695b2a6721333c184cbd'
+'zix7LPQsHA=='
+'Tue
+24 Jun 2025 10:26:35 GMT'
+'empty'
+'ba10f40edb774e02'
+'8c5d5a80-501c-11f0-97e8-6b35bef72a71'
+'L'
+'ID5_Ar9FXrDeuJigd1cxG7DNcrI520EWfVs9lmiGi53SDiibmRJKYgfHVwOIhuova5FJz2A13x4Xv6S2YmFVETrwvlY_DyxrVV1gZLAxiHqyazzOTmBHMjMd45z1dUlARnhGhrL7oqC2sWYUpHy2zLXYYb-FmhDxTp7nZAEbO8y_ZJkGzk6iz5A'
+'WARN'
+120
+'000010d56f8c481b'
+'<div class="push-sdk-prompt-shell" id="push-sdk-prompt-5044"><style>.push-sdk-prompt-shell{position:fixed;z-index:999999999;transform:translate3d(0
+0
+0);top:0;bottom:0;width:90vw;left:5vw;pointer-events:none}.push-sdk-prompt-shell>.push-sdk-prompt-container{pointer-events:auto}.push-sdk-prompt-container.s-slide{position:absolute;box-sizing:border-box;transform:translateX(-50%);left:50%;width:auto;max-width:100%;font-family:-apple-system
+system
+system-ui
+BlinkMacSystemFont
+\'Segoe UI\'
+Roboto
+Oxygen
+Ubuntu
+Cantarell
+\'Open Sans\'
+\'Helvetica Neue\'
+sans-serif;font-size:14px;font-weight:400;line-height:1.24em;text-decoration:none;webkit-font-smoothing:antialiased}.push-sdk-prompt-container.s-slide .pushly-prompt-wrapper{box-sizing:border-box;display:flex;flex-direction:row;justify-content:space-between;gap:14px;width:450px;padding:14px;overflow:hidden;background:#fff;border:1px solid #00000011;border-radius:6px;text-wrap:wrap}@media only screen and (min-device-width:769px){.push-sdk-prompt-container.s-slide.pos-d-top{top:0}.push-sdk-prompt-container.s-slide.pos-d-top .pushly-prompt-wrapper{border-top-left-radius:0;border-top-right-radius:0;border-top:none;box-shadow:0 1px 2px #00000008}}@media only screen and (max-device-width:768px){.push-sdk-prompt-container.s-slide.pos-m-top{top:0}.push-sdk-prompt-container.s-slide.pos-m-top .pushly-prompt-wrapper{border-top-left-radius:0;border-top-right-radius:0;border-top:none;box-shadow:0 1px 2px #00000008}}@media only screen and (min-device-width:769px){.push-sdk-prompt-container.s-slide.pos-d-bottom{bottom:0}.push-sdk-prompt-container.s-slide.pos-d-bottom .pushly-prompt-wrapper{border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom:none;box-shadow:0 -1px 2px #00000008}}@media only screen and (max-device-width:768px){.push-sdk-prompt-container.s-slide.pos-m-bottom{bottom:0}.push-sdk-prompt-container.s-slide.pos-m-bottom .pushly-prompt-wrapper{border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom:none;box-shadow:0 -1px 2px #00000008}}\n.push-sdk-prompt-container.s-slide > .pushly-prompt-wrapper > .pushly-prompt-image{box-sizing:border-box;flex:0 0 auto;background-image:url("https://media.pushlycdn.com/domain_8717/images/Cem7paDKSi2KRNvMjTcC_sJKDqlWh_400x400.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;width:64px;height:64px;border-radius:4px}\n.push-sdk-prompt-container.s-slide>.pushly-prompt-wrapper>.pushly-prompt-content{box-sizing:border-box;flex:1 1 auto}.push-sdk-prompt-container.s-slide>.pushly-prompt-wrapper>.pushly-prompt-content>.pushly-prompt-content-copy{box-sizing:border-box;display:flex;flex-direction:column;gap:8px}.push-sdk-prompt-container.s-slide .pushly-prompt-wrapper .pushly-prompt-content .pushly-prompt-content-copy .pushly-prompt-title{font-weight:600;color:#555}.push-sdk-prompt-container.s-slide .pushly-prompt-wrapper .pushly-prompt-content .pushly-prompt-content-copy .pushly-prompt-subtitle{color:#555}.push-sdk-prompt-container.s-slide .pushly-prompt-btns{display:flex;flex-direction:row-reverse;justify-content:flex-start;gap:6px;margin-top:16px}.push-sdk-prompt-container.s-slide .pushly-prompt-btns>button.pushly-prompt-btn{position:relative;overflow:hidden;padding:8px 24px;margin:0;border:none;border-radius:4px;background:0 0;cursor:pointer;font-size:1em;font-weight:500;font-family:inherit;text-align:center;text-decoration:none;text-transform:inherit}.push-sdk-prompt-container.s-slide .pushly-prompt-btns>button.pushly-prompt-btn.pushly-prompt-btn-dismiss{background-color:#fff;color:#555}.push-sdk-prompt-container.s-slide .pushly-prompt-btns>button.pushly-prompt-btn.pushly-prompt-btn-allow{background-color:#555;color:#fff}.push-sdk-prompt-container.s-slide .pushly-prompt-btns>button.pushly-prompt-btn:hover::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:#0000000A}.push-sdk-prompt-container.s-slide.l-normal{display:flex;flex-direction:row;justify-content:center}.push-sdk-prompt-container.s-slide.l-normal .pushly-prompt-content .pushly-prompt-content-copy{display:flex;flex-direction:column}.push-sdk-prompt-container.s-slide.l-normal .pushly-prompt-content .pushly-prompt-actions{display:flex;flex-direction:row;justify-content:flex-end}.push-sdk-prompt-container.s-slide.l-stacked .pushly-prompt-wrapper{display:flex;flex-direction:column;align-items:center}.push-sdk-prompt-container.s-slide.l-stacked .pushly-prompt-wrapper .pushly-prompt-content .pushly-prompt-content-copy{display:flex;flex-direction:column;align-items:center}.push-sdk-prompt-container.s-slide.l-stacked .pushly-prompt-content .pushly-prompt-actions{display:flex;flex-direction:row;justify-content:center;align-items:center}</style><div class="push-sdk-prompt-container s-slide l-normal pos-d-bottom pos-m-bottom"><div class="pushly-prompt-wrapper"><div class="pushly-prompt-image"></div><div class="pushly-prompt-content"><div class="pushly-prompt-content-copy"><div class="pushly-prompt-title"><span>Get the Latest Updates First</span></div><div class="pushly-prompt-subtitle"><span>Click &quot;Sign Up&quot; then &quot;Allow&quot; for Notifications</span></div></div><div class="pushly-prompt-btns"><button class="pushly-prompt-btn pushly-prompt-btn-allow" onclick=\'PushlySDK.Prompts.dispatch({prompt_action:{type:"allow"
+id:5044}})\'><span>Sign Up</span></button> <button class="pushly-prompt-btn pushly-prompt-btn-dismiss" onclick=\'PushlySDK.Prompts.dispatch({prompt_action:{type:"dismiss"
+id:5044}})\'><span>No Thanks</span></button></div></div></div></div></div>'
+'%7B%7D'
+604800
+'openx'
+8069
+42886
+'N4Ig-mBGAeDGCuAnRIBcoAOGAuBnNAjAOwCsADAGxEAs1ATABwEEUA0IGAbrAHbaHtc-VMXJVajZmw6dcvfiPaIkAGzQgQ7FavUB6TSBV5CpSjXpMW7DDtQBtEPoC6AX3YQYGRAFNOaUAAmAIYAnsJ2omYSlkSu7lDQvt58wsBu4AmwAJYB6pCQAZBE3gBmFAC0JEQBROXUQd4E5QxEDAzlQXTUBACc1BQBAMywdLDlkeL0RAR0PSAuQA___'
+'zix7LPQsHA%3D%3D'
+137
+'1750760796958'
+'false'
+'true'
+'1'
+1784802397334
+'.foodandwine.com'
+'Google Chrome'
+'other'
+'ID5*Pv4eNDK0xyZhmJ27WO4XoDLEO8YyH8YQGHNTtgzIMDgoYG0Ksm3bk4QIOT_4cnXW'
+'BnDvATBm2bMVNy4Vz'
+'8c2c1150-501c-11f0-adfd-49dc7c6fc9f6'
+'Chromium'
+'e2a186fe-c536-44cf-a214-a2e86d66f811'
+'ID5*OMmYvmNWtlsahBhsJtrNEG2gNXw8JpijNHpeM8t4G3YoYKyRsuQIzBeBKUiFfUgd'
+25263
+1750674398129
+'9d3f8dc30c90922a04f115a4ce67868e'
+1751970398130
+5044
+1750674405557
+'188d38206970--01jye56kt87qw386z9b1jwgg54'
+1750674405559
+'esp.criteo.com'
+1750674396606
+'be99a711-a74b-4433-9a7d-131c5dfc5646_2025-06-23T10:26:35.313Z'
+'Sun
+21 Sep 2025 10:26:38 GMT'
+'SLIDE'
+'4 second'
+'1e03a0e7313f5d6a'
+'N4IgTghgdgJiBcBmAHAFgAwEYBsAaEAzgK4DGJApgQQgC5hHn4Dm5A9gqADYQ0CWNRGOQQBaHADoArOnQAmfLwAOCEJgDsa8bO3jsmLTJD4w5Jr1ZQA-lAgBbYfBAAZCAAIAChABergCLlFCDAaeygaIxASCz4ocjDrOwcQAGVWIhoAC1cAQXswXhIICJJ-AE8VFw9vCL57Sy8LJNzyfMKAehdLTy9itLCwUoT7FQAhVk5eADdeIvwosN5Y-KihFWTsiM4LMwFV-BFsZHFMVABORDm-ukGVpJGAeQiTMwtLW4qQAF98Gmp4dWk2DUqFQsjQqDwIBgRUcACMMgAqEgAPxgBCRigAJOgAHqwrxI2EImAwBG8ZGwiAIiAZZEEZEUBEAawAPtlFIpOOQAKQkMBI3gIgCOFPRnGRpRZtggJHuyW5TGRYGREGRUBZAGEMmBWPZuQB3BmcYkAMwRNGRthZmEQmnQ4nt6G5sJoxKg1PIyMU-WlA1SJpo-qC5AAKqVFOQWSMdfqCC1uTKVZw2RyudzPRlrfbMJJxGpuTASAjYcbYYLYTBkV4oxMoEzeUWSEyEYoGURieQEZMVYrYYpixTmzAhcX-RAYCz.AQmTRWIpeQAPJFC7E4yuwotEClMamqk2ozirgBWXqCfAgnAAkkIFiaCjxzO6YETYSOSKSIC.bMTESRETAdwgfcSHdWEiBZSxNl-dgkFtT4gA___'
+'%7B%22signature%22%3A%22ID5_Ar9FXrDeuJigd1cxG7DNcrI520EWfVs9lmiGi53SDiibmRJKYgfHVwOIhuova5FJz2A13x4Xv6S2YmFVETrwvlY_DyxrVV1gZLAxiHqyazzOTmBHMjMd45z1dUlARnhGhrL7oqC2sWYUpHy2zLXYYb-FmhDxTp7nZAEbO8y_ZJkGzk6iz5A%22%2C%22created_at%22%3A%222025-06-23T10%3A26%3A37.857Z%22%2C%22id5_consent%22%3Atrue%2C%22original_uid%22%3A%22ID5*aFI6XTPNFLhKH7qPdkFv8z07l59svTpAZOH80JvjuZUoYPILOap7uwLIVO87DmCv%22%2C%22universal_uid%22%3A%22ID5*PnaIUDI8UUJhEAvfWGaBxDJMraIyl1B0GPvF0gxAplwoYCPMDuVEYygDzO6-B4Mz%22%2C%22link_type%22%3A2%2C%22cascade_needed%22%3Atrue%2C%22privacy%22%3A%7B%22jurisdiction%22%3A%22other%22%2C%22id5_consent%22%3Atrue%7D%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22aO9Q5%2BTigmSQsibjuwEhbZnLWHEdRLjTcm1CcAZwkxoV54JFOdoe8vSiBCCex6lm%22%7D%2C%22cache_control%22%3A%7B%22max_age_sec%22%3A7200%7D%2C%22ids%22%3A%7B%22id5id%22%3A%7B%22eid%22%3A%7B%22source%22%3A%22id5-sync.com%22%2C%22uids%22%3A%5B%7B%22id%22%3A%22ID5*PnaIUDI8UUJhEAvfWGaBxDJMraIyl1B0GPvF0gxAplwoYCPMDuVEYygDzO6-B4Mz%22%2C%22atype%22%3A1%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22aO9Q5%2BTigmSQsibjuwEhbZnLWHEdRLjTcm1CcAZwkxoV54JFOdoe8vSiBCCex6lm%22%7D%7D%5D%7D%7D%7D%7D'
+'ALNI_MY-LEENrH9LPfwTzplpBPAziQee4g'
+'Not/A)Brand'
+1750676197337
+1750674405338
+'aO9Q5+TigmSQsibjuwEhbZnLWHEdRLjTcm1CcAZwkxp2XOPR1XuRxMHuPfW3xjjK'
+23261
+'ZVbd5roFgTZkRPG0LWEoe7pdfOO-qDiyFYAJa2Shk-2sLuR17N29A2j_r1SSp6MbOErdkfl3ba0n2XhKnKbz8A'
+1750674397413
+'100'
+'bottom'
+'fb.1.1750674397424.385512283219012091'
+7151
+'NATIVE'
+1750717593844
+'2025-06-23T10:26:37.857Z'
+'.1750674397333.1750674397333.1.S4WhoBa0LRpCO-nrSB_1XfFBdG32n.1'
+1750674397431
+'Basic Slide Prompt'
+'CjYKBQgKEIobCgYI3QEQihsKBgilARCKGwoGCIEBEIobCgYIogEQihsKBgjSARCKGwoFCH4Qihs'
+'none'}

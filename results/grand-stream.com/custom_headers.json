@@ -1,0 +1,121 @@
+[
+  {
+    "method": "RESPONSE",
+    "header_name": "akamai-grn",
+    "header_value": "0.2ee7898f.1750673740.251bad68",
+    "host_domain": "grand-stream.com",
+    "method_domain": "typekit.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "grand-stream.com",
+    "method_domain": "fontawesome.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "954339c1ca27b18d-MIA",
+    "host_domain": "grand-stream.com",
+    "method_domain": "fontawesome.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "MISS",
+    "host_domain": "grand-stream.com",
+    "method_domain": "fontawesome.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "954339c0cf02cdcd-LIM",
+    "host_domain": "grand-stream.com",
+    "method_domain": "fontawesome.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-request-id",
+    "header_value": "GEukffQMv7X9Q6EaFUnh",
+    "host_domain": "grand-stream.com",
+    "method_domain": "fontawesome.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascgcycc:1077:0",
+    "host_domain": "grand-stream.com",
+    "method_domain": "googletagmanager.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascnsrsggc:158:0",
+    "host_domain": "grand-stream.com",
+    "method_domain": "google.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascnsrsggc:127:0",
+    "host_domain": "grand-stream.com",
+    "method_domain": "doubleclick.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "akamai-grn",
+    "header_value": "0.2ee7898f.1750673742.251bafd4",
+    "host_domain": "grand-stream.com",
+    "method_domain": "typekit.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=\"coop_38fac9d5b82543fc4729580d18ff2d3d\"",
+    "host_domain": "grand-stream.com",
+    "method_domain": "google.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "grand-stream.com",
+    "method_domain": "fontawesome.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "954339cb2acd41a7-MIA",
+    "host_domain": "grand-stream.com",
+    "method_domain": "fontawesome.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=\"coop_38fac9d5b82543fc4729580d18ff2d3d\"",
+    "host_domain": "grand-stream.com",
+    "method_domain": "google.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=\"coop_38fac9d5b82543fc4729580d18ff2d3d\"",
+    "host_domain": "grand-stream.com",
+    "method_domain": "google.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=\"coop_38fac9d5b82543fc4729580d18ff2d3d\"",
+    "host_domain": "grand-stream.com",
+    "method_domain": "google.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascnsrsggc:158:0",
+    "host_domain": "grand-stream.com",
+    "method_domain": "google.com"
+  }
+]

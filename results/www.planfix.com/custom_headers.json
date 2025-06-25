@@ -1,0 +1,716 @@
+[
+  {
+    "method": "REQUEST",
+    "header_name": "X-Requested-With",
+    "header_value": "XMLHttpRequest",
+    "host_domain": "planfix.com",
+    "method_domain": "planfix.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-Requested-With",
+    "header_value": "XMLHttpRequest",
+    "host_domain": "planfix.com",
+    "method_domain": "planfix.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "planfix.com",
+    "method_domain": "chatra.io"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "954315441fbacdc9-LIM",
+    "host_domain": "planfix.com",
+    "method_domain": "chatra.io"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "954315445f1ecdcb-LIM",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "feature-policy",
+    "header_value": "geolocation 'none'; microphone 'none'; camera 'none'; payment 'none'; document-domain 'none'; display-capture 'none'; autoplay 'none'",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "954315445f1ccdcb-LIM",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "feature-policy",
+    "header_value": "geolocation 'none'; microphone 'none'; camera 'none'; payment 'none'; document-domain 'none'; display-capture 'none'; autoplay 'none'",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "95431544af9ccdcb-LIM",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "feature-policy",
+    "header_value": "geolocation 'none'; microphone 'none'; camera 'none'; payment 'none'; document-domain 'none'; display-capture 'none'; autoplay 'none'",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "95431544bfadcdcb-LIM",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "feature-policy",
+    "header_value": "geolocation 'none'; microphone 'none'; camera 'none'; payment 'none'; document-domain 'none'; display-capture 'none'; autoplay 'none'",
+    "host_domain": "planfix.com",
+    "method_domain": "sf-syn.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-bgj",
+    "header_value": "imgq:100,h2pri",
+    "host_domain": "planfix.com",
+    "method_domain": "softwaresuggest.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "planfix.com",
+    "method_domain": "softwaresuggest.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-polished",
+    "header_value": "origFmt=png, origSize=18367",
+    "host_domain": "planfix.com",
+    "method_domain": "softwaresuggest.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "95431544983618e5-MIA",
+    "host_domain": "planfix.com",
+    "method_domain": "softwaresuggest.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "HIT",
+    "host_domain": "planfix.com",
+    "method_domain": "chatra.io"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "954315455996cdcd-LIM",
+    "host_domain": "planfix.com",
+    "method_domain": "chatra.io"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascgcycc:1319:0",
+    "host_domain": "planfix.com",
+    "method_domain": "googletagmanager.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascgcycc:1077:0",
+    "host_domain": "planfix.com",
+    "method_domain": "googletagmanager.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascnsrsggc:102:0",
+    "host_domain": "planfix.com",
+    "method_domain": "google-analytics.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascnsrsgac:225:0",
+    "host_domain": "planfix.com",
+    "method_domain": "google-analytics.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-opener-policy-report-only",
+    "header_value": "same-origin; report-to=ascnsrsgac:175:0",
+    "host_domain": "planfix.com",
+    "method_domain": "google-analytics.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "request-context",
+    "header_value": "appId=cid-v1:24d14d43-192c-49a0-9966-64b85dcb3cd6",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-azure-ref",
+    "header_value": "20250623T095047Z-r1696bbbc68f8rb9hC1BL1dm0n00000003p000000000hw4e",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-cache",
+    "header_value": "CONFIG_NOCACHE",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Amz-Cf-Id",
+    "header_value": "Mn0DrBvFvNIhSnwFnh0wQUlGenVHw0q7hlphri5LVko-nUCHeDBgHw==",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Amz-Cf-Pop",
+    "header_value": "SCL51-P3",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Amz-Server-Side-Encryption",
+    "header_value": "AES256",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Amz-Version-Id",
+    "header_value": "vKijrcN8yb8pbfPHfWKL9eM3g.Gkz8KE",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Cache",
+    "header_value": "Hit from cloudfront",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-amz-cf-id",
+    "header_value": "tH7kqSpLsjOwZgr-t7C3A_qovEJdfm6e_b9DaE7GsoguAq8Xq_2foQ==",
+    "host_domain": "planfix.com",
+    "method_domain": "pfx.so"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-amz-cf-pop",
+    "header_value": "SCL51-P4",
+    "host_domain": "planfix.com",
+    "method_domain": "pfx.so"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-cache",
+    "header_value": "Hit from cloudfront",
+    "host_domain": "planfix.com",
+    "method_domain": "pfx.so"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-azure-ref",
+    "header_value": "20250623T095047Z-r1696bbbc68f8rb9hC1BL1dm0n00000003p000000000hw57",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-cache",
+    "header_value": "TCP_HIT",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fd-int-roxy-purgeid",
+    "header_value": "83967209",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-ms-request-id",
+    "header_value": "9389c6a8-501e-0064-252a-dadf43000000",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-ms-version",
+    "header_value": "2018-03-28",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-amz-cf-id",
+    "header_value": "a319hoZ_6Ww6JIae6BvrfKpS0Qz82zomPOGE_EERWEzVM6v7bVlIng==",
+    "host_domain": "planfix.com",
+    "method_domain": "pfx.so"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-amz-cf-pop",
+    "header_value": "SCL51-P4",
+    "host_domain": "planfix.com",
+    "method_domain": "pfx.so"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-cache",
+    "header_value": "Hit from cloudfront",
+    "host_domain": "planfix.com",
+    "method_domain": "pfx.so"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Amz-Cf-Id",
+    "header_value": "Ho4uc2mldd6MhxekUEhd4nchw_jdqTYIAUqI6giM2rLgUt-x6KkpYg==",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Amz-Cf-Pop",
+    "header_value": "SCL51-P3",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Amz-Server-Side-Encryption",
+    "header_value": "AES256",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Amz-Version-Id",
+    "header_value": "CK4cMX5vZLEnRrAtBOR1tfE4_uNanswm",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-Cache",
+    "header_value": "Hit from cloudfront",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "access-control-request-methods",
+    "header_value": "GET",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-advertisable-eid",
+    "header_value": "3QEU55AVURGVNFYKGPRLHU",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-attribution-url",
+    "header_value": "https%3A%2F%2Fx.adroll.com%2Fattribution%2Ftrigger%3Ffpc%3D8f220ef1593e262007e3d7dc05693d79%26advertisable_eid%3D3QEU55AVURGVNFYKGPRLHU%26conversion_type%3DPageView%26conversion_value%3D0.0%26currency%3DUSC%26flg%3D1%26pv%3D37805176014.26391%26arrfrr%3Dhttps%253A%252F%252Fplanfix.com%252F",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-conversion-currency",
+    "header_value": "",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-conversion-value",
+    "header_value": "0.0",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-organization-eid",
+    "header_value": "SZE3KRCUORAERGQMXVYRZ4",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-pixel-eid",
+    "header_value": "EPGGWMNOENDCJMRYE2IIFV",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-rule",
+    "header_value": "*",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-rule-type",
+    "header_value": "p",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-segment-display-name",
+    "header_value": "Visitors to Unsegmented Pages",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-segment-eid",
+    "header_value": "OLCQG7YFPFB7ZDDI7VV6SN",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-segment-name",
+    "header_value": "*",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-embedder-policy-report-only",
+    "header_value": "require-corp;report-to=\"coep_report\"",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "document-policy",
+    "header_value": "force-load-at-top, include-js-call-stacks-in-crash-reports",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-connection-quality",
+    "header_value": "EXCELLENT; q=0.9, rtt=40, rtx=0, c=23, mss=1232, tbw=4905, tp=8, tpl=0, uplat=2, ullat=-1",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-debug",
+    "header_value": "v1uDFsDQWanJAgEZhNdA5gJoDSiNkyseR2apUDuk00nxm/L22kLKi8bPCbMROJaVtB33TlBqC+jFKcuY4b8yNg==",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-optimizer",
+    "header_value": "0",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-embedder-policy-report-only",
+    "header_value": "require-corp;report-to=\"coep_report\"",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "document-policy",
+    "header_value": "force-load-at-top, include-js-call-stacks-in-crash-reports",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-connection-quality",
+    "header_value": "EXCELLENT; q=0.9, rtt=37, rtx=0, c=68, mss=1232, tbw=81033, tp=74, tpl=0, uplat=6, ullat=-1",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-debug",
+    "header_value": "3A2kz6QafE9dGOUvZS6Ai2R+JbFSbstFv34v8SwHk8OVwIs0+o9BsqI7m94FDI4ovRmjaGEtLmR+mXnjGsxj0w==",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.net"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "ad-auction-allowed",
+    "header_value": "true",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-connection-quality",
+    "header_value": "GOOD; q=0.7, rtt=52, rtx=0, c=23, mss=1232, tbw=5005, tp=10, tpl=0, uplat=0, ullat=0",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-result",
+    "header_value": "g.-1.-1.-1",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "Request-Context",
+    "header_value": "appId=cid-v1:3f60b293-70d6-4805-b0bb-3484f0a73bf0",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "document-policy",
+    "header_value": "force-load-at-top, include-js-call-stacks-in-crash-reports",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-connection-quality",
+    "header_value": "EXCELLENT; q=0.9, rtt=47, rtx=0, c=23, mss=1232, tbw=4953, tp=9, tpl=0, uplat=150, ullat=0",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-debug",
+    "header_value": "ducRC1ez4E1fSmsoeKonGabF4gBcCYLM4dAGSVR7gPEbRDJXtsbcPrmqUXq35zbOtjkw2KHr0Kf29zaXRNhrxg==",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "X-RPHost",
+    "header_value": "1e5551a43c15a2a2988f4ec71599119f",
+    "host_domain": "planfix.com",
+    "method_domain": "rubiconproject.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "access-control-request-methods",
+    "header_value": "GET",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-advertisable-eid",
+    "header_value": "3QEU55AVURGVNFYKGPRLHU",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-conversion-currency",
+    "header_value": "",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-conversion-value",
+    "header_value": "0.0",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-pixel-eid",
+    "header_value": "EPGGWMNOENDCJMRYE2IIFV",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-rule",
+    "header_value": "*",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-rule-type",
+    "header_value": "p",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-segment-display-name",
+    "header_value": "Visitors to Unsegmented Pages",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-segment-eid",
+    "header_value": "OLCQG7YFPFB7ZDDI7VV6SN",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-segment-name",
+    "header_value": "*",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fastly-to-nlb-rtt",
+    "header_value": "142593",
+    "host_domain": "planfix.com",
+    "method_domain": "taboola.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-cache-status",
+    "header_value": "DYNAMIC",
+    "host_domain": "planfix.com",
+    "method_domain": "casalemedia.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cf-ray",
+    "header_value": "954315535c143d82-LIM",
+    "host_domain": "planfix.com",
+    "method_domain": "casalemedia.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "cross-origin-embedder-policy-report-only",
+    "header_value": "require-corp;report-to=\"coep_report\"",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "document-policy",
+    "header_value": "force-load-at-top, include-js-call-stacks-in-crash-reports",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-connection-quality",
+    "header_value": "EXCELLENT; q=0.9, rtt=46, rtx=0, c=24, mss=1232, tbw=5373, tp=13, tpl=0, uplat=300, ullat=0",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-fb-debug",
+    "header_value": "G6V3MMgr7hvCEZvJhcw2T6EyCqBFcz41OIX98LHpHGIwzo/grwgC7hckmV/yB3u88Y/uW0KscXxbYmlS/+HX+A==",
+    "host_domain": "planfix.com",
+    "method_domain": "facebook.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "an-x-request-uuid",
+    "header_value": "89a452a6-754a-4456-a367-529be98680de",
+    "host_domain": "planfix.com",
+    "method_domain": "adnxs.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-proxy-origin",
+    "header_value": "177.222.61.200; 177.222.61.200; 806.bm-nginx-loadbalancer.mgmt.nym2.adnexus.net; *.adnxs.com",
+    "host_domain": "planfix.com",
+    "method_domain": "adnxs.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-traceid",
+    "header_value": "a8d854b991e8b52fd18eb9da3e620d0a",
+    "host_domain": "planfix.com",
+    "method_domain": "outbrain.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "Request-Context",
+    "header_value": "appId=cid-v1:3f60b293-70d6-4805-b0bb-3484f0a73bf0",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "Request-Context",
+    "header_value": "appId=cid-v1:3f60b293-70d6-4805-b0bb-3484f0a73bf0",
+    "host_domain": "planfix.com",
+    "method_domain": "clarity.ms"
+  }
+]
