@@ -3,8 +3,11 @@
 ## Files
 
 - **main.py** – Main script that orchestrates the full workflow across websites.
-- **filter.py** – Contains all header filtering logic using heuristics.
+- **header_analysis.py** – Gateway to all the operations that are performed on the headers.
+- **pipeline_filtering.py** - Script that enforces the filtering pipeline
+- **permutation_filtering_stats.py** - Does all the combinations of filters and collects data.
 - **parser.py** – Parses cookies, local storage, and session storage to extract stored values.
+- **information_api.py** - To read and write from and to files.
 - **standardHeadersFileGenerator.py** – Scrapes reference websites to generate the list of standard headers "standard_headers.txt".
 
 ## Results
@@ -15,10 +18,8 @@ The `results/` folder has the following structure:
 results/ 
 ├── all_custom_headers.json         # Custom headers found across all websites 
 ├── website1/ 
-│ ├── custom_headers.json           # Custom headers found for this website 
-│ ├── group_filter_stats.json       # Filtering when pipeline applied
-│ ├── individual_filter_stats.json  # Filtering when heuristics applied individually
-│ ├── network.json                  # Raw network request/response events 
-│ └── seen_std_headers.json         # Count of seen standard headers 
+│ ├── capture/          # All network/application information
+│ ├── pipeline/         # Filtering information
+│ └── stats/            # Statistics for combinations of filters
 ├── website2/ 
 │ ├── ... </pre>
