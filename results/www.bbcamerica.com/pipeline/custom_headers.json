@@ -2,14 +2,14 @@
   {
     "method": "REQUEST",
     "header_name": "X-AMCN-DEVICE-AD-ID",
-    "header_value": "69186748-83de-4ac1-9f00-01226194c077",
+    "header_value": "56ead514-c551-4c28-929b-8935f3a453a8",
     "host_domain": "bbcamerica.com",
     "method_domain": "amcn.com"
   },
   {
     "method": "REQUEST",
     "header_name": "X-AMCN-DEVICE-ID",
-    "header_value": "69186748-83de-4ac1-9f00-01226194c077",
+    "header_value": "56ead514-c551-4c28-929b-8935f3a453a8",
     "host_domain": "bbcamerica.com",
     "method_domain": "amcn.com"
   },
@@ -23,14 +23,14 @@
   {
     "method": "REQUEST",
     "header_name": "X-AMCN-DEVICE-AD-ID",
-    "header_value": "69186748-83de-4ac1-9f00-01226194c077",
+    "header_value": "56ead514-c551-4c28-929b-8935f3a453a8",
     "host_domain": "bbcamerica.com",
     "method_domain": "amcn.com"
   },
   {
     "method": "REQUEST",
     "header_name": "X-AMCN-DEVICE-ID",
-    "header_value": "69186748-83de-4ac1-9f00-01226194c077",
+    "header_value": "56ead514-c551-4c28-929b-8935f3a453a8",
     "host_domain": "bbcamerica.com",
     "method_domain": "amcn.com"
   },

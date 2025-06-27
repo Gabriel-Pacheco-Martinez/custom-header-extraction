@@ -1,6 +1,7 @@
 import tldextract
 
 from pipeline_filtering import heuristics_filtering_pipeline
+from permutation_filtering_stats import permutation_statistics
 
 #####################################
 # Get ALL headers in network
@@ -53,6 +54,16 @@ def get_custom_headers(all_headers, default_headers, storage_values, pipeline_fo
         all_headers, default_headers, storage_values, pipeline_folder
     )
     return custom_headers, standard_headers
+
+#####################################
+# Get PERMUTATION filtering stats
+#####################################
+def get_filtering_permutation_stats(all_headers, default_headers, storage_values, stats_folder):
+    # =======
+    # Get statistics
+    permutation_statistics(
+        all_headers, default_headers, storage_values, stats_folder
+    )
 
 #####################################
 # Helper Functions

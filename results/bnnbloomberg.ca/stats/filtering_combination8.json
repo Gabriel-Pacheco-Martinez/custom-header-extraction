@@ -1,0 +1,20 @@
+{
+  "Combination 8: min_length + consistent": {
+    "third_party": {
+      "Headers into filter": 4287,
+      "Headers removed": 0
+    },
+    "min_length": {
+      "Headers into filter": 4287,
+      "Headers removed": 2827
+    },
+    "consistent": {
+      "Headers into filter": 1460,
+      "Headers removed": 410
+    },
+    "not_in_storage": {
+      "Headers into filter": 1050,
+      "Headers removed": 0
+    }
+  }
+}

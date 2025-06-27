@@ -4,14 +4,17 @@ import json
 
 
 def extract_all_cookie_values(cookies):
-    extracted_values = set()
+    # ======
+    # Initialize set
+    values = set()
 
+    # ======
+    # Loop
     for cookie in cookies:
         raw_value = cookie.get("value", "")
         if not raw_value:
             continue
 
-        # =====
         # Case 1: URL-encoded → decode and split
         if "%" in raw_value:
             decoded = urllib.parse.unquote(raw_value)
@@ -24,11 +27,10 @@ def extract_all_cookie_values(cookies):
                     _, val = part.split("=", 1)
                     val = val.strip()
                     if val:
-                        extracted_values.add(val)  # ✅ fixed
+                        values.add(val)  # ✅ fixed
                 else:
-                    extracted_values.add(part)
+                    values.add(part)
 
-                    # =====
         # Case 2: Not encoded but contains key=value → extract value from each pair
         elif "=" in raw_value:
             segments = re.split(r"[:|$&]", raw_value)  # Handle multi-field formats
@@ -37,28 +39,36 @@ def extract_all_cookie_values(cookies):
                     _, val = seg.split("=", 1)
                     val = val.strip()
                     if val:
-                        extracted_values.add(val)
+                        values.add(val)
                 else:
-                    extracted_values.add(seg.strip())
+                    values.add(seg.strip())
 
-        # Case 3: Plain unencoded value, no special structure → keep whole
+        # Case 3: Plain unencoded value, no special structure
         else:
-            extracted_values.add(raw_value.strip())
+            values.add(raw_value.strip())
 
-    return extracted_values
+    return values
 
 def extract_all_storage_values(data):
+    # ======
+    # Initialize set
     values = set()
 
+    # ======
+    # Recursion function
     def recurse(value):
+        # If dictionary
         if isinstance(value, dict):
             for v in value.values():
                 recurse(v)
+
+        # If list
         elif isinstance(value, list):
             for elem in value:
                 recurse(elem)
+
+        # Else
         else:
-            # If not a string
             if not isinstance(value, str):
                 values.add(value)
                 return
@@ -96,10 +106,12 @@ def extract_all_storage_values(data):
                     else:
                         values.add(seg.strip())
 
-            # Case 3: Plain unencoded value, no special structure → keep whole
+            # Case 3: Plain unencoded value, no special structure
             else:
                 values.add(value.strip())
 
+    # ======
+    # Recursion callback
     recurse(data)
     return values
 
@@ -136,9 +148,7 @@ def parse_nested_json(value):
     else:
         return value
 
-
 def fix_and_parse_mprtcl(value):
-    # Replace
     value = value.replace("'", '"')
     value = value.replace('|', ',')
     value = re.sub(r',(\s*[}\]])', r'\1', value)

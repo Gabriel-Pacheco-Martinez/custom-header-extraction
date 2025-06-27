@@ -15,7 +15,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # Mine
 from information_api import read_json, save_json, load_standard_headers
 from parser import extract_all_cookie_values, parse_nested_json, extract_all_storage_values
-from header_analysis import get_custom_headers, get_headers
+from header_analysis import get_custom_headers, get_headers, get_filtering_permutation_stats
 
 # =====================
 # Helper functions
@@ -138,19 +138,22 @@ def process_site_data(url, base_output_folder):
     storage_values = set(read_json(capture_folder+"/storage_values.json"))
 
     # =====
-    # Get custom headers
+    # Get custom headers and save information
     custom_headers, standard_headers = get_custom_headers(
         all_headers, default_headers, storage_values, pipeline_folder
     )
 
-    # =====
-    # Save information
     data_to_save = [
         (custom_headers, "custom_headers.json"),
         (standard_headers, "standard_headers.json"),
     ]
     for data, filename in data_to_save:
         save_json(data, os.path.join(pipeline_folder, filename))
+
+    # =====
+    # Get filtering permutation statistics
+    get_filtering_permutation_stats(all_headers, default_headers, storage_values, stats_folder)
+
 
     return custom_headers
 
@@ -166,17 +169,22 @@ def process_multiple_sites(urls, result_base_folder="results"):
 # Main
 # =====================
 if __name__ == "__main__":
-    # Define flag
-    capture = False
+    # ======
+    # Please change flags as needed
+    capture = False  # Can be false if network information already available in folder "results/website/capture"
     process = True
 
+    # ======
+    # Define websites
     websites = [
         # =====
-        "https://www.bbcamerica.com/",
-        "https://www.planfix.com/",
-        "https://bnnbloomberg.ca"
+        "http://www.bbcamerica.com/",
+        "http://www.planfix.com/",
+        "http://bnnbloomberg.ca"
     ]
 
+    # ======
+    # Capture website, process information, or both
     if capture:
         capture_multiple_sites(websites)
     if process:
