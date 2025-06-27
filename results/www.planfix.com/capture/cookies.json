@@ -1,0 +1,141 @@
+[
+  {
+    "domain": ".planfix.com",
+    "expiry": 1751101286,
+    "httpOnly": false,
+    "name": "_ym_isad",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "2"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1782565286,
+    "httpOnly": false,
+    "name": "_ym_d",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "1751029287"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1785589285,
+    "httpOnly": false,
+    "name": "_ga",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GA1.2.24840487.1751029285"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1782565286,
+    "httpOnly": false,
+    "name": "_clck",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "9oq609%7C2%7Cfx4%7C0%7C2004"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1758805285,
+    "httpOnly": false,
+    "name": "_fbp",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "fb.1.1751029285810.244356216801515750"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1782565285,
+    "httpOnly": false,
+    "name": "__ar_v4",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "%7C3QEU55AVURGVNFYKGPRLHU%3A20250627%3A1%7CEPGGWMNOENDCJMRYE2IIFV%3A20250627%3A1"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1751115687,
+    "httpOnly": false,
+    "name": "_clsk",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "14njp8z%7C1751029287036%7C1%7C1%7Ck.clarity.ms%2Fcollect"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1751029345,
+    "httpOnly": false,
+    "name": "_gat_UA-57748039-4",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1782565286,
+    "httpOnly": false,
+    "name": "_ym_uid",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "1751029287137603428"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1782586885,
+    "httpOnly": false,
+    "name": "__adroll_fpc",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "6699b54eb4f63b857697f2d607f54031-1751029285367"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1751031087,
+    "httpOnly": false,
+    "name": "_ym_visorc",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "w"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1785589285,
+    "httpOnly": false,
+    "name": "_ga_538N0FP35E",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GS2.1.s1751029285$o1$g0$t1751029285$j60$l0$h0"
+  },
+  {
+    "domain": ".planfix.com",
+    "expiry": 1751115685,
+    "httpOnly": false,
+    "name": "_gid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GA1.2.289417889.1751029285"
+  },
+  {
+    "domain": ".planfix.com",
+    "httpOnly": true,
+    "name": "PFSITESESSID",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "8fa8b56d6f7b5bd2de7df2dc7a03769c"
+  }
+]

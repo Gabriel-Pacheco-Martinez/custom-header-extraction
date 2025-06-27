@@ -1,0 +1,24 @@
+{
+  "Compound filtering statistics": {
+    "standard_headers": {
+      "Headers into filter": 3290,
+      "Headers removed": 3188
+    },
+    "third_party": {
+      "Headers into filter": 102,
+      "Headers removed": 2
+    },
+    "min_length": {
+      "Headers into filter": 100,
+      "Headers removed": 25
+    },
+    "inconsistent": {
+      "Headers into filter": 75,
+      "Headers removed": 24
+    },
+    "not_in_storage": {
+      "Headers into filter": 51,
+      "Headers removed": 47
+    }
+  }
+}

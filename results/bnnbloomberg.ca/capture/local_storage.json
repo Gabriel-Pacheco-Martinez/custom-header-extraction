@@ -1,0 +1,1083 @@
+{
+  "IH_LGCL_TS": "Fri, 04 Jul 2025 13:13:52 GMT",
+  "NRBA_SESSION": {
+    "value": "251a3781f7b86a14",
+    "inactiveAt": 1751031834868,
+    "expiresAt": 1751044434868,
+    "updatedAt": 1751030035719,
+    "sessionReplayMode": 0,
+    "sessionReplaySentFirstChunk": false,
+    "sessionTraceMode": 0,
+    "traceHarvestStarted": false,
+    "serverTimeDiff": -392,
+    "custom": {}
+  },
+  "_GESPSK-permutive-secure-signal": [
+    "permutive-secure-signal",
+    null,
+    1751030032833,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      100
+    ]
+  ],
+  "_GESPSK-pubcid.org": [
+    "pubcid.org",
+    null,
+    1751030032834,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      100
+    ]
+  ],
+  "_GESPSK-uidapi.com": [
+    "uidapi.com",
+    null,
+    1751030032834,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [
+      100
+    ]
+  ],
+  "_cb": "B25eaED027_h0tC9t",
+  "_cb_expires": 1785158032003,
+  "_cb_svref": "external",
+  "_cb_svref_expires": 1751031837023,
+  "_cc_id": "9a7fd22439df178f6c82649216809fb4",
+  "_chartbeat2": ".1751030032001.1751030032001.1.BdqVdJB8M27LDvuUbsDTFQRRDO8h0a.1",
+  "_chartbeat2_expires": 1785158032003,
+  "_iiq_fdata": {
+    "pcid": "ee26d88c-fc1a-4580-819c-5535344f7ce6",
+    "pcidDate": 1751030032844
+  },
+  "_iiq_sync_456059511": 1751030032845,
+  "_pcrprs": [
+    "adv"
+  ],
+  "_pdfps": [
+    20074,
+    32255,
+    32335,
+    "adv"
+  ],
+  "_pfws": [
+    20074
+  ],
+  "_prubicons": [
+    20074
+  ],
+  "_psegs": [
+    20074,
+    32255,
+    32335
+  ],
+  "_pssps": {
+    "cohorts": [
+      "adv"
+    ],
+    "ssps": [
+      "openx",
+      "pubmatic",
+      "appnexus",
+      "ix"
+    ]
+  },
+  "_t_tests": "eyJHMTk5bkdaVXNXSmxiIjp7ImNob3NlblZhcmlhbnQiOiJCIiwic3BlY2lmaWNMb2NhdGlvbiI6WyJDTnNHTkwiLCJEOEt2QTEiXX0sImxpZnRfZXhwIjoibSJ9",
+  "_t_tests_expires": 1751033632493,
+  "_v__chartbeat3": "DyVWt0DEQGu5CUVQ4R",
+  "_v__chartbeat3_expires": 1785158037019,
+  "aps:3733:deviceSignal/sua": {
+    "architecture": "arm",
+    "bitness": 64,
+    "mobile": 0,
+    "model": "",
+    "source": 2,
+    "platform": {
+      "brand": "macOS",
+      "version": [
+        15,
+        2,
+        0
+      ]
+    },
+    "browsers": [
+      {
+        "brand": "Google Chrome",
+        "version": [
+          137,
+          0,
+          7151,
+          120
+        ]
+      },
+      {
+        "brand": "Chromium",
+        "version": [
+          137,
+          0,
+          7151,
+          120
+        ]
+      },
+      {
+        "brand": "Not/A)Brand",
+        "version": [
+          24,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "aps:3733:sessionMarker/marker": "a83f5a6d-4b6e-443d-847c-1ac9219d972f_2025-06-27T13:13:54.594Z",
+  "apstagCfg": {
+    "CONFIG_CALL_ENABLED": true,
+    "v": 1
+  },
+  "apstagCxMEnabled": 1,
+  "carbon_ccuid": "91941317-e670-4842-9cce-807a0ec1bfc2",
+  "carbon_data": {
+    "profile": {
+      "identity": {
+        "id": "91941317-e670-4842-9cce-807a0ec1bfc2",
+        "update": false
+      },
+      "audiences": null
+    },
+    "context": {
+      "pageContext": null,
+      "customTaxonomy": [],
+      "customTaxonomyTTL": 3600000,
+      "dealIds": null
+    }
+  },
+  "connectId": {
+    "puid": "212c114269cab5cf9b413e6b06bd4bd8510f626d2a86bd883cc8014b9b847155",
+    "vmuid": "xabxyWKjnC3ArBvg9jaeD433-rc6v0kgiYfRRFef4azr24SVH7etJnB8DiXUKSTVVXAKZYqxwXe4Io7I1SD1vw",
+    "connectid": "xabxyWKjnC3ArBvg9jaeD433-rc6v0kgiYfRRFef4azr24SVH7etJnB8DiXUKSTVVXAKZYqxwXe4Io7I1SD1vw",
+    "connectId": "xabxyWKjnC3ArBvg9jaeD433-rc6v0kgiYfRRFef4azr24SVH7etJnB8DiXUKSTVVXAKZYqxwXe4Io7I1SD1vw",
+    "ttl": 86400000,
+    "lastSynced": 1751030033410,
+    "lastUsed": 1751030033410
+  },
+  "cto_bidid": "x20vp19jaHUwRVcyb1k3dE0xYnRnZEFMQU02c29NcWx4TU1vQVV2dWNzeGpSeU1RUmtQTjQ2VHNsZ0ZmUGxwSmxOejM1SnUlMkJwSEVVOVY1S2p1Y0dCVzRUYUVsSnU1S1RxbWRoTGlyQ1YlMkZRR0RLczBSNnNKZmRFNktuelJsYkg4MEdaQjk",
+  "cto_bundle": "Bqol3l9wRTdIVjl4d2lQY1I0NmJ0bnRTNmFPOUxKOGQ3MGtvNjFNOTBsTWpRJTJCTUxoRTlNTUIlMkZuTlFkMjdhNVJ6OENVNWZ3ZVduNHBudFRaS0c3UjI1dmVmJTJGR0wyYWhTblYlMkJDU2JQeWslMkJOU3lvMEhDRFREQjBuUGRBdmZOZDF1SjhZbWd1MUNmZVZwcFcwMTBqcnAzZmtWbWg2b0lZUGQ5Rlg3NHpaSWFXTUJGZWQ5bmVPRldBNk9wUzFOczJUcE1WNCUyRlZlWmlHajJONW11VEZvaGNhd2JJMnJBJTNEJTNE",
+  "goog:cached:topics": [
+    null,
+    1751030035439,
+    3
+  ],
+  "id5id": "%7B%22signature%22%3A%22ID5_AmHuHyLXTIkB798bTk69QDvkHx-iJ6ZxTjuetfTV5NOMnZQtkZCZ6vaULTuv2-dPu5F05N1gIqMTHyQYibau-c08yw8JtrjqkXdjvDymSMuzfiboe4SZGRrz_ITHmL0dfY1wxhghxm55RQ_66HUVvSb2GLJkT7t96KBTzNXa5BU-CcsVhBw%22%2C%22created_at%22%3A%222025-06-27T13%3A13%3A53.754Z%22%2C%22id5_consent%22%3Atrue%2C%22original_uid%22%3A%22ID5*_aLhyht-uq3mZDC02k2YI4BVWugvkUgtAfVq7zp2Js8p6vmBKB3XiVVM4wFY8-Ky%22%2C%22universal_uid%22%3A%22ID5*ADTLN-NVuL5NUkpBU5R0xrK9FCyi5C0yjQEBDKdnWFUp6q2jRH3Q4n94U0AefEVT%22%2C%22link_type%22%3A2%2C%22cascade_needed%22%3Afalse%2C%22privacy%22%3A%7B%22jurisdiction%22%3A%22other%22%2C%22id5_consent%22%3Atrue%7D%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22ySg81Vm4nZ2GVBoZPUDo1zUqnIfc6gbGHmhU9nTYYypKpoIirHwtq%2FDXVyltfL0N%22%7D%2C%22cache_control%22%3A%7B%22max_age_sec%22%3A7200%7D%2C%22ids%22%3A%7B%22id5id%22%3A%7B%22eid%22%3A%7B%22source%22%3A%22id5-sync.com%22%2C%22uids%22%3A%5B%7B%22id%22%3A%22ID5*ADTLN-NVuL5NUkpBU5R0xrK9FCyi5C0yjQEBDKdnWFUp6q2jRH3Q4n94U0AefEVT%22%2C%22atype%22%3A1%2C%22ext%22%3A%7B%22linkType%22%3A2%2C%22pba%22%3A%22ySg81Vm4nZ2GVBoZPUDo1zUqnIfc6gbGHmhU9nTYYypKpoIirHwtq%2FDXVyltfL0N%22%7D%7D%5D%7D%7D%7D%7D",
+  "id5id_cst": "zix7LPQsHA==",
+  "id5id_exp": "Thu, 25 Sep 2025 13:13:55 GMT",
+  "id5id_last": "Fri, 27 Jun 2025 13:13:55 GMT",
+  "id5id_last_exp": "Thu, 25 Sep 2025 13:13:55 GMT",
+  "id5id_privacy": {
+    "jurisdiction": "other",
+    "id5_consent": true
+  },
+  "id5id_privacy_exp": "Sun, 27 Jul 2025 13:13:55 GMT",
+  "id5id_v2_2478375955370564": {
+    "data": {
+      "response": {
+        "signature": "ID5_AmHuHyLXTIkB798bTk69QDvkHx-iJ6ZxTjuetfTV5NOMnZQtkZCZ6vaULTuv2-dPu5F05N1gIqMTHyQYibau-c08yw8JtrjqkXdjvDymSMuzfiboe4SZGRrz_ITHmL0dfY1wxhghxm55RQ_66HUVvSb2GLJkT7t96KBTzNXa5BU-CcsVhBw",
+        "created_at": "2025-06-27T13:13:53.754Z",
+        "id5_consent": true,
+        "original_uid": "ID5*_aLhyht-uq3mZDC02k2YI4BVWugvkUgtAfVq7zp2Js8p6vmBKB3XiVVM4wFY8-Ky",
+        "universal_uid": "ID5*ADTLN-NVuL5NUkpBU5R0xrK9FCyi5C0yjQEBDKdnWFUp6q2jRH3Q4n94U0AefEVT",
+        "link_type": 2,
+        "cascade_needed": false,
+        "privacy": {
+          "jurisdiction": "other",
+          "id5_consent": true
+        },
+        "ext": {
+          "linkType": 2,
+          "pba": "ySg81Vm4nZ2GVBoZPUDo1zUqnIfc6gbGHmhU9nTYYypKpoIirHwtq/DXVyltfL0N"
+        },
+        "cache_control": {
+          "max_age_sec": 7200
+        },
+        "ids": {
+          "id5id": {
+            "eid": {
+              "source": "id5-sync.com",
+              "uids": [
+                {
+                  "id": "ID5*ADTLN-NVuL5NUkpBU5R0xrK9FCyi5C0yjQEBDKdnWFUp6q2jRH3Q4n94U0AefEVT",
+                  "atype": 1,
+                  "ext": {
+                    "linkType": 2,
+                    "pba": "ySg81Vm4nZ2GVBoZPUDo1zUqnIfc6gbGHmhU9nTYYypKpoIirHwtq/DXVyltfL0N"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "responseTimestamp": 1751030035450,
+      "consents": {
+        "gdpr": false
+      }
+    },
+    "expireAt": 1752326035450
+  },
+  "iiq": {
+    "pcid": "ee26d88c-fc1a-4580-819c-5535344f7ce6",
+    "pcidDate": 1751030032844
+  },
+  "jasper_closed_captions_coordinates": {},
+  "jwplayerLocalId": "1gc7om91veqm",
+  "li_adsId": "36885306-68d9-4da7-b733-b3fa33917e89",
+  "mgniSession": "eyJpZCI6IjBhODIzY2JlLTc4MGItNDY3OS1iZmYxLTdkN2NhM2EwYzdhYSIsInN0YXJ0IjoxNzUxMDMwMDM0NzM0LCJleHBpcmVzIjoxNzUxMDUxNjM0NzM0LCJsYXN0U2VlbiI6MTc1MTAzMDAzNDczNCwiZnBrdnMiOnt9LCJwdmlkIjoiZGRlOGRmNDcifQ==",
+  "mprtcl-prodv4_CAA9746C": "eyI4MDYxOTA3ODIwODEzNDY3NDgiOnsiY3AiOltdfX0=",
+  "mprtcl-v4_CAA9746C": {
+    "gs": {
+      "ie": 1,
+      "dt": "us1-42c7bf7b21a03d479b372347c506a331",
+      "cgid": "0bbb408d-4ce7-49be-f278-6b3f2c3d8b33",
+      "das": "1892926a-5069-4320-e722-46323ecd2c1a",
+      "csm": "WyI4MDYxOTA3ODIwODEzNDY3NDgiXQ==",
+      "sid": "D37D2AEC-E2BE-41F8-9903-72FCF423A957",
+      "les": 1751030040314,
+      "ssd": 1751030033219
+    },
+    "l": 0,
+    "806190782081346748": {
+      "fst": 1751030033713
+    },
+    "cu": 806190782081346748
+  },
+  "mprtcl-v4_CAA9746C-batches": "",
+  "mprtcl-v4_CAA9746C-id-cache": "",
+  "ntv_eids_v2": [
+    {
+      "source": "pubcid.org",
+      "uids": [
+        {
+          "id": "6e2086e0-f5cc-4222-894d-cada928b7ef8",
+          "atype": 1
+        }
+      ]
+    }
+  ],
+  "ntv_tapi": "",
+  "optimizely_data$$oeu1751030031789r0.9544933798555575$$30066350836$$layer_map": {},
+  "optimizely_data$$oeu1751030031789r0.9544933798555575$$30066350836$$layer_states": [],
+  "optimizely_data$$oeu1751030031789r0.9544933798555575$$30066350836$$session_state": {
+    "lastSessionTimestamp": 1751030031790,
+    "sessionId": "b5e4ecfe-0111-4a26-b6a7-2bb1ba3aebaf"
+  },
+  "optimizely_data$$oeu1751030031789r0.9544933798555575$$30066350836$$tracker_optimizely": {},
+  "optimizely_data$$oeu1751030031789r0.9544933798555575$$30066350836$$variation_map": {},
+  "optimizely_data$$oeu1751030031789r0.9544933798555575$$30066350836$$visitor_profile": {
+    "profile": {
+      "visitorId": "oeu1751030031789r0.9544933798555575",
+      "customBehavior": {},
+      "first_session": true,
+      "browserId": "gc",
+      "browserVersion": "137.0.0.0",
+      "device": "desktop",
+      "device_type": "desktop_laptop",
+      "referrer": null,
+      "source_type": "direct"
+    },
+    "metadata": {
+      "visitorId": {},
+      "events": {},
+      "customBehavior": {},
+      "first_session": {},
+      "browserId": {},
+      "browserVersion": {},
+      "device": {},
+      "device_type": {},
+      "referrer": {},
+      "source_type": {}
+    }
+  },
+  "optimizely_data$$pending_events": {},
+  "panoramaId_expiry": 1751116433486,
+  "permutive-app": {
+    "eventPublication": {
+      "eventUpload": [
+        [
+          "PageviewComplete-48927f6f-77ad-46cc-8f82-d8c4b5a04188",
+          {
+            "event": {
+              "name": "PageviewComplete",
+              "time": "2025-06-27T13:13:57.162Z",
+              "properties": {
+                "isp_info": {
+                  "isp": "Telefonica Celular de Bolivia S.A.",
+                  "organization": "Telefonica Celular de Bolivia S.A.",
+                  "autonomous_system_number": 27882,
+                  "autonomous_system_organization": "Telefonica Celular de Bolivia S.A."
+                },
+                "geo_info": {
+                  "continent": "South America",
+                  "country": "Bolivia",
+                  "city": "La Paz",
+                  "province": "La Paz Department"
+                },
+                "classifications_watson": {
+                  "taxonomy_labels": []
+                },
+                "user_info": {
+                  "authStatus": "anonymous"
+                },
+                "product_info": {
+                  "platform": "web",
+                  "productName": "bnnbloomberg",
+                  "environment": "production"
+                },
+                "page_info": {
+                  "type": "homepage",
+                  "siteSection": "homepage",
+                  "name": "bnnbloomberg:homepage",
+                  "gsCat": []
+                },
+                "client": {
+                  "domain": "www.bnnbloomberg.ca",
+                  "referrer": "",
+                  "title": "BNN Bloomberg - Canada Business News, TSX Today, Oil and Energy Prices",
+                  "type": "web",
+                  "url": "https://www.bnnbloomberg.ca",
+                  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 PermutiveWebSDK/v20.40.0"
+                },
+                "contextual": {
+                  "classifications": null
+                },
+                "aggregations": {
+                  "PageviewEngagement": {
+                    "engaged_time": 0
+                  },
+                  "SegmentEntry": [
+                    20074,
+                    32255,
+                    32335
+                  ],
+                  "SegmentExit": [],
+                  "CohortEntry": [
+                    20074,
+                    32255,
+                    32335
+                  ],
+                  "CohortExit": []
+                }
+              },
+              "session_id": "569efb10-5eec-46db-a95a-262420447385",
+              "view_id": "48927f6f-77ad-46cc-8f82-d8c4b5a04188",
+              "segments": [
+                20074,
+                32255,
+                32335
+              ],
+              "user_id": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e",
+              "cohorts": [
+                20074,
+                32255,
+                32335,
+                "adv",
+                "adv"
+              ]
+            },
+            "requiresEnrichment": false,
+            "sdkProcessed": true
+          }
+        ]
+      ]
+    },
+    "core": {
+      "activations": {
+        "dfp": [
+          "adv"
+        ],
+        "dfp_contextual": []
+      },
+      "cohorts": {
+        "all": [
+          20074,
+          32255,
+          32335,
+          "adv",
+          "adv"
+        ],
+        "ql": [
+          20074,
+          32255,
+          32335
+        ],
+        "qlCustom": [
+          20074,
+          32255,
+          32335
+        ],
+        "qlStandard": []
+      },
+      "stateMigrated": true
+    },
+    "metricContext": {
+      "session_count": {
+        "scope": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e",
+        "lastValue": "569efb10-5eec-46db-a95a-262420447385",
+        "count": 1
+      },
+      "session_init_count": {
+        "scope": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e,569efb10-5eec-46db-a95a-262420447385",
+        "lastValue": 0.8378459505923178,
+        "count": 1
+      },
+      "session_view_count": {
+        "scope": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e,569efb10-5eec-46db-a95a-262420447385",
+        "lastValue": "48927f6f-77ad-46cc-8f82-d8c4b5a04188",
+        "count": 1
+      }
+    },
+    "sdkql": {},
+    "strategicPartnerships": {},
+    "mediaAndEntertainment": {},
+    "advertisers": {}
+  },
+  "permutive-consent": {
+    "opt_in": true,
+    "token": "permutive-consent"
+  },
+  "permutive-data-misc": {
+    "identities": {
+      "pxid": {
+        "value": "20e798a1-a7fa-4a36-9e01-614d2b9d51f8",
+        "expiry": 1751116432845
+      },
+      "appnexus": {
+        "expiry": 1751116432845
+      },
+      "bell_id": {
+        "value": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e"
+      },
+      "dmpBackupId": {
+        "value": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e"
+      }
+    },
+    "metricsEnabled": false,
+    "addon:tracking_pixel": {}
+  },
+  "permutive-data-queries": {
+    "event-source-id": "32255085-d179-4cb7-8d98-94203f702046"
+  },
+  "permutive-id": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e",
+  "permutive-prebid-rtd": {
+    "acBidders": [
+      "rubicon",
+      "pubmatic",
+      "appnexus",
+      "ix",
+      "openx"
+    ]
+  },
+  "permutive-session": {
+    "session_id": "569efb10-5eec-46db-a95a-262420447385",
+    "last_updated": "2025-06-27T13:13:52.205Z",
+    "hasChanged": true
+  },
+  "v20241212_bnn_production_web_jasperConfig.json": {
+    "value": {
+      "player": {
+        "uhdConfiguration": {
+          "enabled": false,
+          "excludedDevices": null
+        },
+        "autoPlayStrategy": "always",
+        "infoOverlayEnabled": true,
+        "pictureInPicture": {
+          "enabled": false,
+          "disablePictureInPictureBasedOnAdRule": false
+        },
+        "shareEnabled": true,
+        "backArrowEnabled": true,
+        "seekForwardEnabled": true,
+        "seekBackwardEnabled": true,
+        "seekForwardDurationInMilliseconds": 10000,
+        "seekBackwardDurationInMilliseconds": 10000,
+        "fullscreenEnabled": true,
+        "episodeSelectorEnabled": false,
+        "seekbarEnabled": true,
+        "describedVideoEnabled": false,
+        "loadingTimeoutLimitInSeconds": 20,
+        "bufferTimeoutBeforeSeekingToLiveEdgeInMilliseconds": 0,
+        "overlayVisibilityDurationInMilliseconds": 2000,
+        "outOfSightBehavior": {
+          "float": {
+            "position": "bottom-right",
+            "horizontalSpacing": 20,
+            "verticalSpacing": 20,
+            "width": 300
+          },
+          "tolerancePercentage": 50,
+          "type": "float"
+        },
+        "upnext": {
+          "displayType": "disabled",
+          "viewType": "modal",
+          "relatedVideosAsNextContent": false,
+          "displayThumbnail": false,
+          "durationInSeconds": 15,
+          "endOffsetInSeconds": 15,
+          "signInEnabled": false
+        },
+        "relatedContentEnabled": false,
+        "watchNextEnabled": false,
+        "liveBuffer": {
+          "enabled": false,
+          "liveEdgeThresholdInMilliseconds": 20000,
+          "minimumDurationInMilliseconds": 600000
+        },
+        "liveChannelSwitcher": {
+          "enabled": false,
+          "displayUnsubscribedChannels": false
+        },
+        "liveSchedule": {
+          "descriptionLabel": "short",
+          "titleLabel": "name",
+          "useMetadata": true
+        },
+        "performanceRestrictions": {
+          "live": {
+            "bitrate": {
+              "enabled": false
+            }
+          },
+          "vod": {
+            "bitrate": {
+              "enabled": false
+            }
+          }
+        },
+        "shareSocialMedia": {
+          "facebookEnabled": true,
+          "linkedInEnabled": true,
+          "twitterEnabled": true
+        },
+        "playbackSpeed": {
+          "enabled": false,
+          "speeds": [
+            0.5,
+            0.75,
+            1,
+            1.25,
+            1.5
+          ]
+        },
+        "bookmark": {
+          "enabled": false
+        },
+        "concurrency": {
+          "enabled": false,
+          "pulseIntervalInSeconds": 60
+        },
+        "blackout": {
+          "enabled": false,
+          "pulseIntervalInSeconds": 20
+        },
+        "closedCaptions": {
+          "enabled": true,
+          "draggable": false,
+          "stylable": false,
+          "useSegmentedTextTracks": false,
+          "useWebVTTForVOD": true
+        },
+        "skipBreaks": {
+          "skipIntroEnabled": false,
+          "skipRecapEnabled": false,
+          "dismissAfterInSeconds": 10
+        },
+        "trickPlay": {
+          "enabled": false,
+          "preloadThumbnailStrategy": "never",
+          "preloadThumbnailLimit": 600
+        },
+        "signInOnAuthenticationErrorEnabled": false,
+        "advancedSettingsAvailability": "secret",
+        "invalidSeasonTrimEnabled": false,
+        "streamingControl": {
+          "liveErrorStrategyConfiguration": {
+            "enabled": true,
+            "web": {
+              "streamingRetryParameters": {
+                "maxAttempts": 5
+              }
+            }
+          },
+          "vodErrorStrategyConfiguration": {
+            "enabled": true,
+            "web": {
+              "streamingRetryParameters": {
+                "maxAttempts": 5
+              }
+            }
+          },
+          "liveBufferingConfiguration": {
+            "enabled": false,
+            "ios": {
+              "reducedPreferredForwardBufferDurationStrategy": {
+                "enabled": false
+              }
+            },
+            "tvos": {
+              "reducedPreferredForwardBufferDurationStrategy": {
+                "enabled": false
+              }
+            }
+          },
+          "vodBufferingConfiguration": {
+            "enabled": false,
+            "ios": {
+              "reducedPreferredForwardBufferDurationStrategy": {
+                "enabled": false
+              }
+            },
+            "tvos": {
+              "reducedPreferredForwardBufferDurationStrategy": {
+                "enabled": false
+              }
+            }
+          },
+          "livePlaybackConfiguration": {
+            "enabled": false,
+            "android": {
+              "tunneling": {
+                "enabled": false
+              }
+            }
+          },
+          "vodPlaybackConfiguration": {
+            "enabled": false,
+            "android": {
+              "tunneling": {
+                "enabled": false
+              }
+            }
+          }
+        },
+        "httpBackoffPolicy": {
+          "enabledForInitialPlayback": true,
+          "enabledForUpNext": true,
+          "enabledForWatchNext": true,
+          "enabledForEpisodeSelector": true,
+          "enabledForRelatedContent": true,
+          "enabledForLiveSchedule": true,
+          "enabledForBookmark": true,
+          "enabledForDLAR": true,
+          "initialIntervalInMilliseconds": 0,
+          "maximumIntervalInMilliseconds": 5000,
+          "retryIntervalInMilliseconds": 1000,
+          "maximumNumberOfRetries": 3
+        },
+        "showTitleOnPreview": false,
+        "multiplexButtonEnabled": false,
+        "useTimeOfDayAsLiveTimestamp": false,
+        "loadingIndicatorDisplayDelayInMilliseconds": 300,
+        "upselling": {
+          "enabledForEpisodeSelector": false
+        }
+      },
+      "advertising": {
+        "adUnit": {
+          "type": "hierarchy",
+          "default": {
+            "adZone": {
+              "enabled": false
+            }
+          },
+          "hierarchy": {
+            "iu": 5479,
+            "hierarchyLevel": 4,
+            "attributes": {
+              "product": {
+                "en": "bnn"
+              },
+              "heroBrand": "bnn",
+              "pageType": "playerpage"
+            },
+            "handleNullAdRightsAsNoAds": false
+          }
+        },
+        "bannerAd": {
+          "adUnitOverride": "",
+          "dismissAfterInSeconds": 8,
+          "displayAfterPlaybackSeenInSeconds": 10,
+          "enabledForLive": false,
+          "enabledForVOD": false,
+          "height": 3,
+          "minimumWidthThreshold": 825,
+          "width": 3
+        },
+        "pauseAd": {
+          "enabledForLive": true,
+          "enabledForVOD": true,
+          "width": 315,
+          "height": 400,
+          "adUnitOverride": "",
+          "minimumWidthThreshold": 930
+        },
+        "videoAd": {
+          "csai": {
+            "enabledForVOD": true,
+            "enabledForLive": true,
+            "ima": {
+              "adMode": "masterTag",
+              "indexExchange": {
+                "adServerUrl": "https://instream.casalemedia.com/playlist",
+                "indexSiteId": 197558,
+                "indexOptimizedPodEnabled": false,
+                "commonAttributes": {
+                  "protocols": [
+                    2,
+                    3,
+                    5,
+                    6
+                  ],
+                  "mimes": [
+                    "video/mp4",
+                    "video/webm",
+                    "application/javascript"
+                  ],
+                  "apiList": [
+                    2
+                  ],
+                  "size": "640x480",
+                  "maxAdDuration": 30,
+                  "timeout": 1000,
+                  "brandExclusion": 1
+                },
+                "commonAttributesOptimizedDurations": [
+                  15,
+                  30
+                ],
+                "implementation": "s",
+                "whyThisAd": true
+              },
+              "masterTag": {
+                "cmsId": 2119,
+                "size": {
+                  "en": "640x480"
+                },
+                "companionSizes": "300x250",
+                "isOnAdManagerSchema": true,
+                "adOutputFormat": "xml_vast4",
+                "hasDelayedImpressions": true,
+                "whyThisAd": true
+              },
+              "renderingSettings": {
+                "maximumBitrateInKbps": 3000,
+                "mediaLoadTimeoutInMilliseconds": 5000,
+                "vastLoadTimeoutInMilliseconds": 5000
+              }
+            },
+            "volumePercentage": 80,
+            "exclusionRules": {
+              "contentBased": {
+                "rule": "disabled"
+              },
+              "timeBased": {
+                "rule": "disabled",
+                "applyRuleAfterActiveSessionInSeconds": 2700
+              }
+            }
+          },
+          "dlar": {
+            "enabledForLive": false
+          },
+          "ssai": {
+            "enabledForVOD": false
+          }
+        }
+      },
+      "chromecast": {
+        "enabled": true,
+        "configPath": "v2/bnn/web-prod.json",
+        "buttonVisibleDuringAds": false,
+        "surroundSoundEnabled": false,
+        "receiverPlayerVersion": "5.x.x"
+      },
+      "analytics": {
+        "versionEnforcementEnabled": false,
+        "braze": {
+          "enabled": true,
+          "activeForLive": true
+        },
+        "comscore": {
+          "defaultStationCode": 5307,
+          "enabled": true
+        },
+        "mParticle": {
+          "enabled": true,
+          "pulse": {
+            "enabled": true,
+            "frequencyDuringAdsInSeconds": 5,
+            "frequencyDuringPlaybackInSeconds": 30
+          }
+        },
+        "permutive": {
+          "enabled": true
+        },
+        "newRelic": {
+          "enabled": true,
+          "adsTrackingEnabled": true,
+          "heartbeatFrequencyInSeconds": 30
+        }
+      },
+      "api": {
+        "dlarBeaconingUrl": "https://dlar-dev-events.global.ssl.fastly.net/intake",
+        "capi": {
+          "baseUrl": "https://capi.9c9media.com",
+          "drmLicenseServerUrl": "https://license.9c9media.ca",
+          "multiLanguageEnabled": false,
+          "recoBaseUrl": "https://recodata.shared-svc.bellmedia.ca/api",
+          "recoBookmarkIntervalUrl": "https://account.bellmedia.ca/config/prod/interval.json",
+          "bookmarkIntervalFallbackInSeconds": 30,
+          "usePlaybackEndpoint": false
+        },
+        "flexmon": {
+          "rte": {
+            "bookmarkIntervalFallbackInSeconds": 30
+          }
+        }
+      },
+      "error": {
+        "airplayUnavailable": {
+          "internalCode": 9001,
+          "languages": {
+            "en": "The AirPlay device seems to be temporarily unavailable. Please check your connection and ensure the device is awake and ready to receive media.",
+            "fr": "L\u2019appareil AirPlay semble \u00eatre temporairement indisponible. Veuillez v\u00e9rifier votre connexion et assurez-vous que l\u2019appareil est activ\u00e9 et pr\u00eat \u00e0 recevoir du m\u00e9dia."
+          }
+        },
+        "airplayUnavailableForThisContent": {
+          "internalCode": 9002,
+          "languages": {
+            "en": "AirPlay is not supported for this content. To stop streaming, tap the AirPlay button, then tap your iPhone or iPad from the list.",
+            "fr": "AirPlay n\u2019est pas support\u00e9 pour ce contenu. Pour arr\u00eater la diffusion, touchez le bouton AirPlay, puis touchez votre iPhone ou iPad dans la liste."
+          }
+        },
+        "capiMediaError": {
+          "internalCode": 1000,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "An error has occurred during playback. Please try again later.",
+            "fr": "Une erreur est survenue lors du chargement du m\u00e9dia. Veuillez r\u00e9essayer plus tard."
+          }
+        },
+        "connectionLost": {
+          "internalCode": 2000,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "You are not connected to the Internet. Please check your Internet connection and try again.",
+            "fr": "Vous n\u2019\u00eates pas connect\u00e9 \u00e0 Internet. Veuillez v\u00e9rifier votre connexion et r\u00e9essayez."
+          }
+        },
+        "downloadedContentOnAirplay": {
+          "internalCode": 9000,
+          "languages": {
+            "en": "AirPlay is not available for downloaded content.",
+            "fr": "AirPlay n\u2019est pas disponible pour le contenu t\u00e9l\u00e9charg\u00e9."
+          }
+        },
+        "drmMobile": {
+          "internalCode": 3000,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "A digital rights management system (DRM) error has occurred.",
+            "fr": "Une erreur de syst\u00e8me de gestion des droits num\u00e9riques (DRM) s\u2019est produite."
+          }
+        },
+        "drmWeb": {
+          "internalCode": 3001,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "This content is not currently available for viewing in your browser. For the best video experience, we recommend using a supported browser for your platform. Please visit our FAQ for more info.",
+            "fr": "Ce contenu est pr\u00e9sentement indisponible pour \u00eatre visionn\u00e9 dans votre navigateur. Pour une exp\u00e9rience vid\u00e9o optimale, nous vous recommandons d\u2019utiliser un navigateur pris en charge par votre plateforme. Merci de visiter la FAQ pour obtenir plus d\u2019information."
+          }
+        },
+        "drmDegraded": {
+          "internalCode": 3002,
+          "languages": {
+            "en": "Output is being obscured because of insufficient external protection. It could be caused by an attempt to record the screen, a bad HDMI cable, a sound bar interfering with HDCP verification or any other condition which doesn't ensures that the video is not tampered. Retry once your setup is compliant.",
+            "fr": "La vid\u00e9o est masqu\u00e9e en raison d'une protection externe insuffisante. Cela peut \u00eatre d\u00fb \u00e0 une tentative d'enregistrement de l'\u00e9cran, \u00e0 un c\u00e2ble HDMI d\u00e9fectueux, \u00e0 une barre de son qui interf\u00e8re avec la v\u00e9rification HDCP ou \u00e0 toute autre condition qui ne garantit pas que la vid\u00e9o n'est pas alt\u00e9r\u00e9e. R\u00e9essayez lorsque votre installation est conforme."
+          }
+        },
+        "jailbrokenOrRootedDevice": {
+          "internalCode": 8000,
+          "languages": {
+            "en": "This video will not play on rooted or jailbroken devices. Please see our FAQs for more information.",
+            "fr": "La vid\u00e9o ne jouera pas sur les appareils ayant \u00e9t\u00e9 d\u00e9brid\u00e9s (jailbroken). Veuillez vous r\u00e9f\u00e9rer \u00e0 notre foire aux questions pour plus d'informations."
+          }
+        },
+        "liveStreamTimeout": {
+          "internalCode": 4000,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "This live stream is currently unavailable. Check your internet connection and try again. If the problem persists, this live stream is either down or has ended.",
+            "fr": "L\u2019\u00e9coute en direct est actuellement indisponible. V\u00e9rifiez votre connexion Internet et r\u00e9essayez. Si le probl\u00e8me persiste, l\u2019\u00e9coute en direct est soit en panne ou la diffusion est termin\u00e9e."
+          }
+        },
+        "manifestAuthentication": {
+          "internalCode": 5000,
+          "languages": {
+            "en": "Please sign in to view this content.",
+            "fr": "Veuillez vous connecter pour voir ce contenu."
+          }
+        },
+        "manifestAuthorization": {
+          "internalCode": 5001,
+          "languages": {
+            "en": "Your account does not authorize you to view this content. Please check your account to confirm your subscription allows this type of content.",
+            "fr": "Votre compte ne vous autorise pas \u00e0 consulter ce contenu. Veuillez v\u00e9rifier votre compte."
+          }
+        },
+        "manifestBlackoutConstraints": {
+          "internalCode": 5002,
+          "languages": {
+            "en": "We're sorry, this content is not available for live streaming.",
+            "fr": "Nous sommes d\u00e9sol\u00e9s, ce contenu n\u2019est pas disponible pour la diffusion en direct."
+          }
+        },
+        "manifestConcurrency": {
+          "internalCode": 5003,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "You are currently streaming content on too many devices. Ensure you do not exceed the number of devices allowed in your plan.",
+            "fr": "Vous diffusez actuellement du contenu sur trop d\u2019appareils. Veuillez vous assurer de ne pas d\u00e9passer le nombre d\u2019appareils inclus dans votre forfait."
+          }
+        },
+        "manifestGeolocationConstraints": {
+          "internalCode": 5004,
+          "languages": {
+            "en": "We're sorry, this content is not available in your country.",
+            "fr": "Nous sommes d\u00e9sol\u00e9s, ce contenu n\u2019est pas disponible dans votre pays."
+          }
+        },
+        "manifestInternalServer": {
+          "internalCode": 5005,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "Service is temporarily unavailable. Please try again later.",
+            "fr": "Le service est temporairement indisponible. Veuillez r\u00e9essayer plus tard."
+          }
+        },
+        "manifestNotFound": {
+          "internalCode": 5006,
+          "languages": {
+            "en": "Sorry, we're having trouble with this video. Please try again later.",
+            "fr": "Nous sommes d\u00e9sol\u00e9s, nous rencontrons des probl\u00e8mes avec cette vid\u00e9o. Veuillez r\u00e9essayer plus tard."
+          }
+        },
+        "manifestParentalControl": {
+          "internalCode": 5007,
+          "languages": {
+            "en": "Your account is restricted from watching this content by parental controls.",
+            "fr": "Le contenu est restreint en raison du contr\u00f4le parental."
+          }
+        },
+        "manifestRestrictedProxy": {
+          "internalCode": 5008,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "We've detected you are using a proxy to access this content. You must disable the proxy to watch.",
+            "fr": "Nous avons d\u00e9tect\u00e9 que vous utilisez un proxy pour acc\u00e9der \u00e0 ce contenu. Vous devez le d\u00e9sactiver pour acc\u00e9der au contenu."
+          }
+        },
+        "manifestUnauthorizedChannel": {
+          "internalCode": 5009,
+          "languages": {
+            "en": "Your account does not authorize you to view this content. Please check your account to confirm your subscription allows this type of content.",
+            "fr": "Votre compte ne vous autorise pas \u00e0 consulter ce contenu. Veuillez v\u00e9rifier votre compte."
+          }
+        },
+        "mediaSource": {
+          "internalCode": 3003,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "An error has occurred. Please ensure your web browser is up to date before trying again. If applicable, disable any virtual private network (VPN) and ad blocker.",
+            "fr": "Une erreur est survenue. Veuillez vous assurer que votre navigateur web est \u00e0 jour avant de r\u00e9essayer. Si applicable, d\u00e9sactivez tout r\u00e9seau virtuel priv\u00e9 (VPN) et bloqueur de publicit\u00e9s."
+          }
+        },
+        "mediaCodec": {
+          "internalCode": 3004,
+          "languages": {
+            "en": "The current device failed to decode the content. The media codec may not be supported, or the device may not have sufficient resources available. To solve the issue, you may restart your device or, if the problem persists, use another device.",
+            "fr": "L\u2019appareil actuel n\u2019a pas pu d\u00e9coder le contenu. Le codec m\u00e9dia peut ne pas \u00eatre pris en charge ou l\u2019appareil peut ne pas disposer de ressources suffisantes. Pour r\u00e9soudre le probl\u00e8me, vous pouvez red\u00e9marrer votre appareil ou, si le probl\u00e8me persiste, utiliser un autre appareil."
+          }
+        },
+        "pictureInPictureUnavailableForThisContent": {
+          "internalCode": 9003,
+          "languages": {
+            "en": "Picture in picture is not supported for this content.",
+            "fr": "L'image dans l'image n\u2019est pas support\u00e9 pour ce contenu"
+          }
+        },
+        "platformPlayerSetup": {
+          "internalCode": 6000,
+          "languages": {
+            "en": "We're sorry, the video player failed to load due to an invalid configuration.",
+            "fr": "Nous sommes d\u00e9sol\u00e9s, impossible de charger la configuration de d\u00e9part du lecteur vid\u00e9o."
+          }
+        },
+        "networkTimeout": {
+          "internalCode": 4002,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "The server is taking too much time to fulfill your request. Check your internet connection or try again later.",
+            "fr": "Le serveur met trop de temps \u00e0 r\u00e9pondre \u00e0 votre demande. V\u00e9rifiez votre connexion Internet ou r\u00e9essayez plus tard."
+          }
+        },
+        "timeout": {
+          "internalCode": 4001,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "The stream is taking too long to load. Check your internet connection and try again.",
+            "fr": "Le contenu prend trop de temps \u00e0 se charger. V\u00e9rifiez votre connexion Internet et r\u00e9essayez."
+          }
+        },
+        "wifiOnly": {
+          "internalCode": 7000,
+          "languages": {
+            "en": "To enable video streaming over mobile data, update your preferences.",
+            "fr": "Pour permettre le visionnement via les donn\u00e9es mobiles, veuillez mettre \u00e0 jour vos pr\u00e9f\u00e9rences."
+          }
+        },
+        "wifiOnlyAtStart": {
+          "internalCode": 7001,
+          "languages": {
+            "en": "To enable video streaming over mobile data, update your preferences.",
+            "fr": "Pour permettre le visionnement via les donn\u00e9es mobiles, veuillez mettre \u00e0 jour vos pr\u00e9f\u00e9rences."
+          }
+        },
+        "unknown": {
+          "internalCode": 999,
+          "allowUserRetry": true,
+          "languages": {
+            "en": "An error has occurred during playback. Please try again later.",
+            "fr": "Une erreur est survenue lors du chargement du m\u00e9dia. Veuillez r\u00e9essayer plus tard."
+          }
+        }
+      }
+    },
+    "expiredEpoch": 1751116434956
+  }
+}
