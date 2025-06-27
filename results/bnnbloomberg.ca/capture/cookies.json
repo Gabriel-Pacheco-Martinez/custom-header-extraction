@@ -1,0 +1,240 @@
+[
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1784726039,
+    "httpOnly": false,
+    "name": "cto_bundle",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "Bqol3l9wRTdIVjl4d2lQY1I0NmJ0bnRTNmFPOUxKOGQ3MGtvNjFNOTBsTWpRJTJCTUxoRTlNTUIlMkZuTlFkMjdhNVJ6OENVNWZ3ZVduNHBudFRaS0c3UjI1dmVmJTJGR0wyYWhTblYlMkJDU2JQeWslMkJOU3lvMEhDRFREQjBuUGRBdmZOZDF1SjhZbWd1MUNmZVZwcFcwMTBqcnAzZmtWbWg2b0lZUGQ5Rlg3NHpaSWFXTUJGZWQ5bmVPRldBNk9wUzFOczJUcE1WNCUyRlZlWmlHajJONW11VEZvaGNhd2JJMnJBJTNEJTNE"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1785158037,
+    "httpOnly": false,
+    "name": "_v__chartbeat3",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "DyVWt0DEQGu5CUVQ4R"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1784711632,
+    "httpOnly": false,
+    "name": "cto_bidid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "x20vp19jaHUwRVcyb1k3dE0xYnRnZEFMQU02c29NcWx4TU1vQVV2dWNzeGpSeU1RUmtQTjQ2VHNsZ0ZmUGxwSmxOejM1SnUlMkJwSEVVOVY1S2p1Y0dCVzRUYUVsSnU1S1RxbWRoTGlyQ1YlMkZRR0RLczBSNnNKZmRFNktuelJsYkg4MEdaQjk"
+  },
+  {
+    "domain": ".www.bnnbloomberg.ca",
+    "expiry": 1751634834,
+    "httpOnly": false,
+    "name": "RT",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "\"z=1&dm=www.bnnbloomberg.ca&si=a4b9ca79-80f7-482f-8675-76d6b99f5c53&ss=mceu2hpw&sl=1&tt=443&rl=1&ld=444\""
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1751033630,
+    "httpOnly": true,
+    "name": "AKA_A2",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "A"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1784726032,
+    "httpOnly": false,
+    "name": "_scor_uid",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "94c6bb2827664df7a1d51685cad35c72"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1782566033,
+    "httpOnly": false,
+    "name": "connectId",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "%7B%22puid%22%3A%22212c114269cab5cf9b413e6b06bd4bd8510f626d2a86bd883cc8014b9b847155%22%2C%22vmuid%22%3A%22xabxyWKjnC3ArBvg9jaeD433-rc6v0kgiYfRRFef4azr24SVH7etJnB8DiXUKSTVVXAKZYqxwXe4Io7I1SD1vw%22%2C%22connectid%22%3A%22xabxyWKjnC3ArBvg9jaeD433-rc6v0kgiYfRRFef4azr24SVH7etJnB8DiXUKSTVVXAKZYqxwXe4Io7I1SD1vw%22%2C%22connectId%22%3A%22xabxyWKjnC3ArBvg9jaeD433-rc6v0kgiYfRRFef4azr24SVH7etJnB8DiXUKSTVVXAKZYqxwXe4Io7I1SD1vw%22%2C%22ttl%22%3A86400000%2C%22lastSynced%22%3A1751030033410%2C%22lastUsed%22%3A1751030033410%7D"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1785158032,
+    "httpOnly": false,
+    "name": "_chartbeat2",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": ".1751030032001.1751030032001.1.BdqVdJB8M27LDvuUbsDTFQRRDO8h0a.1"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1753622032,
+    "httpOnly": false,
+    "name": "pbjs_sharedId_cst",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "zix7LPQsHA%3D%3D"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1774358033,
+    "httpOnly": false,
+    "name": "_cc_id",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "9a7fd22439df178f6c82649216809fb4"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1751116433,
+    "httpOnly": false,
+    "name": "panoramaId_expiry",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1751116433486"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1766582032,
+    "httpOnly": false,
+    "name": "_pubcid_cst",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "zix7LPQsHA%3D%3D"
+  },
+  {
+    "domain": "www.bnnbloomberg.ca",
+    "expiry": 1758705235,
+    "httpOnly": false,
+    "name": "ccuid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "91941317-e670-4842-9cce-807a0ec1bfc2"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1766582032,
+    "httpOnly": false,
+    "name": "_pubcid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "6e2086e0-f5cc-4222-894d-cada928b7ef8"
+  },
+  {
+    "domain": "www.bnnbloomberg.ca",
+    "httpOnly": false,
+    "name": "jasper_device_id",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "471d271c-d113-4587-8243-cd850cf67407"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1751033632,
+    "httpOnly": false,
+    "name": "_t_tests",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "eyJHMTk5bkdaVXNXSmxiIjp7ImNob3NlblZhcmlhbnQiOiJCIiwic3BlY2lmaWNMb2NhdGlvbiI6WyJDTnNHTkwiLCJEOEt2QTEiXX0sImxpZnRfZXhwIjoibSJ9"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1766841232,
+    "httpOnly": false,
+    "name": "permutive-id",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1751031837,
+    "httpOnly": false,
+    "name": "_cb_svref",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "external"
+  },
+  {
+    "domain": "www.bnnbloomberg.ca",
+    "expiry": 1756214033,
+    "httpOnly": false,
+    "name": "pbjs-unifiedid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "%7B%22TDID%22%3A%22f859d9bf-c5eb-4b8b-abfe-824a55b3e182%22%2C%22TDID_LOOKUP%22%3A%22FALSE%22%2C%22TDID_CREATED_AT%22%3A%222025-06-27T13%3A13%3A53%22%7D"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1766582031,
+    "httpOnly": false,
+    "name": "optimizelyEndUserId",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "oeu1751030031789r0.9544933798555575"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1753622032,
+    "httpOnly": false,
+    "name": "pbjs_sharedId",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "8d0e9692-0b49-4a53-a871-16d5c8825bf7"
+  },
+  {
+    "domain": "www.bnnbloomberg.ca",
+    "expiry": 1756214033,
+    "httpOnly": false,
+    "name": "pbjs-unifiedid_cst",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "zix7LPQsHA%3D%3D"
+  },
+  {
+    "domain": ".bnnbloomberg.ca",
+    "expiry": 1785158032,
+    "httpOnly": false,
+    "name": "_cb",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "B25eaED027_h0tC9t"
+  },
+  {
+    "domain": "www.bnnbloomberg.ca",
+    "httpOnly": false,
+    "name": "dmpBackupId",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "5b93f4e7-da7a-4b5b-a7db-94f5fc23d12e"
+  }
+]

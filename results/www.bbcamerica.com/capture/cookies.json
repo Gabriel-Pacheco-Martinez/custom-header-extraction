@@ -1,0 +1,140 @@
+[
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1766582226,
+    "httpOnly": false,
+    "name": "__eoi",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "ID=d8590054e16b07f5:T=1751030226:RT=1751030226:S=AA-AfjaeSQD-8Gjp_eDAh7dQDF_N"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1784726226,
+    "httpOnly": false,
+    "name": "__gpi",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "UID=000010d637bd7403:T=1751030226:RT=1751030226:S=ALNI_Maj3WSidZlcJr7KyeDK_-f6gAuvZA"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1784726226,
+    "httpOnly": false,
+    "name": "__gads",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "ID=6a5fc086507180d9:T=1751030226:RT=1751030226:S=ALNI_MZPO_Vv40n77vxf_0AH0tBd9oHooA"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1785590226,
+    "httpOnly": false,
+    "name": "_ga_PBWGV33NJW",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GS2.2.s1751030226$o1$g1$t1751030226$j60$l0$h0"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1751030285,
+    "httpOnly": false,
+    "name": "_gat_mpgaTracker1",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1"
+  },
+  {
+    "domain": "www.bbcamerica.com",
+    "expiry": 1751116624,
+    "httpOnly": false,
+    "name": "user_token",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "eyJraWQiOiJwcm9kLTEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOiJ1bmF1dGgiLCJhdWQiOiJyZXNvdXJjZV9zZXJ2ZXIiLCJhdXRoX3R5cGUiOiJiZWFyZXIiLCJmZWF0dXJlX2ZsYWdzIjoiZXlKaGJXTndiSFZ6TFcxMmNHUWlPbnNpWTJoaGNuUmxjaTF0ZG5BdFpXNWhZbXhsWkNJNlptRnNjMlY5TENKaGJXTndiSFZ6TFhScGVtVnVMV04zSWpwN0ltVnVZV0pzWldRaU9uUnlkV1Y5TENKaGJXTndiSFZ6TFdGa0xYUnBaWElpT25zaVlXUXRkR2xsY2kxd2RYSmphR0Z6WlMxdmJpSTZabUZzYzJWOUxDSmpZV0pmWVcxamNDMWpiMjUwWlc1MExXTjNMV3AxYmkweU1ESTFJam9pUVNJc0ltRnRZM0JzZFhNdGMydHBjQzF3Y205dGJ5MWhaSE1pT25zaWMydHBjQzF3Y205dGJ5MWhaSE10Wlc1aFlteGxaQ0k2Wm1Gc2MyVXNJblpoY21saGRHbHZiaUk2SWtGTlF5c2dWMmwwYUNCQlpITWlmU3dpWVcxakxYUmxjbTF6TFdOaGNIUjFjbVVpT21aaGJITmxMQ0pqYjIxallYTjBMV0ZrTFdKc2IyTnJaWEl0YzJOeVpXVnVJanA3SW5OMVluUnBkR3hsSWpvaVJtOXlJR2hsYkhBc0lHVnRZV2xzSUdOMWMzUnZiV1Z5YzJWeWRtbGpaVUJoYldOd2JIVnpMbU52YlM0aUxDSjBhWFJzWlNJNklsUm9aU0JOYjI1MGFHeDVJSGRwZEdnZ1FXUnpJSEJzWVc0Z2FYTWdibTkwSUdOMWNuSmxiblJzZVNCemRYQndiM0owWldRZ2IyNGdXR1pwYm1sMGVTQmtaWFpwWTJWekxpSXNJbVZ1WVdKc1pXUWlPblJ5ZFdWOUxDSmhiV053YkhWekxYWnBlbWx2TFhCeWIyMXZkR2x2YmlJNmV5SmpiM1Z3YjI1ZlkyOWtaU0k2SW5KbGRHRnBiREVpTENKamIzVndiMjVmWTI5a1pWOXRiMjUwYUd4NUlqb2ljbVYwWVdsc015SXNJbVZ1WVdKc1pXUWlPblJ5ZFdWOWZRPT0iLCJyb2xlcyI6WyJ1bmF1dGgiXSwiaXNzIjoiaXAtMTAtMi0xMDItOTguZWMyLmludGVybmFsIiwidG9rZW5fdHlwZSI6ImF1dGgiLCJleHAiOjE3NTEwMzM4MjQsImRldmljZS1pZCI6IjY5MTg2NzQ4LTgzZGUtNGFjMS05ZjAwLTAxMjI2MTk0YzA3NyIsImJ5cGFzc19wZXJzaXN0Ijp0cnVlLCJpYXQiOjE3NTEwMzAyMjQsImp0aSI6ImEyMTMxZTFiLWJkNzQtNDdjYS04NzBiLWQ4YWVkOTA3MGZkOSJ9.a4QWOdaxlXe09IGKNl7jds5mthAnpg-e_R-Uuver1jx69DxE0v0djBJiOv57-pCO61DbBzKf6Ze363IAzIBk0MA-2Hvj75QTZFME-_LkV8wgYZEmr2aaopKqDoCtMqpL8zuQrrzVa0MRylxj9GxsYg8p41f0Yd2XZ3t3nrrK_2WsCzz5KdoD4Dz0zZ9K2Pd9OTon-XWyYXxiJOsVYMCchrNoxvJVyqxyI2UBN4dRolv5oJ9L_udk5wgwEXkZcXP5EMmhh_uk92Ek5vbBBBxnXagI0fi2gRwp-imerYmlmuxaHq-7CasVLxxr_PpyaA1qqhwXExf1_09hdWn0WV9bnA"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1751116624,
+    "httpOnly": false,
+    "name": "_gid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GA1.2.387592149.1751030225"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1785590224,
+    "httpOnly": false,
+    "name": "_ga",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "GA1.2.272759565.1751030225"
+  },
+  {
+    "domain": "www.bbcamerica.com",
+    "expiry": 1785590219,
+    "httpOnly": false,
+    "name": "__ga_uid",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "69186748-83de-4ac1-9f00-01226194c077"
+  },
+  {
+    "domain": "www.bbcamerica.com",
+    "httpOnly": false,
+    "name": "client_version",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "4.7.1"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1751030285,
+    "httpOnly": false,
+    "name": "_gat_mpgaTracker2",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1"
+  },
+  {
+    "domain": "www.bbcamerica.com",
+    "httpOnly": false,
+    "name": "client_type",
+    "path": "/",
+    "sameSite": "None",
+    "secure": true,
+    "value": "html5"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1782566219,
+    "httpOnly": false,
+    "name": "OptanonConsent",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "isIABGlobal=false&datestamp=Fri+Jun+27+2025+09%3A16%3A59+GMT-0400+(Bolivia+Time)&version=6.5.0&hosts=&consentId=2dbecfd4-1776-4034-bd5d-64a4c87e2814&interactionCount=0&landingPath=https%3A%2F%2Fwww.bbcamerica.com%2F&groups=C0003%3A1%2CC0001%3A1%2CC0002%3A1%2CC0004%3A1%2CSPD_BG%3A1"
+  },
+  {
+    "domain": ".bbcamerica.com",
+    "expiry": 1758806218,
+    "httpOnly": false,
+    "name": "_gcl_au",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": false,
+    "value": "1.1.181088332.1751030218"
+  }
+]

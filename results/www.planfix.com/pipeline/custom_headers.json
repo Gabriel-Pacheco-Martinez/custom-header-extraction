@@ -1,0 +1,30 @@
+[
+  {
+    "method": "RESPONSE",
+    "header_name": "x-advertisable-eid",
+    "header_value": "3QEU55AVURGVNFYKGPRLHU",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-pixel-eid",
+    "header_value": "EPGGWMNOENDCJMRYE2IIFV",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-advertisable-eid",
+    "header_value": "3QEU55AVURGVNFYKGPRLHU",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  },
+  {
+    "method": "RESPONSE",
+    "header_name": "x-pixel-eid",
+    "header_value": "EPGGWMNOENDCJMRYE2IIFV",
+    "host_domain": "planfix.com",
+    "method_domain": "adroll.com"
+  }
+]

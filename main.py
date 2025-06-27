@@ -1,15 +1,66 @@
+# General
 import os
 import json
 import time
 import urllib.parse
+from operator import truediv
+
+# Selenium
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from webdriver_manager.chrome import ChromeDriverManager
-from filter import filter_headers
 
+# Mine
+from information_api import read_json, save_json, load_standard_headers
+from parser import extract_all_cookie_values, parse_nested_json, extract_all_storage_values
+from header_analysis import get_custom_headers, get_headers
 
+# =====================
+# Helper functions
+# =====================
+def visit_url(driver, url, wait_time=20):
+    # driver.delete_all_cookies()
+    driver.get(url)
+    time.sleep(wait_time)
+
+def get_hostname(url):
+    try:
+        return urllib.parse.urlparse(url).netloc.replace(":", "_")
+    except:
+        return "invalid"
+
+def extract_network_events(logs):
+    events = []
+    for entry in logs:
+        try:
+            message = json.loads(entry["message"])["message"]
+            if message["method"] in ["Network.requestWillBeSent", "Network.responseReceived"]:
+                events.append(message)
+        except (json.JSONDecodeError, KeyError):
+            continue
+    return events
+
+def get_storage_information(driver):
+    # Define set to store values
+    storage_values = set()
+
+    # Values in cookies/local/session storage
+    cookies = driver.get_cookies()
+    local_storage = parse_nested_json(driver.execute_script("return {...localStorage}"))
+    session_storage = parse_nested_json(driver.execute_script("return {...sessionStorage}"))
+
+    # Update set with values
+    storage_values.update(extract_all_cookie_values(cookies))
+    storage_values.update(extract_all_storage_values(local_storage))
+    storage_values.update(extract_all_storage_values(session_storage))
+
+    return storage_values, cookies, local_storage, session_storage
+
+# =====================
+# Capture sites
+# =====================
 def setup_driver():
     options = Options()
     #options.add_argument("--headless=new")
@@ -24,70 +75,38 @@ def setup_driver():
     service = Service(ChromeDriverManager().install())
     return webdriver.Chrome(service=service, options=options)
 
-def visit_url(driver, url, wait_time=60):
-    driver.get(url)
-    time.sleep(wait_time)
-
-def get_performance_logs(driver):
-    return driver.get_log("performance")
-
-def extract_network_events(logs):
-    events = []
-    for entry in logs:
-        try:
-            message = json.loads(entry["message"])["message"]
-            if message["method"] in ["Network.requestWillBeSent", "Network.responseReceived"]:
-                events.append(message)
-        except (json.JSONDecodeError, KeyError):
-            continue
-    return events
-
-def get_cookies(driver):
-    return driver.get_cookies()
-
-def save_json(data, path):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w") as f:
-        json.dump(data, f, indent=2)
-
-def save_text(data, path):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        content = str(data)
-        for part in content.split(','):
-            f.write(part.strip() + "\n")
-
-def get_hostname(url):
-    try:
-        return urllib.parse.urlparse(url).netloc.replace(":", "_")
-    except:
-        return "invalid"
-
 def capture_site_data(url, base_output_folder):
     hostname = get_hostname(url)
-    output_folder = os.path.join(base_output_folder, hostname)
-    custom_headers = None
-
+    capture_folder = os.path.join(base_output_folder, hostname + "/capture")
     driver = setup_driver()
+
     try:
+        # ======
+        # Visit url
         visit_url(driver, url)
-        logs = get_performance_logs(driver)
 
         # ======
-        # Network and storage information
+        # Get storage information
+        storage_values, cookies, local_storage, session_storage = get_storage_information(driver)
+
+        # ======
+        # Get network information
+        logs = driver.get_log("performance")
         network_events = extract_network_events(logs)
-        custom_headers, standard_headers, stored_values = filter_headers(
-            network_events, hostname, driver, output_folder)
+        all_headers = get_headers(network_events, hostname)
 
-        # ======
+        # =====
         # Save information
-        save_json(network_events, os.path.join(output_folder, "network.json"))
-        save_json(custom_headers, os.path.join(output_folder, "custom_headers.json"))
-        save_json(standard_headers, os.path.join(output_folder, "seen_std_headers.json"))
-
-        # ======
-        # Print local/cookies
-        save_text(stored_values, os.path.join(output_folder, "stored_values.txt"))
+        data_to_save = [
+            (network_events, "network_events.json"),
+            (all_headers, "all_headers.json"),
+            (cookies, "cookies.json"),
+            (local_storage, "local_storage.json"),
+            (session_storage, "session_storage.json"),
+            (storage_values, "storage_values.json")
+        ]
+        for data, filename in data_to_save:
+            save_json(data, os.path.join(capture_folder, filename))
 
         print(f"[✓] Captured: {hostname}")
 
@@ -96,41 +115,69 @@ def capture_site_data(url, base_output_folder):
         return []
     finally:
         driver.quit()
-        return custom_headers
 
 def capture_multiple_sites(urls, result_base_folder="results"):
+    for url in urls:
+        capture_site_data(url, result_base_folder)
+
+# =====================
+# Process sites
+# =====================
+def process_site_data(url, base_output_folder):
+    hostname = get_hostname(url)
+    print(f"[🌐] Webpage: {hostname}")
+
+    capture_folder = os.path.join(base_output_folder, hostname + "/capture")
+    pipeline_folder = os.path.join(base_output_folder, hostname + "/pipeline")
+    stats_folder = os.path.join(base_output_folder, hostname + "/stats")
+
+    # =====
+    # Read files to process headers
+    all_headers = read_json(capture_folder+"/all_headers.json")
+    default_headers = load_standard_headers("standard_headers.txt")
+    storage_values = set(read_json(capture_folder+"/storage_values.json"))
+
+    # =====
+    # Get custom headers
+    custom_headers, standard_headers = get_custom_headers(
+        all_headers, default_headers, storage_values, pipeline_folder
+    )
+
+    # =====
+    # Save information
+    data_to_save = [
+        (custom_headers, "custom_headers.json"),
+        (standard_headers, "standard_headers.json"),
+    ]
+    for data, filename in data_to_save:
+        save_json(data, os.path.join(pipeline_folder, filename))
+
+    return custom_headers
+
+
+def process_multiple_sites(urls, result_base_folder="results"):
     all_custom_headers = []
     for url in urls:
-        custom_headers_curr_url = capture_site_data(url, result_base_folder)
+        custom_headers_curr_url = process_site_data(url, result_base_folder)
         all_custom_headers.append(custom_headers_curr_url)
-
     save_json(all_custom_headers, os.path.join(result_base_folder, "all_custom_headers.json"))
 
-# Example usage
+# =====================
+# Main
+# =====================
 if __name__ == "__main__":
+    # Define flag
+    capture = False
+    process = True
+
     websites = [
         # =====
-        "https://www.cloudflare.com/",
-        "https://www.bbcamerica.com/", #✅
-        "https://onedrive.com", #✅
-        "https://www.nytimes.com/", #✅
-        "https://www.businesstimes.com.sg/",
-        "https://www.tiktok.com/explore", #✅
-        "https://www.jasatel.net",
-        "https://www.booking.com", #🔸
-        "https://www.planfix.com", #✅
-        "https://bedbathandbeyond.com",
-        "https://www.bnnbloomberg.ca", #✅
-        "https://www.amazon.com/", #✅
-        "https://grand-stream.com/", #✅
-        "https://www.eatthis.com/", #✅
-        "https://www.orlandosentinel.com/",
-        "https://www.foodandwine.com/", #✅
-        "https://www.excite.co.jp/", #✅
-        "https://response.jp/", #✅
-
-        # =====
-        # "https://news.google.com","https://bbc.co.uk","https://usatoday.com",
-        # "https://bloomberg.com","https://time.com"
+        "https://www.bbcamerica.com/",
+        "https://www.planfix.com/",
+        "https://bnnbloomberg.ca"
     ]
-    capture_multiple_sites(websites)
+
+    if capture:
+        capture_multiple_sites(websites)
+    if process:
+        process_multiple_sites(websites)

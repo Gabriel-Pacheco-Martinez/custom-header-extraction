@@ -1,0 +1,9 @@
+[
+  {
+    "method": "REQUEST",
+    "header_name": "x-mp-key",
+    "header_value": "us1-42c7bf7b21a03d479b372347c506a331",
+    "host_domain": "bnnbloomberg.ca",
+    "method_domain": "mparticle.com"
+  }
+]

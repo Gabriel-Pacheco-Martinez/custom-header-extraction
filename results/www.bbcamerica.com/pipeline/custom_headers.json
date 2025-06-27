@@ -1,0 +1,44 @@
+[
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-DEVICE-AD-ID",
+    "header_value": "69186748-83de-4ac1-9f00-01226194c077",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-DEVICE-ID",
+    "header_value": "69186748-83de-4ac1-9f00-01226194c077",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-CACHE-HASH",
+    "header_value": "dD1hbWNuO249YmJjYTtwPXdlYjtlPXVuYXV0aDtjPWJvO2w9ZW4tdXM7YXY9My41OC4wO2ZmPWV5SmhiV053YkhWekxXMTJjR1FpT25zaVkyaGhjblJsY2kxdGRuQXRaVzVoWW14bFpDSTZabUZzYzJWOUxDSmhiV053YkhWekxYUnBlbVZ1TFdOM0lqcDdJbVZ1WVdKc1pXUWlPblJ5ZFdWOUxDSmhiV053YkhWekxXRmtMWFJwWlhJaU9uc2lZV1F0ZEdsbGNpMXdkWEpqYUdGelpTMXZiaUk2Wm1Gc2MyVjlMQ0pqWVdKZllXMWpjQzFqYjI1MFpXNTBMV04zTFdwMWJpMHlNREkxSWpvaVFTSXNJbUZ0WTNCc2RYTXRjMnRwY0Mxd2NtOXRieTFoWkhNaU9uc2ljMnRwY0Mxd2NtOXRieTFoWkhNdFpXNWhZbXhsWkNJNlptRnNjMlVzSW5aaGNtbGhkR2x2YmlJNklrRk5ReXNnVjJsMGFDQkJaSE1pZlN3aVlXMWpMWFJsY20xekxXTmhjSFIxY21VaU9tWmhiSE5sTENKamIyMWpZWE4wTFdGa0xXSnNiMk5yWlhJdGMyTnlaV1Z1SWpwN0luTjFZblJwZEd4bElqb2lSbTl5SUdobGJIQXNJR1Z0WVdsc0lHTjFjM1J2YldWeWMyVnlkbWxqWlVCaGJXTndiSFZ6TG1OdmJTNGlMQ0owYVhSc1pTSTZJbFJvWlNCTmIyNTBhR3g1SUhkcGRHZ2dRV1J6SUhCc1lXNGdhWE1nYm05MElHTjFjbkpsYm5Sc2VTQnpkWEJ3YjNKMFpXUWdiMjRnV0dacGJtbDBlU0JrWlhacFkyVnpMaUlzSW1WdVlXSnNaV1FpT25SeWRXVjlMQ0poYldOd2JIVnpMWFpwZW1sdkxYQnliMjF2ZEdsdmJpSTZleUpqYjNWd2IyNWZZMjlrWlNJNkluSmxkR0ZwYkRFaUxDSmpiM1Z3YjI1ZlkyOWtaVjl0YjI1MGFHeDVJam9pY21WMFlXbHNNeUlzSW1WdVlXSnNaV1FpT25SeWRXVjlmUT09",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-DEVICE-AD-ID",
+    "header_value": "69186748-83de-4ac1-9f00-01226194c077",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "X-AMCN-DEVICE-ID",
+    "header_value": "69186748-83de-4ac1-9f00-01226194c077",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "amcn.com"
+  },
+  {
+    "method": "REQUEST",
+    "header_name": "x-mp-key",
+    "header_value": "us1-4d67df7096df824194bb46893e83f1c9",
+    "host_domain": "bbcamerica.com",
+    "method_domain": "mparticle.com"
+  }
+]
