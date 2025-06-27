@@ -1,47 +1,47 @@
 [
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1766582226,
+    "expiry": 1766589719,
     "httpOnly": false,
     "name": "__eoi",
     "path": "/",
     "sameSite": "None",
     "secure": true,
-    "value": "ID=d8590054e16b07f5:T=1751030226:RT=1751030226:S=AA-AfjaeSQD-8Gjp_eDAh7dQDF_N"
+    "value": "ID=4cdb3eed69d5a9f3:T=1751037719:RT=1751037719:S=AA-AfjZ3Un09JIDjt7JZd5-71k3z"
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1784726226,
+    "expiry": 1784733719,
     "httpOnly": false,
     "name": "__gpi",
     "path": "/",
     "sameSite": "None",
     "secure": true,
-    "value": "UID=000010d637bd7403:T=1751030226:RT=1751030226:S=ALNI_Maj3WSidZlcJr7KyeDK_-f6gAuvZA"
+    "value": "UID=000010d63c927b17:T=1751037719:RT=1751037719:S=ALNI_MaqRPolvNvhOs9pmvKcrSkHvcr8YQ"
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1784726226,
+    "expiry": 1784733719,
     "httpOnly": false,
     "name": "__gads",
     "path": "/",
     "sameSite": "None",
     "secure": true,
-    "value": "ID=6a5fc086507180d9:T=1751030226:RT=1751030226:S=ALNI_MZPO_Vv40n77vxf_0AH0tBd9oHooA"
+    "value": "ID=6b1234fe8d38db23:T=1751037719:RT=1751037719:S=ALNI_MbIN3BchwDdVaG0Zwhrr0r__syvpA"
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1785590226,
+    "expiry": 1785597718,
     "httpOnly": false,
     "name": "_ga_PBWGV33NJW",
     "path": "/",
     "sameSite": "Lax",
     "secure": false,
-    "value": "GS2.2.s1751030226$o1$g1$t1751030226$j60$l0$h0"
+    "value": "GS2.2.s1751037718$o1$g1$t1751037718$j60$l0$h0"
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1751030285,
+    "expiry": 1751037777,
     "httpOnly": false,
     "name": "_gat_mpgaTracker1",
     "path": "/",
@@ -51,43 +51,43 @@
   },
   {
     "domain": "www.bbcamerica.com",
-    "expiry": 1751116624,
+    "expiry": 1751124115,
     "httpOnly": false,
     "name": "user_token",
     "path": "/",
     "sameSite": "Lax",
     "secure": false,
-    "value": "eyJraWQiOiJwcm9kLTEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOiJ1bmF1dGgiLCJhdWQiOiJyZXNvdXJjZV9zZXJ2ZXIiLCJhdXRoX3R5cGUiOiJiZWFyZXIiLCJmZWF0dXJlX2ZsYWdzIjoiZXlKaGJXTndiSFZ6TFcxMmNHUWlPbnNpWTJoaGNuUmxjaTF0ZG5BdFpXNWhZbXhsWkNJNlptRnNjMlY5TENKaGJXTndiSFZ6TFhScGVtVnVMV04zSWpwN0ltVnVZV0pzWldRaU9uUnlkV1Y5TENKaGJXTndiSFZ6TFdGa0xYUnBaWElpT25zaVlXUXRkR2xsY2kxd2RYSmphR0Z6WlMxdmJpSTZabUZzYzJWOUxDSmpZV0pmWVcxamNDMWpiMjUwWlc1MExXTjNMV3AxYmkweU1ESTFJam9pUVNJc0ltRnRZM0JzZFhNdGMydHBjQzF3Y205dGJ5MWhaSE1pT25zaWMydHBjQzF3Y205dGJ5MWhaSE10Wlc1aFlteGxaQ0k2Wm1Gc2MyVXNJblpoY21saGRHbHZiaUk2SWtGTlF5c2dWMmwwYUNCQlpITWlmU3dpWVcxakxYUmxjbTF6TFdOaGNIUjFjbVVpT21aaGJITmxMQ0pqYjIxallYTjBMV0ZrTFdKc2IyTnJaWEl0YzJOeVpXVnVJanA3SW5OMVluUnBkR3hsSWpvaVJtOXlJR2hsYkhBc0lHVnRZV2xzSUdOMWMzUnZiV1Z5YzJWeWRtbGpaVUJoYldOd2JIVnpMbU52YlM0aUxDSjBhWFJzWlNJNklsUm9aU0JOYjI1MGFHeDVJSGRwZEdnZ1FXUnpJSEJzWVc0Z2FYTWdibTkwSUdOMWNuSmxiblJzZVNCemRYQndiM0owWldRZ2IyNGdXR1pwYm1sMGVTQmtaWFpwWTJWekxpSXNJbVZ1WVdKc1pXUWlPblJ5ZFdWOUxDSmhiV053YkhWekxYWnBlbWx2TFhCeWIyMXZkR2x2YmlJNmV5SmpiM1Z3YjI1ZlkyOWtaU0k2SW5KbGRHRnBiREVpTENKamIzVndiMjVmWTI5a1pWOXRiMjUwYUd4NUlqb2ljbVYwWVdsc015SXNJbVZ1WVdKc1pXUWlPblJ5ZFdWOWZRPT0iLCJyb2xlcyI6WyJ1bmF1dGgiXSwiaXNzIjoiaXAtMTAtMi0xMDItOTguZWMyLmludGVybmFsIiwidG9rZW5fdHlwZSI6ImF1dGgiLCJleHAiOjE3NTEwMzM4MjQsImRldmljZS1pZCI6IjY5MTg2NzQ4LTgzZGUtNGFjMS05ZjAwLTAxMjI2MTk0YzA3NyIsImJ5cGFzc19wZXJzaXN0Ijp0cnVlLCJpYXQiOjE3NTEwMzAyMjQsImp0aSI6ImEyMTMxZTFiLWJkNzQtNDdjYS04NzBiLWQ4YWVkOTA3MGZkOSJ9.a4QWOdaxlXe09IGKNl7jds5mthAnpg-e_R-Uuver1jx69DxE0v0djBJiOv57-pCO61DbBzKf6Ze363IAzIBk0MA-2Hvj75QTZFME-_LkV8wgYZEmr2aaopKqDoCtMqpL8zuQrrzVa0MRylxj9GxsYg8p41f0Yd2XZ3t3nrrK_2WsCzz5KdoD4Dz0zZ9K2Pd9OTon-XWyYXxiJOsVYMCchrNoxvJVyqxyI2UBN4dRolv5oJ9L_udk5wgwEXkZcXP5EMmhh_uk92Ek5vbBBBxnXagI0fi2gRwp-imerYmlmuxaHq-7CasVLxxr_PpyaA1qqhwXExf1_09hdWn0WV9bnA"
+    "value": "eyJraWQiOiJwcm9kLTEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJlbnRpdGxlbWVudHMiOiJ1bmF1dGgiLCJhdWQiOiJyZXNvdXJjZV9zZXJ2ZXIiLCJhdXRoX3R5cGUiOiJiZWFyZXIiLCJmZWF0dXJlX2ZsYWdzIjoiZXlKaGJXTndiSFZ6TFcxMmNHUWlPbnNpWTJoaGNuUmxjaTF0ZG5BdFpXNWhZbXhsWkNJNlptRnNjMlY5TENKaGJXTndiSFZ6TFhScGVtVnVMV04zSWpwN0ltVnVZV0pzWldRaU9uUnlkV1Y5TENKaGJXTndiSFZ6TFdGa0xYUnBaWElpT25zaVlXUXRkR2xsY2kxd2RYSmphR0Z6WlMxdmJpSTZabUZzYzJWOUxDSmpZV0pmWVcxamNDMWpiMjUwWlc1MExXTjNMV3AxYmkweU1ESTFJam9pUVNJc0ltRnRZM0JzZFhNdGMydHBjQzF3Y205dGJ5MWhaSE1pT25zaWMydHBjQzF3Y205dGJ5MWhaSE10Wlc1aFlteGxaQ0k2Wm1Gc2MyVXNJblpoY21saGRHbHZiaUk2SWtGTlF5c2dWMmwwYUNCQlpITWlmU3dpWVcxakxYUmxjbTF6TFdOaGNIUjFjbVVpT21aaGJITmxMQ0pqYjIxallYTjBMV0ZrTFdKc2IyTnJaWEl0YzJOeVpXVnVJanA3SW5OMVluUnBkR3hsSWpvaVJtOXlJR2hsYkhBc0lHVnRZV2xzSUdOMWMzUnZiV1Z5YzJWeWRtbGpaVUJoYldOd2JIVnpMbU52YlM0aUxDSjBhWFJzWlNJNklsUm9aU0JOYjI1MGFHeDVJSGRwZEdnZ1FXUnpJSEJzWVc0Z2FYTWdibTkwSUdOMWNuSmxiblJzZVNCemRYQndiM0owWldRZ2IyNGdXR1pwYm1sMGVTQmtaWFpwWTJWekxpSXNJbVZ1WVdKc1pXUWlPblJ5ZFdWOUxDSmhiV053YkhWekxYWnBlbWx2TFhCeWIyMXZkR2x2YmlJNmV5SmpiM1Z3YjI1ZlkyOWtaU0k2SW5KbGRHRnBiREVpTENKamIzVndiMjVmWTI5a1pWOXRiMjUwYUd4NUlqb2ljbVYwWVdsc015SXNJbVZ1WVdKc1pXUWlPblJ5ZFdWOWZRPT0iLCJyb2xlcyI6WyJ1bmF1dGgiXSwiaXNzIjoiaXAtMTAtMi0xODMtMTc0LmVjMi5pbnRlcm5hbCIsInRva2VuX3R5cGUiOiJhdXRoIiwiZXhwIjoxNzUxMDQxMzE1LCJkZXZpY2UtaWQiOiI1NmVhZDUxNC1jNTUxLTRjMjgtOTI5Yi04OTM1ZjNhNDUzYTgiLCJieXBhc3NfcGVyc2lzdCI6dHJ1ZSwiaWF0IjoxNzUxMDM3NzE1LCJqdGkiOiI1NjRjMTJjYy1mMjBlLTQ2MjEtOTRiNS00YmNjMGFhODA0MjAifQ.OH-aPnK15ncQ_LnQzsBpyDMg0RZ7ChM83d4uRBEFHfwut2QfrAnTZKhqFw4EJsuId4Vc8r8WSjgchrVGn1mZT53Vuk1bkZw9DjUegfuXaIrwufYHaVEbUWlGvCyhwN0s6Od0fD2Nfe_10IG_jhIC573zHEbs8DO7ee8oLTtTvm5mmiCBdyWAi3C0vT_RkJybOYbNJPA3wKbQrCdSN5E1norZkn6JkBzAf81hyCzMzDw3ZOJFTD2W_1DPZ1hftk_vudvqPJwUqi3WMyT-4w0ml8anB91Qin1UTvgJnT8H81J9kNMUCzNUvxM8zprV47T1u6RgOwW9sTFEePY2j8fINw"
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1751116624,
+    "expiry": 1751124116,
     "httpOnly": false,
     "name": "_gid",
     "path": "/",
     "sameSite": "Lax",
     "secure": false,
-    "value": "GA1.2.387592149.1751030225"
+    "value": "GA1.2.1360734891.1751037716"
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1785590224,
+    "expiry": 1785597716,
     "httpOnly": false,
     "name": "_ga",
     "path": "/",
     "sameSite": "Lax",
     "secure": false,
-    "value": "GA1.2.272759565.1751030225"
+    "value": "GA1.2.1917661593.1751037716"
   },
   {
     "domain": "www.bbcamerica.com",
-    "expiry": 1785590219,
+    "expiry": 1785597708,
     "httpOnly": false,
     "name": "__ga_uid",
     "path": "/",
     "sameSite": "Lax",
     "secure": false,
-    "value": "69186748-83de-4ac1-9f00-01226194c077"
+    "value": "56ead514-c551-4c28-929b-8935f3a453a8"
   },
   {
     "domain": "www.bbcamerica.com",
@@ -100,7 +100,7 @@
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1751030285,
+    "expiry": 1751037777,
     "httpOnly": false,
     "name": "_gat_mpgaTracker2",
     "path": "/",
@@ -119,22 +119,22 @@
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1782566219,
+    "expiry": 1782573709,
     "httpOnly": false,
     "name": "OptanonConsent",
     "path": "/",
     "sameSite": "Lax",
     "secure": false,
-    "value": "isIABGlobal=false&datestamp=Fri+Jun+27+2025+09%3A16%3A59+GMT-0400+(Bolivia+Time)&version=6.5.0&hosts=&consentId=2dbecfd4-1776-4034-bd5d-64a4c87e2814&interactionCount=0&landingPath=https%3A%2F%2Fwww.bbcamerica.com%2F&groups=C0003%3A1%2CC0001%3A1%2CC0002%3A1%2CC0004%3A1%2CSPD_BG%3A1"
+    "value": "isIABGlobal=false&datestamp=Fri+Jun+27+2025+11%3A21%3A49+GMT-0400+(Bolivia+Time)&version=6.5.0&hosts=&consentId=e0c43339-6e84-4744-9a84-082a63840ba0&interactionCount=0&landingPath=https%3A%2F%2Fwww.bbcamerica.com%2F&groups=C0003%3A1%2CC0001%3A1%2CC0002%3A1%2CC0004%3A1%2CSPD_BG%3A1"
   },
   {
     "domain": ".bbcamerica.com",
-    "expiry": 1758806218,
+    "expiry": 1758813707,
     "httpOnly": false,
     "name": "_gcl_au",
     "path": "/",
     "sameSite": "Lax",
     "secure": false,
-    "value": "1.1.181088332.1751030218"
+    "value": "1.1.326063566.1751037707"
   }
 ]

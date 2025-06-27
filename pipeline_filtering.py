@@ -5,7 +5,7 @@ from information_api import save_json
 #####################################
 # Pipeline
 #####################################
-def heuristics_filtering_pipeline(all_headers, known_standard_headers, stored_values, output_folder):
+def heuristics_filtering_pipeline(all_headers, known_standard_headers, storage_values, output_folder):
     # Initialize counts
     n_total_headers = 0
     n_final_headers = 0
@@ -71,7 +71,7 @@ def heuristics_filtering_pipeline(all_headers, known_standard_headers, stored_va
 
         # === Heuristic 4: Stored in cookies/local
         if apply_heuristic_4:
-            is_in_cookies_local = check_if_in_storage(curr_header["header_value"], stored_values)
+            is_in_cookies_local = check_if_in_storage(curr_header["header_value"], storage_values)
             if not is_in_cookies_local:
                 compound_filtering_stats["not_in_storage"] += 1
                 continue

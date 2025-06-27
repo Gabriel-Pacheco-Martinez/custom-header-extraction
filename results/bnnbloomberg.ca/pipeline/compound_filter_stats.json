@@ -1,24 +1,24 @@
 {
   "Compound filtering statistics": {
     "standard_headers": {
-      "Headers into filter": 4694,
-      "Headers removed": 4254
+      "Headers into filter": 4287,
+      "Headers removed": 3914
     },
     "third_party": {
-      "Headers into filter": 440,
-      "Headers removed": 130
+      "Headers into filter": 373,
+      "Headers removed": 75
     },
     "min_length": {
-      "Headers into filter": 310,
-      "Headers removed": 100
+      "Headers into filter": 298,
+      "Headers removed": 95
     },
     "inconsistent": {
-      "Headers into filter": 210,
-      "Headers removed": 146
+      "Headers into filter": 203,
+      "Headers removed": 141
     },
     "not_in_storage": {
-      "Headers into filter": 64,
-      "Headers removed": 63
+      "Headers into filter": 62,
+      "Headers removed": 61
     }
   }
 }
