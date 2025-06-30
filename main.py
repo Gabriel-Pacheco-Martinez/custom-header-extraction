@@ -22,7 +22,12 @@ from header_analysis import get_custom_headers, get_headers, get_filtering_permu
 # =====================
 def visit_url(driver, url, wait_time=20):
     # driver.delete_all_cookies()
-    driver.get(url)
+    try:
+        time.sleep(1)  # Allow browser to settle
+        driver.get(url)
+    except Exception as e:
+        print("[✗] Could not load:", url)
+        print("    Error:", str(e))
     time.sleep(wait_time)
 
 def get_hostname(url):
@@ -171,16 +176,18 @@ def process_multiple_sites(urls, result_base_folder="results"):
 if __name__ == "__main__":
     # ======
     # Please change flags as needed
-    capture = False  # Can be false if network information already available in folder "results/website/capture"
-    process = True
+    capture = True  # Can be false if network information already available in folder "results/website/capture"
+    process = False
 
     # ======
     # Define websites
     websites = [
         # =====
-        "http://www.bbcamerica.com/",
-        "http://www.planfix.com/",
-        "http://bnnbloomberg.ca"
+        # "http://www.bbcamerica.com/",
+        # "http://www.planfix.com/",
+        # "http://bnnbloomberg.ca/",
+        # "http://yahoo.com//",
+        "http://wikipedia.org"
     ]
 
     # ======
