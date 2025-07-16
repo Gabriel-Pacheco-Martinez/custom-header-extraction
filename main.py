@@ -160,15 +160,25 @@ def process_site_data(url, base_output_folder):
     get_filtering_permutation_stats(all_headers, default_headers, storage_values, stats_folder)
 
 
-    return custom_headers
+    return custom_headers, len(all_headers)
 
 
 def process_multiple_sites(urls, result_base_folder="results"):
     all_custom_headers = []
+    num_total_headers = 0
     for url in urls:
-        custom_headers_curr_url = process_site_data(url, result_base_folder)
+        custom_headers_curr_url, all_headers_curr_url = process_site_data(url, result_base_folder)
         all_custom_headers.append(custom_headers_curr_url)
+        num_total_headers = num_total_headers + all_headers_curr_url
     save_json(all_custom_headers, os.path.join(result_base_folder, "all_custom_headers.json"))
+
+    num_custom_headers = sum(len(headers) for headers in all_custom_headers if headers)
+
+    # Print information
+    print("\n==========")
+    print("total websites: ",len(urls))
+    print("total headers: ", num_total_headers)
+    print("total custom headers: ", num_custom_headers)
 
 # =====================
 # Main
@@ -176,18 +186,98 @@ def process_multiple_sites(urls, result_base_folder="results"):
 if __name__ == "__main__":
     # ======
     # Please change flags as needed
-    capture = True  # Can be false if network information already available in folder "results/website/capture"
-    process = False
+    capture = False  # Can be false if network information already available in folder "results/website/capture"
+    process = True
 
     # ======
     # Define websites
     websites = [
         # =====
-        # "http://www.bbcamerica.com/",
-        # "http://www.planfix.com/",
-        # "http://bnnbloomberg.ca/",
-        # "http://yahoo.com//",
-        "http://wikipedia.org"
+        "http://www.bbcamerica.com/",
+        "http://www.planfix.com/",
+        "http://bnnbloomberg.ca/",
+        "http://wikipedia.org",
+        "http://reddit.com",
+        "http://bing.com/",
+        "http://www.amazon.com/",
+        "http://www.yahoo.com/",
+        "http://www.temu.com",
+        "http://www.duckduckgo.com/",
+        "http://www.tiktok.com/",
+        "http://www.yandex.ru/",
+        "http://www.weather.com/",
+        "http://www.msn.com/",
+        "http://www.fandom.com/",
+        "http://www.netflix.com/",
+        "http://www.pinterest.com/",
+        "http://www.naver.com/",
+        "http://www.canva.com/",
+        "http://www.vk.com/",
+        "http://www.paypal.com/",
+        "http://www.imdb.com/",
+        "http://www.samsung.com/",
+        "http://www.mail.ru/",
+        "http://www.ebay.com/",
+        "http://www.walmart.com/",
+        "http://www.bbc.co.uk/",
+        "http://www.amazon.de/",
+        "http://www.google.com.br/",
+        "http://www.amazon.co.uk/",
+        "http://www.ozon.ru/",
+        "http://www.cricbuzz.com/",
+        "http://www.accuweather.com/",
+        "http://www.etsy.com/",
+        "http://www.uol.com.br/",
+        "http://www.dzen.ru/",
+        "http://www.shopify.com/",
+        "http://www.steamcommunity.com/",
+        "http://www.infobae.com/",
+        "http://www.google.de/",
+        "http://www.primevideo.com/",
+        "http://www.dailymail.co.uk/",
+        "http://www.linktree.ee/",
+        "http://www.people.com/",
+        "http://www.google.it/",
+        "http://www.google.es/",
+        "http://www.shein.com/",
+        "http://www.max.com/",
+        "http://www.avito.ru/",
+        "http://www.twitch.tv/",
+        "http://www.openai.com/",
+        "http://www.aliexpress.com/",
+        "http://www.github.com/",
+        "http://www.spotify.com/",
+        "http://www.apple.com/",
+        "http://www.bilibili.com/",
+        "http://www.roblox.com/",
+        "http://www.globo.com/",
+        "http://www.amazon.co.jp/",
+        "http://www.nytimes.com/",
+        "http://www.quora.com/",
+        "http://www.telegram.org/",
+        "http://www.dailymotion.com/",
+        "http://www.coupang.com/",
+        "http://www.booking.com/",
+        "http://www.espn.com/",
+        "http://www.brave.com/",
+        "http://www.cnn.com/",
+        "http://www.indeed.com/",
+        "http://www.rakuten.co.jp/",
+        "http://www.zoom.us/",
+        "http://www.usps.com/",
+        "http://www.steampowered.com/",
+        "http://www.shop.app/",
+        "http://www.marca.com/",
+        "http://www.rutube.ru/",
+        "http://www.ecosia.org/",
+        "http://www.disneyplus.com/",
+        "http://www.theguardian.com/",
+        "http://www.gmail.com/",
+        "http://www.zillow.com/",
+        "http://www.amazon.in/",
+        "http://www.instructure.com/",
+        "http://www.wildberries.ru/",
+        "http://www.google.co.uk/", #✅
     ]
 
     # ======

@@ -81,5 +81,227 @@
       "host_domain": "bnnbloomberg.ca",
       "method_domain": "mparticle.com"
     }
-  ]
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "method": "REQUEST",
+      "header_name": "mrf-lb-hash",
+      "header_value": "https://www.infobae.com/america/",
+      "host_domain": "infobae.com",
+      "method_domain": "mrf.io"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "method": "RESPONSE",
+      "header_name": "pin-unauth",
+      "header_value": "dWlkPVlUUmxOMkprTm1ZdFpETmhZUzAwWkdRNUxUa3dPR0V0WVRJelpXTTNOV016Tm1ZNA",
+      "host_domain": "aliexpress.com",
+      "method_domain": "pinterest.com"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "method": "REQUEST",
+      "header_name": "Session-Id",
+      "header_value": "1751399531645-3746378058501",
+      "host_domain": "espn.com",
+      "method_domain": "fn-pz.com"
+    },
+    {
+      "method": "REQUEST",
+      "header_name": "Session-Id",
+      "header_value": "1751399531645-3746378058501",
+      "host_domain": "espn.com",
+      "method_domain": "fn-pz.com"
+    },
+    {
+      "method": "REQUEST",
+      "header_name": "Vision-Id",
+      "header_value": "1751399531645-3656368173293",
+      "host_domain": "espn.com",
+      "method_domain": "fn-pz.com"
+    }
+  ],
+  [],
+  [
+    {
+      "method": "RESPONSE",
+      "header_name": "x-goog-stored-content-encoding",
+      "header_value": "identity",
+      "host_domain": "cnn.com",
+      "method_domain": "ml314.com"
+    },
+    {
+      "method": "RESPONSE",
+      "header_name": "x-goog-stored-content-encoding",
+      "header_value": "identity",
+      "host_domain": "cnn.com",
+      "method_domain": "bounceexchange.com"
+    },
+    {
+      "method": "RESPONSE",
+      "header_name": "x-goog-stored-content-encoding",
+      "header_value": "identity",
+      "host_domain": "cnn.com",
+      "method_domain": "bounceexchange.com"
+    },
+    {
+      "method": "RESPONSE",
+      "header_name": "x-goog-stored-content-encoding",
+      "header_value": "identity",
+      "host_domain": "cnn.com",
+      "method_domain": "bounceexchange.com"
+    },
+    {
+      "method": "RESPONSE",
+      "header_name": "x-goog-stored-content-encoding",
+      "header_value": "identity",
+      "host_domain": "cnn.com",
+      "method_domain": "ad-delivery.net"
+    },
+    {
+      "method": "RESPONSE",
+      "header_name": "x-goog-stored-content-encoding",
+      "header_value": "identity",
+      "host_domain": "cnn.com",
+      "method_domain": "ad-delivery.net"
+    },
+    {
+      "method": "RESPONSE",
+      "header_name": "x-goog-stored-content-encoding",
+      "header_value": "identity",
+      "host_domain": "cnn.com",
+      "method_domain": "bounceexchange.com"
+    },
+    {
+      "method": "RESPONSE",
+      "header_name": "x-goog-stored-content-encoding",
+      "header_value": "identity",
+      "host_domain": "cnn.com",
+      "method_domain": "bounceexchange.com"
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "method": "RESPONSE",
+      "header_name": "pin-unauth",
+      "header_value": "dWlkPVl6ZzBZelptTkRrdFpXRXhNQzAwTTJNeUxUaGtNbVF0Wm1Ka1ptSXhOelV6WVRFdw",
+      "host_domain": "usps.com",
+      "method_domain": "pinterest.com"
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "method": "REQUEST",
+      "header_name": "user-id",
+      "header_value": "lQOd8Xzn8IiwCEnB30xf3AGZ75ZAg2a1f0Teg36Qy36lFZfeXmylE52qMVQ1fmfvLg4JtsGANNomsjnQ",
+      "host_domain": "rutube.ru",
+      "method_domain": "expf.ru"
+    },
+    {
+      "method": "REQUEST",
+      "header_name": "user-id",
+      "header_value": "lQOd8Xzn8IiwCEnB30xf3AGZ75ZAg2a1f0Teg36Qy36lFZfeXmylE52qMVQ1fmfvLg4JtsGANNomsjnQ",
+      "host_domain": "rutube.ru",
+      "method_domain": "expf.ru"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "method": "REQUEST",
+      "header_name": "visited_url",
+      "header_value": "https://www.instructure.com/",
+      "host_domain": "instructure.com",
+      "method_domain": "zi-scripts.com"
+    },
+    {
+      "method": "REQUEST",
+      "header_name": "_zitok",
+      "header_value": "d6232b77b995b72f40661751402112",
+      "host_domain": "instructure.com",
+      "method_domain": "zoominfo.com"
+    },
+    {
+      "method": "REQUEST",
+      "header_name": "visited-url",
+      "header_value": "https://www.instructure.com/",
+      "host_domain": "instructure.com",
+      "method_domain": "zoominfo.com"
+    }
+  ],
+  [],
+  []
 ]
