@@ -2,36 +2,8 @@
   [
     {
       "method": "REQUEST",
-      "header_name": "X-AMCN-DEVICE-AD-ID",
-      "header_value": "56ead514-c551-4c28-929b-8935f3a453a8",
-      "host_domain": "bbcamerica.com",
-      "method_domain": "amcn.com"
-    },
-    {
-      "method": "REQUEST",
-      "header_name": "X-AMCN-DEVICE-ID",
-      "header_value": "56ead514-c551-4c28-929b-8935f3a453a8",
-      "host_domain": "bbcamerica.com",
-      "method_domain": "amcn.com"
-    },
-    {
-      "method": "REQUEST",
       "header_name": "X-AMCN-CACHE-HASH",
       "header_value": "dD1hbWNuO249YmJjYTtwPXdlYjtlPXVuYXV0aDtjPWJvO2w9ZW4tdXM7YXY9My41OC4wO2ZmPWV5SmhiV053YkhWekxXMTJjR1FpT25zaVkyaGhjblJsY2kxdGRuQXRaVzVoWW14bFpDSTZabUZzYzJWOUxDSmhiV053YkhWekxYUnBlbVZ1TFdOM0lqcDdJbVZ1WVdKc1pXUWlPblJ5ZFdWOUxDSmhiV053YkhWekxXRmtMWFJwWlhJaU9uc2lZV1F0ZEdsbGNpMXdkWEpqYUdGelpTMXZiaUk2Wm1Gc2MyVjlMQ0pqWVdKZllXMWpjQzFqYjI1MFpXNTBMV04zTFdwMWJpMHlNREkxSWpvaVFTSXNJbUZ0WTNCc2RYTXRjMnRwY0Mxd2NtOXRieTFoWkhNaU9uc2ljMnRwY0Mxd2NtOXRieTFoWkhNdFpXNWhZbXhsWkNJNlptRnNjMlVzSW5aaGNtbGhkR2x2YmlJNklrRk5ReXNnVjJsMGFDQkJaSE1pZlN3aVlXMWpMWFJsY20xekxXTmhjSFIxY21VaU9tWmhiSE5sTENKamIyMWpZWE4wTFdGa0xXSnNiMk5yWlhJdGMyTnlaV1Z1SWpwN0luTjFZblJwZEd4bElqb2lSbTl5SUdobGJIQXNJR1Z0WVdsc0lHTjFjM1J2YldWeWMyVnlkbWxqWlVCaGJXTndiSFZ6TG1OdmJTNGlMQ0owYVhSc1pTSTZJbFJvWlNCTmIyNTBhR3g1SUhkcGRHZ2dRV1J6SUhCc1lXNGdhWE1nYm05MElHTjFjbkpsYm5Sc2VTQnpkWEJ3YjNKMFpXUWdiMjRnV0dacGJtbDBlU0JrWlhacFkyVnpMaUlzSW1WdVlXSnNaV1FpT25SeWRXVjlMQ0poYldOd2JIVnpMWFpwZW1sdkxYQnliMjF2ZEdsdmJpSTZleUpqYjNWd2IyNWZZMjlrWlNJNkluSmxkR0ZwYkRFaUxDSmpiM1Z3YjI1ZlkyOWtaVjl0YjI1MGFHeDVJam9pY21WMFlXbHNNeUlzSW1WdVlXSnNaV1FpT25SeWRXVjlmUT09",
-      "host_domain": "bbcamerica.com",
-      "method_domain": "amcn.com"
-    },
-    {
-      "method": "REQUEST",
-      "header_name": "X-AMCN-DEVICE-AD-ID",
-      "header_value": "56ead514-c551-4c28-929b-8935f3a453a8",
-      "host_domain": "bbcamerica.com",
-      "method_domain": "amcn.com"
-    },
-    {
-      "method": "REQUEST",
-      "header_name": "X-AMCN-DEVICE-ID",
-      "header_value": "56ead514-c551-4c28-929b-8935f3a453a8",
       "host_domain": "bbcamerica.com",
       "method_domain": "amcn.com"
     },
@@ -80,107 +52,6 @@
       "header_value": "us1-42c7bf7b21a03d479b372347c506a331",
       "host_domain": "bnnbloomberg.ca",
       "method_domain": "mparticle.com"
-    }
-  ],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [
-    {
-      "method": "REQUEST",
-      "header_name": "mrf-lb-hash",
-      "header_value": "https://www.infobae.com/america/",
-      "host_domain": "infobae.com",
-      "method_domain": "mrf.io"
-    }
-  ],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [
-    {
-      "method": "RESPONSE",
-      "header_name": "pin-unauth",
-      "header_value": "dWlkPVlUUmxOMkprTm1ZdFpETmhZUzAwWkdRNUxUa3dPR0V0WVRJelpXTTNOV016Tm1ZNA",
-      "host_domain": "aliexpress.com",
-      "method_domain": "pinterest.com"
-    }
-  ],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [
-    {
-      "method": "REQUEST",
-      "header_name": "Session-Id",
-      "header_value": "1751399531645-3746378058501",
-      "host_domain": "espn.com",
-      "method_domain": "fn-pz.com"
-    },
-    {
-      "method": "REQUEST",
-      "header_name": "Session-Id",
-      "header_value": "1751399531645-3746378058501",
-      "host_domain": "espn.com",
-      "method_domain": "fn-pz.com"
-    },
-    {
-      "method": "REQUEST",
-      "header_name": "Vision-Id",
-      "header_value": "1751399531645-3656368173293",
-      "host_domain": "espn.com",
-      "method_domain": "fn-pz.com"
     }
   ],
   [],
@@ -244,41 +115,6 @@
   ],
   [],
   [],
-  [],
-  [
-    {
-      "method": "RESPONSE",
-      "header_name": "pin-unauth",
-      "header_value": "dWlkPVl6ZzBZelptTkRrdFpXRXhNQzAwTTJNeUxUaGtNbVF0Wm1Ka1ptSXhOelV6WVRFdw",
-      "host_domain": "usps.com",
-      "method_domain": "pinterest.com"
-    }
-  ],
-  [],
-  [],
-  [],
-  [
-    {
-      "method": "REQUEST",
-      "header_name": "user-id",
-      "header_value": "lQOd8Xzn8IiwCEnB30xf3AGZ75ZAg2a1f0Teg36Qy36lFZfeXmylE52qMVQ1fmfvLg4JtsGANNomsjnQ",
-      "host_domain": "rutube.ru",
-      "method_domain": "expf.ru"
-    },
-    {
-      "method": "REQUEST",
-      "header_name": "user-id",
-      "header_value": "lQOd8Xzn8IiwCEnB30xf3AGZ75ZAg2a1f0Teg36Qy36lFZfeXmylE52qMVQ1fmfvLg4JtsGANNomsjnQ",
-      "host_domain": "rutube.ru",
-      "method_domain": "expf.ru"
-    }
-  ],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
   [
     {
       "method": "REQUEST",
@@ -289,19 +125,10 @@
     },
     {
       "method": "REQUEST",
-      "header_name": "_zitok",
-      "header_value": "d6232b77b995b72f40661751402112",
-      "host_domain": "instructure.com",
-      "method_domain": "zoominfo.com"
-    },
-    {
-      "method": "REQUEST",
       "header_name": "visited-url",
       "header_value": "https://www.instructure.com/",
       "host_domain": "instructure.com",
       "method_domain": "zoominfo.com"
     }
-  ],
-  [],
-  []
+  ]
 ]

@@ -5,7 +5,7 @@ from information_api import save_json
 #####################################
 # Pipeline
 #####################################
-def heuristics_filtering_pipeline(all_headers, known_standard_headers, storage_values, output_folder):
+def heuristics_filtering_pipeline(all_headers, all_headers_2, known_standard_headers, storage_values, output_folder):
     # Initialize counts
     n_total_headers = 0
     n_final_headers = 0
@@ -30,6 +30,7 @@ def heuristics_filtering_pipeline(all_headers, known_standard_headers, storage_v
     apply_heuristic_2 = True
     apply_heuristic_3 = True
     apply_heuristic_4 = True
+    apply_heuristic_5 = True
 
 
     for curr_header in all_headers:
@@ -64,7 +65,7 @@ def heuristics_filtering_pipeline(all_headers, known_standard_headers, storage_v
         # === Heuristic 3: Consistent value
         if apply_heuristic_3:
             seen_headers, is_consistent = check_if_consistent_value(
-                curr_header["header_name"], curr_header["header_value"], seen_headers)
+                curr_header["header_name"], curr_header["header_value"], seen_headers, all_headers_2)
             if not is_consistent:
                 compound_filtering_stats["inconsistent"] += 1
                 continue
@@ -119,12 +120,20 @@ def check_if_third_party_associated(url, hostname):
 def check_if_min_value_length(value):
     return len(urllib.parse.unquote(value)) >= 8 #returns true if length is bigger than 8
 
-def check_if_consistent_value(name, value, seen_headers):
+def check_if_consistent_value(name, value, seen_headers, all_headers_2):
+    # Check if value consistent across current visit
     if name in seen_headers:
         if seen_headers[name] != value:
             return seen_headers, 0
     else:
         seen_headers[name] = value
+
+    # Check if value consistent across visits
+    if name in all_headers_2:
+        if all_headers_2[name] != value:
+            return seen_headers, 0
+
+    # Consistent across session and visits
     return seen_headers, 1
 
 def check_if_in_storage(value, set):

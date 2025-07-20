@@ -10,10 +10,10 @@
     },
     "consistent": {
       "Headers into filter": 1460,
-      "Headers removed": 410
+      "Headers removed": 734
     },
     "not_in_storage": {
-      "Headers into filter": 1050,
+      "Headers into filter": 726,
       "Headers removed": 0
     }
   }

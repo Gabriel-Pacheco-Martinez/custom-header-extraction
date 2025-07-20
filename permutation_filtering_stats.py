@@ -6,7 +6,7 @@ from information_api import save_json
 #####################################
 # Permutations
 #####################################
-def permutation_statistics(all_headers, known_standard_headers, storage_values, output_folder):
+def permutation_statistics(all_headers, all_headers_2, known_standard_headers, storage_values, output_folder):
     filters = [third_party, min_length, consistent, not_in_storage]
     n=1
 
@@ -25,7 +25,7 @@ def permutation_statistics(all_headers, known_standard_headers, storage_values, 
                 passed = True
 
                 for curr_func in combo:
-                    if not curr_func(header, seen_headers, storage_values, filtering_stats):
+                    if not curr_func(header, all_headers_2, seen_headers, storage_values, filtering_stats):
                         passed = False
                         break
 
@@ -43,28 +43,37 @@ def permutation_statistics(all_headers, known_standard_headers, storage_values, 
 #####################################
 # Heuristics/Filters
 #####################################
-def third_party(header, seen_headers, storage_values, filtering_stats):
+def third_party(header, all_headers_2, seen_headers, storage_values, filtering_stats):
     if header["host_domain"] == header["method_domain"]:
         filtering_stats["third_party"] += 1
         return False
     return True
 
-def min_length(header, seen_headers, storage_values, filtering_stats):
+def min_length(header, all_headers_2, seen_headers, storage_values, filtering_stats):
     if len(urllib.parse.unquote(header["header_value"])) >= 8:
         filtering_stats["min_length"] += 1
         return False
     return True
 
-def consistent(header, seen_headers, storage_values, filtering_stats):
-    if header["header_name"] in seen_headers:
-        if seen_headers[header["header_name"]] != header["header_value"]:
+def consistent(header, all_headers_2, seen_headers, storage_values, filtering_stats):
+    name = header["header_name"]
+    value = header["header_value"]
+
+    if name in seen_headers:
+        if seen_headers[name] != value:
             filtering_stats["consistent"] += 1
             return False
     else:
-        seen_headers[header["header_name"]] = header["header_value"]
+        seen_headers[name] = value
+
+    if name in all_headers_2:
+        if all_headers_2[name] != value:
+            filtering_stats["consistent"] += 1
+            return False
+
     return True
 
-def not_in_storage(header, seen_headers, storage_values, filtering_stats):
+def not_in_storage(header, all_headers_2, seen_headers, storage_values, filtering_stats):
     if header["header_value"] not in storage_values:
         filtering_stats["not_in_storage"] += 1
         return False

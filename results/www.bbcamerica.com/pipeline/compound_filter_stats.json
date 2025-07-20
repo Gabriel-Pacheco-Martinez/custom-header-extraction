@@ -14,11 +14,11 @@
     },
     "inconsistent": {
       "Headers into filter": 115,
-      "Headers removed": 54
+      "Headers removed": 84
     },
     "not_in_storage": {
-      "Headers into filter": 61,
-      "Headers removed": 55
+      "Headers into filter": 31,
+      "Headers removed": 29
     }
   }
 }

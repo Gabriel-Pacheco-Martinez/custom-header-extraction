@@ -44,25 +44,49 @@ def get_headers(events, hostname):
 
     return all_headers
 
+
+def get_headers_key_value_pair(events):
+    all_headers_2 = {}
+
+    for event in events:
+        method = event.get("method")
+        params = event.get("params")
+        headers = None
+
+        if method == "Network.requestWillBeSent":
+            request = params.get("request")
+            headers = request.get("headers")
+
+        elif method == "Network.responseReceived":
+            response = params.get("response")
+            headers = response.get("headers")
+
+        if headers:
+            for header_name, header_value in headers.items():
+                all_headers_2[header_name] = header_value
+
+    return all_headers_2
+
+
 #####################################
 # Get CUSTOM headers through filtering
 #####################################
-def get_custom_headers(all_headers, default_headers, storage_values, pipeline_folder):
+def get_custom_headers(all_headers, all_headers_2, default_headers, storage_values, pipeline_folder):
     # =======
     # Perform custom header extraction
     custom_headers, standard_headers = heuristics_filtering_pipeline(
-        all_headers, default_headers, storage_values, pipeline_folder
+        all_headers, all_headers_2, default_headers, storage_values, pipeline_folder
     )
     return custom_headers, standard_headers
 
 #####################################
 # Get PERMUTATION filtering stats
 #####################################
-def get_filtering_permutation_stats(all_headers, default_headers, storage_values, stats_folder):
+def get_filtering_permutation_stats(all_headers, all_headers_2, default_headers, storage_values, stats_folder):
     # =======
     # Get statistics
     permutation_statistics(
-        all_headers, default_headers, storage_values, stats_folder
+        all_headers, all_headers_2, default_headers, storage_values, stats_folder
     )
 
 #####################################

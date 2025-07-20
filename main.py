@@ -15,7 +15,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 # Mine
 from information_api import read_json, save_json, load_standard_headers
 from parser import extract_all_cookie_values, parse_nested_json, extract_all_storage_values
-from header_analysis import get_custom_headers, get_headers, get_filtering_permutation_stats
+from header_analysis import get_custom_headers, get_headers, get_filtering_permutation_stats, get_headers_key_value_pair
+
 
 # =====================
 # Helper functions
@@ -82,7 +83,13 @@ def setup_driver():
 
 def capture_site_data(url, base_output_folder):
     hostname = get_hostname(url)
+    visit = 1
+
     capture_folder = os.path.join(base_output_folder, hostname + "/capture")
+    if os.path.isdir(capture_folder):
+        capture_folder = os.path.join(base_output_folder, hostname + "/capture2")
+        visit = 2
+
     driver = setup_driver()
 
     try:
@@ -98,22 +105,38 @@ def capture_site_data(url, base_output_folder):
         # Get network information
         logs = driver.get_log("performance")
         network_events = extract_network_events(logs)
-        all_headers = get_headers(network_events, hostname)
 
-        # =====
-        # Save information
-        data_to_save = [
-            (network_events, "network_events.json"),
-            (all_headers, "all_headers.json"),
-            (cookies, "cookies.json"),
-            (local_storage, "local_storage.json"),
-            (session_storage, "session_storage.json"),
-            (storage_values, "storage_values.json")
-        ]
-        for data, filename in data_to_save:
-            save_json(data, os.path.join(capture_folder, filename))
+        if visit == 1:
+            # =====
+            # Extract headers
+            all_headers = get_headers(network_events, hostname)
 
-        print(f"[✓] Captured: {hostname}")
+            # =====
+            # Save information
+            data_to_save = [
+                (network_events, "network_events.json"),
+                (all_headers, "all_headers.json"),
+                (cookies, "cookies.json"),
+                (local_storage, "local_storage.json"),
+                (session_storage, "session_storage.json"),
+                (storage_values, "storage_values.json")
+            ]
+            for data, filename in data_to_save:
+                save_json(data, os.path.join(capture_folder, filename))
+
+            print(f"[✓] Captured: {hostname} — 1st visit")
+
+        if visit == 2:
+            # =====
+            # Extract headers
+            all_headers_2 = get_headers_key_value_pair(network_events)
+
+            # =====
+            # Save information
+            save_json(all_headers_2, os.path.join(capture_folder, "all_headers_2.json"))
+
+            print(f"[✓] Captured: {hostname} — 2nd visit")
+
 
     except Exception as e:
         print(f"[✗] Failed: {url} — {str(e)}")
@@ -133,19 +156,21 @@ def process_site_data(url, base_output_folder):
     print(f"[🌐] Webpage: {hostname}")
 
     capture_folder = os.path.join(base_output_folder, hostname + "/capture")
+    capture_folder_2 = os.path.join(base_output_folder, hostname + "/capture2")
     pipeline_folder = os.path.join(base_output_folder, hostname + "/pipeline")
     stats_folder = os.path.join(base_output_folder, hostname + "/stats")
 
     # =====
     # Read files to process headers
     all_headers = read_json(capture_folder+"/all_headers.json")
+    all_headers_2 = read_json(capture_folder_2+"/all_headers_2.json")
     default_headers = load_standard_headers("standard_headers.txt")
     storage_values = set(read_json(capture_folder+"/storage_values.json"))
 
     # =====
     # Get custom headers and save information
     custom_headers, standard_headers = get_custom_headers(
-        all_headers, default_headers, storage_values, pipeline_folder
+        all_headers, all_headers_2, default_headers, storage_values, pipeline_folder
     )
 
     data_to_save = [
@@ -157,7 +182,7 @@ def process_site_data(url, base_output_folder):
 
     # =====
     # Get filtering permutation statistics
-    get_filtering_permutation_stats(all_headers, default_headers, storage_values, stats_folder)
+    get_filtering_permutation_stats(all_headers, all_headers_2, default_headers, storage_values, stats_folder)
 
 
     return custom_headers, len(all_headers)
@@ -196,88 +221,11 @@ if __name__ == "__main__":
         "http://www.bbcamerica.com/",
         "http://www.planfix.com/",
         "http://bnnbloomberg.ca/",
-        "http://wikipedia.org",
-        "http://reddit.com",
-        "http://bing.com/",
-        "http://www.amazon.com/",
-        "http://www.yahoo.com/",
-        "http://www.temu.com",
-        "http://www.duckduckgo.com/",
-        "http://www.tiktok.com/",
-        "http://www.yandex.ru/",
-        "http://www.weather.com/",
-        "http://www.msn.com/",
-        "http://www.fandom.com/",
-        "http://www.netflix.com/",
-        "http://www.pinterest.com/",
-        "http://www.naver.com/",
-        "http://www.canva.com/",
-        "http://www.vk.com/",
-        "http://www.paypal.com/",
-        "http://www.imdb.com/",
-        "http://www.samsung.com/",
-        "http://www.mail.ru/",
-        "http://www.ebay.com/",
-        "http://www.walmart.com/",
-        "http://www.bbc.co.uk/",
-        "http://www.amazon.de/",
-        "http://www.google.com.br/",
-        "http://www.amazon.co.uk/",
-        "http://www.ozon.ru/",
-        "http://www.cricbuzz.com/",
-        "http://www.accuweather.com/",
-        "http://www.etsy.com/",
-        "http://www.uol.com.br/",
-        "http://www.dzen.ru/",
-        "http://www.shopify.com/",
-        "http://www.steamcommunity.com/",
-        "http://www.infobae.com/",
-        "http://www.google.de/",
-        "http://www.primevideo.com/",
-        "http://www.dailymail.co.uk/",
-        "http://www.linktree.ee/",
-        "http://www.people.com/",
-        "http://www.google.it/",
-        "http://www.google.es/",
-        "http://www.shein.com/",
-        "http://www.max.com/",
-        "http://www.avito.ru/",
-        "http://www.twitch.tv/",
-        "http://www.openai.com/",
-        "http://www.aliexpress.com/",
-        "http://www.github.com/",
-        "http://www.spotify.com/",
-        "http://www.apple.com/",
-        "http://www.bilibili.com/",
-        "http://www.roblox.com/",
-        "http://www.globo.com/",
-        "http://www.amazon.co.jp/",
-        "http://www.nytimes.com/",
-        "http://www.quora.com/",
-        "http://www.telegram.org/",
-        "http://www.dailymotion.com/",
-        "http://www.coupang.com/",
-        "http://www.booking.com/",
         "http://www.espn.com/",
-        "http://www.brave.com/",
         "http://www.cnn.com/",
-        "http://www.indeed.com/",
-        "http://www.rakuten.co.jp/",
-        "http://www.zoom.us/",
         "http://www.usps.com/",
-        "http://www.steampowered.com/",
-        "http://www.shop.app/",
-        "http://www.marca.com/",
         "http://www.rutube.ru/",
-        "http://www.ecosia.org/",
-        "http://www.disneyplus.com/",
-        "http://www.theguardian.com/",
-        "http://www.gmail.com/",
-        "http://www.zillow.com/",
-        "http://www.amazon.in/",
         "http://www.instructure.com/",
-        "http://www.wildberries.ru/",
-        "http://www.google.co.uk/", #✅
     ]
 
     # ======
