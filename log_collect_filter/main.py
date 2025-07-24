@@ -278,7 +278,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Websites capture and processing.")
     parser.add_argument("--capture", action="store_true", help="Enable capture phase")
     parser.add_argument("--process", action="store_true", help="Enable processing phase")
-    parser.add_argument("--file", type=str, default="/Users/gabriel/Downloads/websites/test.txt",
+    parser.add_argument("--file", type=str,
+                        default="/home/bless/gabriel_temp/websites/5k-news-websites.txt",
                         help="Path to the text file with website URLs")
     args = parser.parse_args()
 
