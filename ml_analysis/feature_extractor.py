@@ -49,16 +49,11 @@ def is_jwt(s):
     parts = s.split('.')
     return len(parts) == 3 and all(is_base64(part) for part in parts)
 
-def contains_email_or_phone(s):
-    email_pattern = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
-    phone_pattern = re.compile(r"\+?\d[\d\-() ]{7,}\d")
-    return bool(email_pattern.search(s) or phone_pattern.search(s))
-
 
 #########################
 # Evaluate a single custom header
 #########################
-def individual_header_analysis(curr, host_domain_count):
+def individual_header_analysis(curr, host_domains, destination_domains):
     curr_name = curr.get("header_name", "")
     curr_value = unquote(str(curr.get("header_value", "")))
 
@@ -79,14 +74,14 @@ def individual_header_analysis(curr, host_domain_count):
         "value_is_uuid": is_uuid(curr_value),
         "value_is_base64": is_base64(curr_value),
         "value_is_jwt": is_jwt(curr_value),
-        "value_has_email_or_phone": contains_email_or_phone(curr_value),
 
         # Entropy analysis
         "header_name_entropy": shannon_entropy_measure(curr_name),
         "header_value_entropy": shannon_entropy_measure(curr_value),
 
-        # Host diversity
-        "host_domain_count": host_domain_count,
+        # Host and Destination diversity
+        "host_domains":  host_domains.get((name, value), "N/A"),
+        "destination_domains": destination_domains.get((name, value), "N/A")
     }
 
 # =====================
@@ -95,7 +90,7 @@ def individual_header_analysis(curr, host_domain_count):
 if __name__ == "__main__":
 
     json_file_path = r"../log_collect_filter/results/all_custom_headers.json"
-    csv_file = "header_features.csv"
+    csv_file = "custom_header_features.csv"
 
     with open(json_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -103,12 +98,15 @@ if __name__ == "__main__":
     # =======
     # Step 1: Build (header_name, header_value) → set of host domains
     header_to_hosts = defaultdict(set)
+    header_to_destinations = defaultdict(set)
     for group in data:
         for header in group:
             name = header.get("header_name", "")
             value = unquote(str(header.get("header_value", "")))
             host = header.get("host_domain", "")
+            destination = header.get("method_domain", "")
             header_to_hosts[(name, value)].add(host)
+            header_to_destinations[(name,value)].add(destination)
 
     # =======
     # Step 2: Keep only unique (name, value) pairs for CSV
@@ -124,8 +122,7 @@ if __name__ == "__main__":
                 continue  # skip duplicate
 
             seen_pairs.add(key)
-            count = len(header_to_hosts[key])
-            features_extracted = individual_header_analysis(header, count)
+            features_extracted = individual_header_analysis(header, header_to_hosts, header_to_destinations)
             rows_for_csv.append(features_extracted)
 
     # =======
@@ -138,5 +135,3 @@ if __name__ == "__main__":
         print(f"✅ CSV for ML analysis created with {len(rows_for_csv)} unique headers")
     else:
         print("⚠️ No headers found to write.")
-
-

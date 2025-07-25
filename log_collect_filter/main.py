@@ -279,7 +279,7 @@ if __name__ == "__main__":
     parser.add_argument("--capture", action="store_true", help="Enable capture phase")
     parser.add_argument("--process", action="store_true", help="Enable processing phase")
     parser.add_argument("--file", type=str,
-                        default="/home/bless/gabriel_temp/websites/5k-news-websites.txt",
+                        default="/Users/gabriel/Documents/Master/Volunteership/Heuristics2/websites/test.txt",
                         help="Path to the text file with website URLs")
     args = parser.parse_args()
 

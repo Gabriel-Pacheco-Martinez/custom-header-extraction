@@ -1,6 +1,42 @@
 # 🕵️‍♂️ Detection of Tracking Custom Headers 
 
-## 1. 📁 Project Architecture
+## 1. 🧪 Instructions
+
+Follow these steps to run the full tracking header analysis pipeline:
+
+### Step 1 — Collect Custom Headers
+Run `main.py` inside the `log_collect_filter/` directory to generate `results/all_custom_headers.json`, which contains filtered custom headers.
+
+```bash
+cd log_collect_filter/
+python main.py -help  # view arguments and usage
+```
+
+### Step 2 — Extract Header Features
+Run `feature_extractor.py` in the `ml_analysis/` directory to extract feature data from the headers file generated in Step 1.
+
+```bash
+cd ml_analysis/
+python feature_extractor.py
+```
+
+### Step 3 — Analyze with LLM
+Run `llm_analyzer.py` in the `ml_analysis/` directory to apply LLM classification on the extracted features and generate an annotated CSV file.
+
+```bash
+python llm_analyzer.py
+```
+
+---
+
+## 2. 📄 Resulting Files
+
+| File Name                                       | Description                                              |
+|-------------------------------------------------|----------------------------------------------------------|
+| `results/all_custom_headers.json`               | Tracking headers obtained through the filtering pipeline |
+| `ml_analysis/custom_header_features.csv`        | Extracted features from those headers & LLM analysis     |
+
+## 3. 📁 Project Architecture
 
 The folder architecture of the project is the following
 
@@ -30,10 +66,10 @@ websites/
 ├── ... </pre>
 
 
-## 2. 📄 Important Files
+## 3. 🏃 Scripts
 
 - 🔹 **main.py** – Main script that orchestrates the full workflow across websites.
-- 🔹 **header_analysis.py** – Gateway for all operations performed on captured headers.
+- **header_analysis.py** – Gateway for all operations performed on captured headers.
 - **parser.py** – Parses cookies, local storage, and session storage to extract stored values.
 - **header_utils/file_io.py** – Handles reading and writing of JSON files.
 - **header_utils/heuristic_filter.py** – Implements the filtering heuristics for headers.
