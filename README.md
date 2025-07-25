@@ -66,7 +66,7 @@ websites/
 ├── ... </pre>
 
 
-## 3. 🏃 Scripts
+## 4. 🏃 Scripts
 
 - 🔹 **main.py** – Main script that orchestrates the full workflow across websites.
 - **header_analysis.py** – Gateway for all operations performed on captured headers.
