@@ -1,12 +1,30 @@
-method,header_name,header_value,header_name_length,header_value_length,num_letters_in_value,num_numbers_in_value,num_special_chars_in_value,value_is_uuid,value_is_base64,value_is_jwt,header_name_entropy,header_value_entropy,host_domains,destination_domains,is_tracking,confidence,why
-RESPONSE,x-cloud-trace-context,7c9c0bd6f27fe2ddf27599fb2369343e,21,32,13,19,0,True,True,False,3.4273334938982645,3.5542292966721747,{'11alive.com'},{'rtbhouse.com'},YES,85,"The header ""x-cloud-trace-context"" is classified as tracking based on the following logic:
-
-1. **Header Name and Value Characteristics**: The value of this header contains a UUID (Universally Unique Identifier) which is often used in distributed tracing systems to identify requests across different services. This suggests that it could be part of a system designed for monitoring or logging purposes, potentially including user tracking.
-
-2. **Entropy Analysis**: Both the Header Name and Value have relatively high entropy values, indicating a random distribution of characters, which is typical for identifiers like UUIDs used in tracing systems.
-
-3. **Domain Involvement**: The header appears to be involved with domains such as ""11alive.com"" and ""rtbhouse.com"". These could be part of a larger tracking infrastructure where data from different sources are aggregated or analyzed.
-
-4. **Common Usage Context**: Headers named ""x-cloud-trace-context"" are commonly used in cloud-based tracing systems, which often involve tracking user interactions across multiple services.
-
-Given these points, the high likelihood that this header is involved in some form of tracking makes it reasonable to classify it as a tracking HTTP header with a confidence level of 85%. However, further context or specific use case details would be needed for absolute certainty."
+method,header_name,header_value,header_name_length,header_value_length,num_letters_in_value,num_numbers_in_value,num_special_chars_in_value,value_is_uuid,value_is_base64,value_is_jwt,header_name_entropy,header_value_entropy,host_domains,destination_domains
+REQUEST,x-referring-url,https://www.whec.com/,15,21,15,0,6,False,False,False,3.106890595608519,3.403989446485262,{'10nbc.com'},{'sail-personalize.com'}
+RESPONSE,req-referer,https://www.abc10.com/,11,22,14,2,6,False,False,False,2.0048861640918427,3.7544418457133455,{'abc10.com'},{'taboola.com'}
+RESPONSE,xpid,fc600cd1-89ba-4f88-9ddf-2b2b3df1a3b4,4,36,16,16,4,True,False,False,2.0,3.7045114597155493,{'abc10.com'},{'connatix.com'}
+REQUEST,x-referring-url,https://www.airforcetimes.com/,15,30,24,0,6,False,False,False,3.106890595608519,3.8980685120588388,{'airforcetimes.com'},{'sail-personalize.com'}
+REQUEST,X-Affilimate-Referrer,https://www.azcentral.com/,21,26,20,0,6,False,False,False,3.3680424225727155,3.921029621737615,{'azcentral.com'},{'affilimateapis.com'}
+REQUEST,X-Affilimate-Referrer,https://www.barnstablepatriot.com/,21,34,28,0,6,False,False,False,3.3680424225727155,3.973512753576009,{'barnstablepatriot.com'},{'affilimateapis.com'}
+REQUEST,mrf-lb-hash,https://baytownsun.com/,11,23,18,0,5,False,False,False,3.095795255000934,3.8492239123906247,{'baytownsun.com'},{'mrf.io'}
+REQUEST,X-Affilimate-Referrer,https://www.burlingtonfreepress.com/,21,36,30,0,6,False,False,False,3.3680424225727155,4.155221528859512,{'burlingtonfreepress.com'},{'affilimateapis.com'}
+REQUEST,X-Affilimate-Referrer,https://www.caller.com/,21,23,17,0,6,False,False,False,3.3680424225727155,3.762267390651494,{'caller.com'},{'affilimateapis.com'}
+REQUEST,X-Affilimate-Referrer,https://www.pjstar.com/,21,23,17,0,6,False,False,False,3.3680424225727155,3.642489673166126,{'chillicothetimesbulletin.com'},{'affilimateapis.com'}
+REQUEST,ct-real-ip,2607:b400:26:0:73cc:c505:b335:5b4a,10,34,7,20,7,False,False,False,3.1219280948873624,3.277880857858267,{'cibolabeacon.com'},{'casino.click'}
+REQUEST,X-Affilimate-Referrer,https://www.cincinnati.com/,21,27,21,0,6,False,False,False,3.3680424225727155,3.624171760941957,{'cincinnati.com'},{'affilimateapis.com'}
+REQUEST,X-Affilimate-Referrer,https://www.citizen-times.com/,21,30,23,0,7,False,False,False,3.3680424225727155,3.831401845392172,{'citizen-times.com'},{'affilimateapis.com'}
+REQUEST,X-Affilimate-Referrer,https://www.clarionledger.com/,21,30,24,0,6,False,False,False,3.3680424225727155,4.123231428797621,{'clarionledger.com'},{'affilimateapis.com'}
+RESPONSE,x-advertisable-eid,ZVOVNQ77GNFKZIA23DLSYC,18,22,18,4,0,False,True,False,3.4613201402110083,4.095795255000934,{'clclt.com'},{'adroll.com'}
+RESPONSE,x-pixel-eid,Y7AUSZECOBGM3LFYSFFHWY,11,22,20,2,0,False,True,False,2.7321588913645702,3.936260027531527,{'clclt.com'},{'adroll.com'}
+RESPONSE,x-segment-eid,Q5XFNOZ4LNHRZD4YLZWDNV,13,22,19,3,0,False,True,False,3.180832987205441,3.7544418457133455,{'clclt.com'},{'adroll.com'}
+REQUEST,deviceid,c6aff9c52d6170c8393cb202228e420d,8,32,11,21,0,True,True,False,2.25,3.7417292966721747,{'coastaljournal.com'},{'mg2insights.com'}
+REQUEST,x-referring-url,https://www.conservativereview.com/,15,35,29,0,6,False,False,False,3.106890595608519,3.9217212310452405,{'conservativereview.com'},{'sail-personalize.com'}
+REQUEST,x-mp-key,us1-818588cec503fd44974deea6286fc291,8,36,13,22,1,False,False,False,2.75,3.98578082135646,{'ctvnews.ca'},{'mparticle.com'}
+REQUEST,mrf-lb-hash,https://www.shawlocal.com/daily-chronicle/,11,42,34,0,8,False,False,False,3.095795255000934,4.100301648814703,{'daily-chronicle.com'},{'mrf.io'}
+REQUEST,mrf-lb-hash,https://www.dailygazette.com/,11,29,23,0,6,False,False,False,3.095795255000934,4.047299098426643,{'dailygazette.com'},{'mrf.io'}
+REQUEST,mrf-lb-hash,https://www.dailysentinel.com/,11,30,24,0,6,False,False,False,3.095795255000934,4.031401845392172,{'dailysentinel.com'},{'mrf.io'}
+REQUEST,X-Affilimate-Referrer,https://www.dailyworld.com/,21,27,21,0,6,False,False,False,3.3680424225727155,3.9121138909722286,{'dailyworld.com'},{'affilimateapis.com'}
+REQUEST,X-Affilimate-Referrer,https://www.eveningtribune.com/,21,31,25,0,6,False,False,False,3.3680424225727155,4.058246713263735,{'dansvilleonline.com'},{'affilimateapis.com'}
+REQUEST,mrf-lb-hash,https://elpais.com/america/,11,27,21,0,6,False,False,False,3.095795255000934,3.7639657428240807,{'elpais.com'},{'mrf.io'}
+REQUEST,mrf-lb-hash,https://www.eltiempo.com,11,24,19,0,5,False,False,False,3.095795255000934,3.688721875540867,{'eltiempo.com'},{'mrf.io'}
+RESPONSE,req-referer,https://www.examiner-enterprise.com/,11,36,29,0,7,False,False,False,2.0048861640918427,3.98578082135646,{'examiner-enterprise.com'},{'taboola.com'}
+RESPONSE,req-referer,https://www.fox8live.com/,11,25,18,1,6,False,False,False,2.0048861640918427,4.023465189601647,{'fox8live.com'},{'taboola.com'}
