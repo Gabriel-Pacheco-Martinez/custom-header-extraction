@@ -166,10 +166,7 @@ def check_if_consistent_in_session(name, all_headers_1):
 def check_if_consistent_in_visits(name, value, all_headers_2):
     # Check if value consistent across visits
     if name in all_headers_2:
-        print(name)
         v = all_headers_2[name][0]
-        print("v:",v)
-        print("value:",value)
         return 0 if not v==value else 1
 
     # Consistent across visits

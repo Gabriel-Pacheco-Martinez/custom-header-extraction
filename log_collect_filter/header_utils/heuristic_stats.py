@@ -3,12 +3,15 @@ import urllib.parse
 import math
 from .file_io import save_json
 from collections import Counter
+from urllib.parse import urlparse
 
 #####################################
 # Permutations
 #####################################
-def filter_combinations(all_headers, all_headers_2, known_standard_headers, storage_values, output_folder):
-    filters = [third_party, min_length, consistent, not_in_storage, entropy]
+def filter_combinations(all_headers, all_headers_1, all_headers_2, known_standard_headers, storage_values, output_folder):
+    filters = [
+        third_party, min_length, consistent_session, not_in_storage, consistent_visits, entropy, url
+    ]
     n=1
 
     for r in range(1, len(filters)+1):
@@ -16,9 +19,11 @@ def filter_combinations(all_headers, all_headers_2, known_standard_headers, stor
             filtering_stats = {
                 "third_party": 0,
                 "min_length": 0,
-                "consistent": 0,
+                "inconsistent_session": 0,
                 "not_in_storage": 0,
-                "entropy": 0
+                "inconsistent_visits": 0,
+                "entropy": 0,
+                "contains_url": 0
             }
             seen_headers = {}
             surviving_headers = []
@@ -27,7 +32,7 @@ def filter_combinations(all_headers, all_headers_2, known_standard_headers, stor
                 passed = True
 
                 for curr_func in combo:
-                    if not curr_func(header, all_headers_2, seen_headers, storage_values, filtering_stats):
+                    if not curr_func(header, all_headers_1, all_headers_2, seen_headers, storage_values, filtering_stats):
                         passed = False
                         break
 
@@ -45,41 +50,57 @@ def filter_combinations(all_headers, all_headers_2, known_standard_headers, stor
 #####################################
 # Heuristics/Filters
 #####################################
-def third_party(header, all_headers_2, seen_headers, storage_values, filtering_stats):
+def third_party(header, all_headers_1, all_headers_2, seen_headers, storage_values, filtering_stats):
     if header["host_domain"] == header["method_domain"]:
         filtering_stats["third_party"] += 1
         return False
     return True
 
-def min_length(header, all_headers_2, seen_headers, storage_values, filtering_stats):
+def min_length(header, all_headers_1, all_headers_2, seen_headers, storage_values, filtering_stats):
     if len(urllib.parse.unquote(header["header_value"])) >= 8:
         filtering_stats["min_length"] += 1
         return False
     return True
 
-def consistent(header, all_headers_2, seen_headers, storage_values, filtering_stats):
+def consistent_session(header, all_headers_1, all_headers_2, seen_headers, storage_values, filtering_stats):
     name = header["header_name"]
     value = header["header_value"]
 
-    if name in seen_headers:
-        if seen_headers[name] != value:
-            filtering_stats["consistent"] += 1
+    if name in all_headers_1:
+        values = all_headers_1[name]
+        if not value==values[0]:
+            filtering_stats["consistent_session"] += 1
             return False
-    else:
-        seen_headers[name] = value
+        return True
+    return False
 
-    if name in all_headers_2:
-        if all_headers_2[name] != value:
-            filtering_stats["consistent"] += 1
-            return False
-
-    return True
-
-def not_in_storage(header, all_headers_2, seen_headers, storage_values, filtering_stats):
+def not_in_storage(header, all_headers_1, all_headers_2, seen_headers, storage_values, filtering_stats):
     if header["header_value"] not in storage_values:
         filtering_stats["not_in_storage"] += 1
         return False
     return True
+
+def consistent_visits(header, all_headers_1, all_headers_2, seen_headers, storage_values, filtering_stats):
+    name = header["header_name"]
+    value = header["header_value"]
+
+    if name in all_headers_2:
+        values = all_headers_2[name]
+        if not value==values[0]:
+            filtering_stats["consistent_visits"] += 1
+            return False
+        return True
+    return True
+
+
+def url(header, all_headers_1, all_headers_2, seen_headers, storage_values, filtering_stats):
+    value = header["header_value"]
+    try:
+        result = urlparse(value)
+        return True if result.scheme in ("http", "https") and result.netloc else 0
+    except:
+        filtering_stats["url"] += 1
+        return False
 
 def entropy(header, all_headers_2, seen_headers, storage_values, filtering_stats):
     probs = [freq / len(header["header_value"]) for freq in Counter(header["header_value"]).values()]

@@ -13,7 +13,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # Mine
 from log_collect_filter.header_utils.file_io import read_json, save_json, load_standard_headers
 from log_collect_filter.parser import extract_all_cookie_values, parse_nested_json, extract_all_storage_values
-from log_collect_filter.header_analysis import get_custom_headers, get_headers, get_headers_key_value_pair
+from log_collect_filter.header_analysis import get_custom_headers, get_headers, get_headers_key_value_pair, get_filtering_permutation_stats
 
 
 # =====================
@@ -243,7 +243,7 @@ def process_site_data(url, base_output_folder):
 
     # =====
     # Get filtering permutation statistics (comment when you don't want stats)
-    #get_filtering_permutation_stats(all_headers, all_headers_2, default_headers, storage_values, stats_folder)
+    # get_filtering_permutation_stats(all_headers, all_headers_dict_1, all_headers_dict_2, default_headers, storage_values, stats_folder)
 
     return 1, custom_headers, len(all_headers)
 

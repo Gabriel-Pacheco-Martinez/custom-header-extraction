@@ -84,11 +84,11 @@ def get_custom_headers(all_headers, all_headers_1, all_headers_2, default_header
 #####################################
 # Get PERMUTATION filtering stats
 #####################################
-def get_filtering_permutation_stats(all_headers, all_headers_2, default_headers, storage_values, stats_folder):
+def get_filtering_permutation_stats(all_headers, all_headers_1, all_headers_2, default_headers, storage_values, stats_folder):
     # =======
     # Get statistics
     filter_combinations(
-        all_headers, all_headers_2, default_headers, storage_values, stats_folder
+        all_headers, all_headers_1, all_headers_2, default_headers, storage_values, stats_folder
     )
 
 #####################################
