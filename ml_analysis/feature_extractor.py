@@ -1,5 +1,6 @@
 import json
 import re
+import os
 import csv
 import math
 import base64
@@ -80,17 +81,22 @@ def individual_header_analysis(curr, host_domains, destination_domains):
         "header_value_entropy": shannon_entropy_measure(curr_value),
 
         # Host and Destination diversity
-        "host_domains":  host_domains.get((name, value), "N/A"),
-        "destination_domains": destination_domains.get((name, value), "N/A")
+        "host_domains":  host_domains.get((curr_name, curr_value), "N/A"),
+        "destination_domains": destination_domains.get((curr_name, curr_value), "N/A")
     }
 
 # =====================
 # Main
 # =====================
-if __name__ == "__main__":
+def perform_feature_extraction():
+    # Print information
+    print("\n=================")
+    print("FEATURE EXTRACTION:")
+    print("=================")
 
-    json_file_path = r"../log_collect_filter/results/all_custom_headers.json"
-    csv_file = "custom_header_features.csv"
+    json_file_path = r"log_collect_filter/results/all_custom_headers.json"
+    csv_file = "ml_analysis/csv_files_before_models/tracking_headers.csv"
+    os.makedirs(os.path.dirname(csv_file), exist_ok=True)
 
     with open(json_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -134,4 +140,18 @@ if __name__ == "__main__":
             writer.writerows(rows_for_csv)
         print(f"✅ CSV for ML analysis created with {len(rows_for_csv)} unique headers")
     else:
-        print("⚠️ No headers found to write.")
+        fieldnames = [
+            "method", "header_name", "header_value",
+            "header_name_length", "header_value_length",
+            "num_letters_in_value", "num_numbers_in_value", "num_special_chars_in_value",
+            "value_is_uuid", "value_is_base64", "value_is_jwt",
+            "header_name_entropy", "header_value_entropy",
+            "host_domains", "destination_domains"
+        ]
+        with open(csv_file, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+        print("⚠️ Extractor: No headers found to write.")
+
+if __name__ == "__main__":
+    perform_feature_extraction()

@@ -3,7 +3,6 @@ import os
 import json
 import time
 import urllib.parse
-import argparse
 
 # Selenium
 from selenium import webdriver
@@ -12,9 +11,9 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 # Mine
-from header_utils.file_io import read_json, save_json, load_standard_headers
-from parser import extract_all_cookie_values, parse_nested_json, extract_all_storage_values
-from header_analysis import get_custom_headers, get_headers, get_headers_key_value_pair
+from log_collect_filter.header_utils.file_io import read_json, save_json, load_standard_headers
+from log_collect_filter.parser import extract_all_cookie_values, parse_nested_json, extract_all_storage_values
+from log_collect_filter.header_analysis import get_custom_headers, get_headers, get_headers_key_value_pair
 
 
 # =====================
@@ -177,7 +176,7 @@ def capture_site_data(url, base_output_folder):
     # Return state of retrieval
     return 1 if first_visit_successful and second_visit_successful else 0
 
-def capture_multiple_sites(urls, result_base_folder="results"):
+def capture_multiple_sites(urls, result_base_folder="log_collect_filter/results"):
     successful_crawls = 0
     for index, url in enumerate(urls):
         print(f"🔍 Looking into website #{index + 1}...")
@@ -221,7 +220,7 @@ def process_site_data(url, base_output_folder):
         return 0, [], 0 # Return: failed status, empty custom_headers, 0 total headers
 
     try:
-        default_headers = load_standard_headers("../std_headers/standard_headers.txt")
+        default_headers = load_standard_headers("std_headers/standard_headers.txt")
     except Exception as e:
         print("⚠️ File not found: 'standard_headers.txt'")
         return 0, [], 0 # Return: failed status, empty custom_headers, 0 total headers
@@ -247,7 +246,7 @@ def process_site_data(url, base_output_folder):
     return 1, custom_headers, len(all_headers)
 
 
-def process_multiple_sites(urls, result_base_folder="results"):
+def process_multiple_sites(urls, result_base_folder="log_collect_filter/results"):
     all_custom_headers = []
     num_total_headers = 0
     successful_website_retrievals = 0 # number of successful retrievals (both visits)
@@ -272,23 +271,7 @@ def process_multiple_sites(urls, result_base_folder="results"):
 # =====================
 # Main
 # =====================
-if __name__ == "__main__":
-    # ======
-    # Parse command-line arguments
-    parser = argparse.ArgumentParser(description="Websites capture and processing.")
-    parser.add_argument("--capture", action="store_true", help="Enable capture phase")
-    parser.add_argument("--process", action="store_true", help="Enable processing phase")
-    parser.add_argument("--file", type=str,
-                        default="/Users/gabriel/Documents/Master/Volunteership/Heuristics2/websites/test.txt",
-                        help="Path to the text file with website URLs")
-    args = parser.parse_args()
-
-    # ======
-    # Please change flags as needed
-    capture = args.capture   # Can be false if network information already available in folder "results/website/capture"
-    process = args.process
-    file = args.file
-
+def perform_web_crawl(file, capture, process):
     # ======
     # Read list with websites
     websites = []

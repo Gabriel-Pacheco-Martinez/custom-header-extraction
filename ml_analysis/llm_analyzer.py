@@ -1,15 +1,32 @@
 from langchain_ollama import ChatOllama
 import re
+import os
 import pandas as pd
 
 def analyse_headers_with_llm():
+    # Print information
+    print("\n=================")
+    print("LLM ANALYSIS:")
+    print("=================")
 
-    llm = ChatOllama(model="qwen2.5:7b", base_url="http://localhost:11434", temperature=0.0)
+    # =======
+    # Model
+    model_name = "qwen2.5:7b"
+    llm = ChatOllama(model=model_name, base_url="http://localhost:11434", temperature=0.0)
 
     # =======
     # Read csv
-    csv_file = "custom_header_features.csv"
-    df = pd.read_csv(csv_file)
+    input_csv = "ml_analysis/csv_files_before_models/tracking_headers.csv"
+    df = pd.read_csv(input_csv)
+
+    if df.empty:
+        print("⚠️ Analyzer: CSV file has only header columns, no data rows.")
+        exit(0)
+
+    # =======
+    # Output csv
+    output_csv = f"ml_analysis/csv_files_post_models/{model_name.split(":")[0]}.csv"
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
 
     # =======
     # Prepare new columns
@@ -147,7 +164,7 @@ def analyse_headers_with_llm():
         df.at[index, "why"] = logic.group(1).strip() if logic else "N/A"
 
     # Write updated dataframe to the same CSV file
-    df.to_csv(csv_file, index=False)
+    df.to_csv(output_csv, index=False)
 
 # =====================
 # Main

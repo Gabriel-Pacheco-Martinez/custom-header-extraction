@@ -1,7 +1,7 @@
 import tldextract
 
-from header_utils.heuristic_filter import filter_pipeline
-from header_utils.heuristic_stats import filter_combinations
+from log_collect_filter.header_utils.heuristic_filter import filter_pipeline
+from log_collect_filter.header_utils.heuristic_stats import filter_combinations
 
 #####################################
 # Get ALL headers in network
