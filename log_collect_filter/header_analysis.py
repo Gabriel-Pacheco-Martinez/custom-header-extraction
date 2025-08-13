@@ -1,4 +1,5 @@
 import tldextract
+from collections import defaultdict
 
 from log_collect_filter.header_utils.heuristic_filter import filter_pipeline
 from log_collect_filter.header_utils.heuristic_stats import filter_combinations
@@ -46,7 +47,7 @@ def get_headers(events, hostname):
 
 
 def get_headers_key_value_pair(events):
-    all_headers_2 = {}
+    headers_dictionary = defaultdict(list)
 
     for event in events:
         method = event.get("method")
@@ -63,19 +64,20 @@ def get_headers_key_value_pair(events):
 
         if headers:
             for header_name, header_value in headers.items():
-                all_headers_2[header_name] = header_value
+                if header_value not in headers_dictionary[header_name]:
+                    headers_dictionary[header_name].append(header_value)
 
-    return all_headers_2
+    return headers_dictionary
 
 
 #####################################
 # Get CUSTOM headers through filtering
 #####################################
-def get_custom_headers(all_headers, all_headers_2, default_headers, storage_values, pipeline_folder):
+def get_custom_headers(all_headers, all_headers_1, all_headers_2, default_headers, storage_values, pipeline_folder):
     # =======
     # Perform custom header extraction
     custom_headers, standard_headers = filter_pipeline(
-        all_headers, all_headers_2, default_headers, storage_values, pipeline_folder
+        all_headers, all_headers_1, all_headers_2, default_headers, storage_values, pipeline_folder
     )
     return custom_headers, standard_headers
 

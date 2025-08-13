@@ -110,6 +110,7 @@ def capture_site_data(url, base_output_folder):
         # ======
         # Extract headers
         all_headers = get_headers(network_events, hostname)
+        all_headers_dict_1 = get_headers_key_value_pair(network_events)
 
         # =====
         # Save information
@@ -119,7 +120,8 @@ def capture_site_data(url, base_output_folder):
             (cookies, "cookies.json"),
             (local_storage, "local_storage.json"),
             (session_storage, "session_storage.json"),
-            (storage_values, "storage_values.json")
+            (storage_values, "storage_values.json"),
+            (all_headers_dict_1, "all_headers_dict_1.json")
         ]
         for data, filename in data_to_save:
             save_json(data, os.path.join(capture_folder, filename))
@@ -158,11 +160,11 @@ def capture_site_data(url, base_output_folder):
 
         # =====
         # Extract headers
-        all_headers_2 = get_headers_key_value_pair(network_events)
+        all_headers_dict_2 = get_headers_key_value_pair(network_events)
 
         # =====
         # Save information
-        save_json(all_headers_2, os.path.join(capture_folder, "all_headers_2.json"))
+        save_json(all_headers_dict_2, os.path.join(capture_folder, "all_headers_dict_2.json"))
 
         print(f"[✓] Captured: {hostname} — 2nd visit")
         second_visit_successful = True
@@ -202,21 +204,22 @@ def process_site_data(url, base_output_folder):
     pipeline_folder = os.path.join(base_output_folder, hostname + "/pipeline")
     stats_folder = os.path.join(base_output_folder, hostname + "/stats")
 
-    all_headers, storage_values, all_headers_2, default_headers = (None, None, None, None)
+    all_headers, all_headers_dict_1, all_headers_dict_2, storage_values, default_headers = (None, None, None, None, None)
 
     # =====
     # Read files to process headers
     try:
-        all_headers = read_json(capture_folder+"/all_headers.json")
+        all_headers = read_json(capture_folder + "/all_headers.json")
+        all_headers_dict_1 = read_json(capture_folder + "/all_headers_dict_1.json")
         storage_values = set(read_json(capture_folder + "/storage_values.json"))
     except Exception as e:
-        print("⚠️Folder does not exist. Visit was not successful.")
+        print(f"⚠️Folder does not exist. Visit was not successful: {e}")
         return 0, [], 0 # Return: failed status, empty custom_headers, 0 total headers
 
     try:
-        all_headers_2 = read_json(capture_folder_2+"/all_headers_2.json")
+        all_headers_dict_2 = read_json(capture_folder_2+"/all_headers_dict_2.json")
     except Exception as e:
-        print("⚠️File not found: 'all_headers_2.json' → Second visit was not successful.")
+        print("⚠️File not found: 'all_headers_dict_2.json' → Second visit was not successful.")
         return 0, [], 0 # Return: failed status, empty custom_headers, 0 total headers
 
     try:
@@ -228,7 +231,7 @@ def process_site_data(url, base_output_folder):
     # =====
     # Get custom headers and save information
     custom_headers, standard_headers = get_custom_headers(
-        all_headers, all_headers_2, default_headers, storage_values, pipeline_folder
+        all_headers, all_headers_dict_1, all_headers_dict_2, default_headers, storage_values, pipeline_folder
     )
 
     data_to_save = [
@@ -241,7 +244,6 @@ def process_site_data(url, base_output_folder):
     # =====
     # Get filtering permutation statistics (comment when you don't want stats)
     #get_filtering_permutation_stats(all_headers, all_headers_2, default_headers, storage_values, stats_folder)
-
 
     return 1, custom_headers, len(all_headers)
 

@@ -1,4 +1,4 @@
-method,header_name,header_value,header_name_length,header_value_length,num_letters_in_value,num_numbers_in_value,num_special_chars_in_value,value_is_uuid,value_is_base64,value_is_jwt,header_name_entropy,header_value_entropy,host_domains,destination_domains
-RESPONSE,x-advertisable-eid,ZVOVNQ77GNFKZIA23DLSYC,18,22,18,4,0,False,True,False,3.4613201402110083,4.095795255000934,{'clclt.com'},{'adroll.com'}
-RESPONSE,x-pixel-eid,Y7AUSZECOBGM3LFYSFFHWY,11,22,20,2,0,False,True,False,2.7321588913645702,3.936260027531527,{'clclt.com'},{'adroll.com'}
-RESPONSE,x-segment-eid,Q5XFNOZ4LNHRZD4YLZWDNV,13,22,19,3,0,False,True,False,3.180832987205441,3.7544418457133455,{'clclt.com'},{'adroll.com'}
+method,header_name,header_value,header_name_length,header_value_length,num_letters_in_value,num_numbers_in_value,num_special_chars_in_value,value_is_uuid,value_is_base64,value_is_jwt,consistency_across_visits,stored_in_cookies_or_local,host_domains,destination_domains
+RESPONSE,x-advertisable-eid,ZVOVNQ77GNFKZIA23DLSYC,18,22,18,4,0,False,True,False,TRUE,TRUE,{'clclt.com'},{'adroll.com'}
+RESPONSE,x-pixel-eid,Y7AUSZECOBGM3LFYSFFHWY,11,22,20,2,0,False,True,False,TRUE,TRUE,{'clclt.com'},{'adroll.com'}
+RESPONSE,x-segment-eid,Q5XFNOZ4LNHRZD4YLZWDNV,13,22,19,3,0,False,True,False,TRUE,TRUE,{'clclt.com'},{'adroll.com'}

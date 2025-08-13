@@ -20,7 +20,7 @@ def analyse_headers_with_llm():
     df = pd.read_csv(input_csv)
 
     if df.empty:
-        print("⚠️ Analyzer: CSV file has only header columns, no data rows.")
+        print("⚠️ Analyzer: CSV file has no data.")
         exit(0)
 
     # =======
@@ -65,6 +65,8 @@ def analyse_headers_with_llm():
           is_uuid: false
           is_base64: false
           is_jwt: false
+          consistent across visits: true
+          value in storage: true
           host_domains: [bbcamerica.com]
           destination_domains: [mparticle.com]
 
@@ -79,6 +81,8 @@ def analyse_headers_with_llm():
           is_uuid: false
           is_base64: true
           is_jwt: false
+          consistent across visits: true
+          value in storage: true
           host_domains: [planfix.com]
           destination_domains: [adroll.com]
 
@@ -95,6 +99,8 @@ def analyse_headers_with_llm():
           is_uuid: false
           is_base64: false
           is_jwt: false
+          consistent across visits: false
+          value in storage: false
           host_domains: [nautica.com]
           destination_domains: [nautica.com]
 
@@ -109,6 +115,8 @@ def analyse_headers_with_llm():
           is_uuid: false
           is_base64: false
           is_jwt: false
+          consistent across visits: true
+          value in storage: false
           host_domains: [nautica.com]
           destination_domains: [nautica.com]
 
@@ -120,12 +128,30 @@ def analyse_headers_with_llm():
         User Prompt:
         Please classify the header below based solely on the provided parameters, using logical reasoning.
 
-        Provide your answer in this format:
+        **Heuristics to consider:**
+        1. Third-party destination domain (destination domains different from host domains). Also take into account if the destination domain is known for tracking.
+        2. Length and composition of the value (long values, mix of letters, numbers, special chars)
+        3. Encoded values (Base64, UUID, JWT)
+        4. Consistency across session and visits
+        5. Stored in browser storage
 
+        **Instructions:**
+        - First, evaluate all heuristics in combination before deciding YES or NO.
+        - Mark a heuristic as YES, in the <heuristics> section, if it contributed to the classification in any way — even if it is only meaningful when combined with other heuristics.
+        - Mark NO, in the <heuristics> section, only if the heuristic played no role at all in the final decision.
+        - If you identify any additional factor outside these heuristics that strongly influenced your classification, mention it clearly in the <logic> section.
+
+        **Output format**
         <answer>YES or NO</answer>  
         <confidence>Give a number from 0 to 100 indicating your certainty in the classification.</confidence>  
-        <logic>Your reasoning for this classification</logic>  
-
+        <logic>Your reasoning for this classification. Explicitly explain how the combination of heuristics led to your decision, and note any additional factors outside the heuristics if applicable.</logic>          <heuristics>
+        1. Third-party destination domain: YES/NO
+        2. Length and composition: YES/NO
+        3. Encoded values: YES/NO
+        4. Consistency across visits: YES/NO
+        5. Stored in cookies or local storage: YES/NO
+        </heuristics>
+        
         ### Current Header Information
         - HTTP Method: {str(row.get("method", "")).strip()}
         - Header Name: {str(row.get("header_name", "")).strip()}
@@ -140,6 +166,9 @@ def analyse_headers_with_llm():
         - Value is UUID: {str(row.get("value_is_uuid", "")).strip()}
         - Value is Base64: {str(row.get("value_is_base64", "")).strip()}
         - Value is JWT: {str(row.get("value_is_jwt", "")).strip()}
+        
+        - Consistent across session and visits: {str(row.get("consistency_across_visits", "")).strip()}
+        - Value in storage: {str(row.get("stored_in_cookies_or_local", "")).strip()}
 
         - Hosts domains: {str(row.get("host_domains", "")).strip()}
         - Destination domains: {str(row.get("destination_domains", "")).strip()}

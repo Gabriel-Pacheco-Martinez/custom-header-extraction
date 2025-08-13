@@ -77,8 +77,12 @@ def individual_header_analysis(curr, host_domains, destination_domains):
         "value_is_jwt": is_jwt(curr_value),
 
         # Entropy analysis
-        "header_name_entropy": shannon_entropy_measure(curr_name),
-        "header_value_entropy": shannon_entropy_measure(curr_value),
+        # "header_name_entropy": shannon_entropy_measure(curr_name),
+        # "header_value_entropy": shannon_entropy_measure(curr_value),
+
+        # Consistency and storage
+        "consistency_across_visits": "TRUE",
+        "stored_in_cookies_or_local": "TRUE",
 
         # Host and Destination diversity
         "host_domains":  host_domains.get((curr_name, curr_value), "N/A"),

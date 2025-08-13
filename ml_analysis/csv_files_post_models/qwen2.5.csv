@@ -1,30 +1,59 @@
-method,header_name,header_value,header_name_length,header_value_length,num_letters_in_value,num_numbers_in_value,num_special_chars_in_value,value_is_uuid,value_is_base64,value_is_jwt,header_name_entropy,header_value_entropy,host_domains,destination_domains,is_tracking,confidence,why
-RESPONSE,x-advertisable-eid,ZVOVNQ77GNFKZIA23DLSYC,18,22,18,4,0,False,True,False,3.4613201402110083,4.095795255000934,{'clclt.com'},{'adroll.com'},YES,95,"The header ""x-advertisable-eid"" with a value of ""ZVOVNQ77GNFKZIA23DLSYC"" is classified as a tracking header based on the following reasoning:
+method,header_name,header_value,header_name_length,header_value_length,num_letters_in_value,num_numbers_in_value,num_special_chars_in_value,value_is_uuid,value_is_base64,value_is_jwt,consistency_across_visits,stored_in_cookies_or_local,host_domains,destination_domains,is_tracking,confidence,why
+RESPONSE,x-advertisable-eid,ZVOVNQ77GNFKZIA23DLSYC,18,22,18,4,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The header ""x-advertisable-eid"" with the value ""ZVOVNQ77GNFKZIA23DLSYC"" is classified as a tracking header based on the following heuristics:
 
-1. **Value Length and Composition**: The value length (22) and composition (18 letters, 4 numbers, 0 special characters) suggest it's not a standard identifier like a UUID or JWT.
-   
-2. **Base64 Encoding**: The fact that the value is Base64 encoded indicates an attempt to obfuscate its nature, which is common in tracking headers.
+1. **Third-party destination domain**: YES
+   - The destination domain ""adroll.com"" is known for advertising and tracking purposes, which strongly suggests that this header could be used to track user behavior across different websites.
 
-3. **Destination Domain**: The destination domain ""adroll.com"" is known for advertising and analytics services, suggesting this header might be used for tracking purposes.
+2. **Length and composition**: YES
+   - The value length of 22 characters with a mix of letters (18) and numbers (4), without any special characters, indicates a structured format often seen in tracking identifiers.
 
-Given these points, it's highly likely that this header is being used for tracking user behavior or sessions across different domains."
-RESPONSE,x-pixel-eid,Y7AUSZECOBGM3LFYSFFHWY,11,22,20,2,0,False,True,False,2.7321588913645702,3.936260027531527,{'clclt.com'},{'adroll.com'},YES,85,"The header ""x-pixel-eid"" with a value of ""Y7AUSZECOBGM3LFYSFFHWY"" is classified as potentially tracking based on the following reasoning:
+3. **Encoded values**: NO
+   - While the header is Base64 encoded, this alone does not strongly indicate it's used for tracking; however, combined with other factors, it supports the tracking hypothesis.
 
-1. **Value Length and Composition**: The value length (22) and composition (20 letters, 2 numbers, 0 special characters) suggest it could be a unique identifier or token.
-   
-2. **Base64 Encoding**: Being Base64 encoded is a common practice for obfuscating data that might otherwise appear as plain text in headers. This can be used to bypass simple pattern recognition and increase the difficulty of identifying its purpose.
+4. **Consistency across visits**: YES
+   - The value being consistent across sessions and visits suggests that this identifier could be used to track user behavior over time, which is a key characteristic of tracking headers.
 
-3. **Host and Destination Domains**: The header's destination domain ""adroll.com"" is known for advertising services, which often involve tracking user behavior across different websites.
+5. **Stored in cookies or local storage**: YES
+   - The fact that the header's value is stored in browser storage means it can persist between page loads and sessions, further supporting its use for tracking purposes.
 
-4. **UUID-like Structure**: Although not explicitly a UUID, the structure could be designed to mimic one, making it harder to distinguish from legitimate identifiers used in tracking mechanisms.
+The combination of these factors strongly indicates that this header is likely used for tracking user behavior across different domains, particularly given the known usage patterns of ""adroll.com"" for advertising. While not all heuristics are fully aligned (e.g., no special characters in the value), the overall pattern and context suggest a high likelihood of tracking.
 
-Given these factors, while there's no definitive proof without more context or analysis of its usage, the combination of Base64 encoding and the destination domain strongly suggests this header is likely being used for tracking purposes."
-RESPONSE,x-segment-eid,Q5XFNOZ4LNHRZD4YLZWDNV,13,22,19,3,0,False,True,False,3.180832987205441,3.7544418457133455,{'clclt.com'},{'adroll.com'},YES,85,"The header ""x-segment-eid"" with a value of ""Q5XFNOZ4LNHRZD4YLZWDNV"" is classified as potentially tracking based on the following reasoning:
+No additional factors outside these heuristics significantly influence this classification."
+RESPONSE,x-pixel-eid,Y7AUSZECOBGM3LFYSFFHWY,11,22,20,2,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The classification of this header as a tracking header is based on the following heuristics:
 
-1. **Value Length and Composition**: The value length (22) and composition (19 letters, 3 numbers, 0 special characters) suggest it's not a standard identifier like a UUID or JWT.
-   
-2. **Base64 Encoding**: Being Base64 encoded is a common practice for tracking headers as it can obfuscate the data being transmitted.
+1. **Third-party destination domain**: YES  
+   The header value consistently points to `adroll.com`, which is known for its role in advertising and tracking user behavior across different websites.
 
-3. **Destination Domains**: The destination domain ""adroll.com"" is known to be involved in advertising and analytics, which often involves user tracking.
+2. **Length and composition**: NO  
+   While the value length (22) is relatively long, it does not provide a strong indication of tracking on its own. The mix of letters and numbers (20 letters, 2 numbers) is typical for many identifiers but doesn't alone suggest tracking.
 
-While these factors strongly suggest that this header could be used for tracking, there's still a small possibility that it might serve another purpose within the application or context not provided here. Therefore, I assign an 85% confidence level."
+3. **Encoded values**: YES  
+   The header value being Base64 encoded (`is_base64: True`) suggests that the data might be obfuscated or structured in a way to avoid easy human readability and could be used for more complex tracking mechanisms.
+
+4. **Consistency across visits**: YES  
+   The fact that this value is consistent across sessions and visits indicates it's likely being stored somewhere (likely cookies/local storage) and reused, which aligns with the behavior of tracking identifiers.
+
+5. **Stored in cookies or local storage**: YES  
+   The header value being stored in browser storage (`value in storage: True`) supports the idea that this is a persistent identifier used for tracking purposes.
+
+The combination of these factors strongly suggests that `x-pixel-eid` is indeed a tracking header, as it involves third-party tracking domains, encoded values, and consistent persistence across sessions. The high confidence level reflects the strong alignment between the heuristics and typical patterns observed in tracking headers."
+RESPONSE,x-segment-eid,Q5XFNOZ4LNHRZD4YLZWDNV,13,22,19,3,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The classification of this header as a tracking header is based on the following heuristics:
+
+1. **Third-party destination domain**: YES  
+   The header value consistently points to `adroll.com`, which is known for its role in advertising and tracking user behavior across different websites.
+
+2. **Length and composition**: NO  
+   While the value length (22) is not exceptionally long, it does contain a mix of letters and numbers, but no special characters. This alone doesn't strongly indicate tracking.
+
+3. **Encoded values**: YES  
+   The header value being Base64 encoded suggests that it might be obfuscating some form of identifier or data, which could be used for tracking purposes.
+
+4. **Consistency across visits**: YES  
+   The fact that the value is consistent across sessions and visits indicates that this header is likely storing a unique identifier to track user behavior over time.
+
+5. **Stored in cookies or local storage**: YES  
+   The header being stored in browser storage means it can be accessed by multiple requests, further supporting its use for tracking purposes.
+
+The combination of these factors strongly suggests that the `x-segment-eid` header is used for tracking. While not all heuristics are fully contributing (e.g., length and composition), the presence of a third-party destination domain known for tracking, encoded values, consistency across sessions, and storage in browser cookies/local storage provide strong evidence.
+
+No additional factors outside these heuristics significantly influence this classification."
