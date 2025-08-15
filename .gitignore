@@ -2,4 +2,3 @@ log_collect_filter/results/
 __pycache__/
 .DS_Store
 data/custom_header_value.json
-data/temp_headers.json
