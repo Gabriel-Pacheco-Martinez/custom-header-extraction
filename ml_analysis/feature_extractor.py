@@ -109,31 +109,31 @@ def perform_feature_extraction():
     # Step 1: Build (header_name, header_value) → set of host domains
     header_to_hosts = defaultdict(set)
     header_to_destinations = defaultdict(set)
-    for group in data:
-        for header in group:
-            name = header.get("header_name", "")
-            value = unquote(str(header.get("header_value", "")))
-            host = header.get("host_domain", "")
-            destination = header.get("method_domain", "")
-            header_to_hosts[(name, value)].add(host)
-            header_to_destinations[(name,value)].add(destination)
+
+    for header in data:
+        name = header.get("header_name", "")
+        value = unquote(str(header.get("header_value", "")))
+        host = header.get("host_domain", "")
+        destination = header.get("method_domain", "")
+        header_to_hosts[(name, value)].add(host)
+        header_to_destinations[(name,value)].add(destination)
 
     # =======
     # Step 2: Keep only unique (name, value) pairs for CSV
     seen_pairs = set()
     rows_for_csv = []
-    for group in data:
-        for header in group:
-            name = header.get("header_name", "")
-            value = unquote(str(header.get("header_value", "")))
-            key = (name, value)
 
-            if key in seen_pairs:
-                continue  # skip duplicate
+    for header in data:
+        name = header.get("header_name", "")
+        value = unquote(str(header.get("header_value", "")))
+        key = (name, value)
 
-            seen_pairs.add(key)
-            features_extracted = individual_header_analysis(header, header_to_hosts, header_to_destinations)
-            rows_for_csv.append(features_extracted)
+        if key in seen_pairs:
+            continue  # skip duplicate
+
+        seen_pairs.add(key)
+        features_extracted = individual_header_analysis(header, header_to_hosts, header_to_destinations)
+        rows_for_csv.append(features_extracted)
 
     # =======
     # Step 3: Write to CSV

@@ -38,7 +38,7 @@ def filter_pipeline(all_headers, all_headers_1, all_headers_2, known_standard_he
     apply_pre_processing = True     # std_headers
     apply_heuristic_1 = True        # third party
     apply_heuristic_2 = True       # min length
-    apply_heuristic_3 = True       # inconsistent across session
+    apply_heuristic_3 = True      # inconsistent across session
     apply_heuristic_4 = True       # cookies/storage
     apply_heuristic_5 = True       # inconsistent across visits
 

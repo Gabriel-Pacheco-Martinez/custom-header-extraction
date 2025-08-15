@@ -1,9 +1,19 @@
 import os
 import json
+import re
 
 def read_json(path):
-    with open(path, "r") as f:
-        return json.load(f)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # Remove problematic control characters
+        content = re.sub(r'[\x00-\x1f]', '', content)
+
+        return json.loads(content)
+    except Exception as e:
+        print(f"⚠️ Failed to read JSON: {e}")
+        return None
 
 def save_json(data, path):
     os.makedirs(os.path.dirname(path), exist_ok=True)

@@ -1,59 +1,55 @@
 method,header_name,header_value,header_name_length,header_value_length,num_letters_in_value,num_numbers_in_value,num_special_chars_in_value,value_is_uuid,value_is_base64,value_is_jwt,consistency_across_visits,stored_in_cookies_or_local,host_domains,destination_domains,is_tracking,confidence,why
-RESPONSE,x-advertisable-eid,ZVOVNQ77GNFKZIA23DLSYC,18,22,18,4,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The header ""x-advertisable-eid"" with the value ""ZVOVNQ77GNFKZIA23DLSYC"" is classified as a tracking header based on the following heuristics:
+REQUEST,hola-soy-gabriel,12345678910,16,11,0,11,0,False,True,False,True,True,{'nautica.com'},{'gabriel.com'},NO,85,"The classification leans towards this header not being used for tracking based on the provided heuristics. Here's a breakdown:
 
-1. **Third-party destination domain**: YES
-   - The destination domain ""adroll.com"" is known for advertising and tracking purposes, which strongly suggests that this header could be used to track user behavior across different websites.
+1. **Third-party destination domain**: NO - The destination domain is `gabriel.com`, which is likely a first-party or closely related to the host, `nautica.com`. There are no known third-party domains associated with tracking.
 
-2. **Length and composition**: YES
-   - The value length of 22 characters with a mix of letters (18) and numbers (4), without any special characters, indicates a structured format often seen in tracking identifiers.
+2. **Length and composition**: NO - The value consists entirely of numbers (11 digits) and has no letters or special characters, making it less complex than typical tracking identifiers. However, this alone is not a strong indicator against tracking as some tracking mechanisms might use numeric values.
 
-3. **Encoded values**: NO
-   - While the header is Base64 encoded, this alone does not strongly indicate it's used for tracking; however, combined with other factors, it supports the tracking hypothesis.
+3. **Encoded values**: YES - The header value is Base64 encoded, which could be used for obfuscation in tracking scenarios but does not inherently indicate tracking without further context.
 
-4. **Consistency across visits**: YES
-   - The value being consistent across sessions and visits suggests that this identifier could be used to track user behavior over time, which is a key characteristic of tracking headers.
+4. **Consistency across visits**: NO - While the value being consistent across sessions and visits can be a sign of tracking, this alone is not conclusive evidence. Consistent values can also occur in non-tracking contexts if they are static identifiers or session tokens.
 
-5. **Stored in cookies or local storage**: YES
-   - The fact that the header's value is stored in browser storage means it can persist between page loads and sessions, further supporting its use for tracking purposes.
+5. **Stored in cookies or local storage**: YES - The fact that the header value is stored indicates persistence, which could support tracking but does not definitively prove it without more context.
 
-The combination of these factors strongly indicates that this header is likely used for tracking user behavior across different domains, particularly given the known usage patterns of ""adroll.com"" for advertising. While not all heuristics are fully aligned (e.g., no special characters in the value), the overall pattern and context suggest a high likelihood of tracking.
+The combination of these factors suggests a low likelihood of this being used for tracking. However, the decision is not absolute due to the potential use of Base64 encoding in tracking scenarios and the consistency across visits, which can be relevant in both tracking and non-tracking contexts."
+RESPONSE,x-advertisable-eid,ZVOVNQ77GNFKZIA23DLSYC,18,22,18,4,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The classification of this header as a tracking header is primarily driven by the following heuristics:
 
-No additional factors outside these heuristics significantly influence this classification."
-RESPONSE,x-pixel-eid,Y7AUSZECOBGM3LFYSFFHWY,11,22,20,2,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The classification of this header as a tracking header is based on the following heuristics:
+1. **Third-party destination domain**: This heuristic is marked as YES because the header value is sent to `adroll.com`, which is known for advertising and tracking purposes, making it highly likely that this header is used for tracking.
 
-1. **Third-party destination domain**: YES  
-   The header value consistently points to `adroll.com`, which is known for its role in advertising and tracking user behavior across different websites.
+2. **Length and composition**: This heuristic is also marked as YES due to the header value being 22 characters long with a mix of letters (18) and numbers (4), but no special characters. While not extremely long or complex, such values can be indicative of tracking identifiers when combined with other factors.
 
-2. **Length and composition**: NO  
-   While the value length (22) is relatively long, it does not provide a strong indication of tracking on its own. The mix of letters and numbers (20 letters, 2 numbers) is typical for many identifiers but doesn't alone suggest tracking.
+3. **Encoded values**: This heuristic is marked as NO because the value is not encoded in Base64, UUID, or JWT formats. However, this does not significantly impact the classification since the destination domain and consistency across visits are more telling.
 
-3. **Encoded values**: YES  
-   The header value being Base64 encoded (`is_base64: True`) suggests that the data might be obfuscated or structured in a way to avoid easy human readability and could be used for more complex tracking mechanisms.
+4. **Consistency across visits**: This heuristic is marked as YES due to the header being consistent across sessions and visits, which aligns with tracking behavior where a unique identifier persists over time.
 
-4. **Consistency across visits**: YES  
-   The fact that this value is consistent across sessions and visits indicates it's likely being stored somewhere (likely cookies/local storage) and reused, which aligns with the behavior of tracking identifiers.
+5. **Stored in cookies or local storage**: This heuristic is marked as YES because the value is stored in browser storage, which is common for tracking purposes.
 
-5. **Stored in cookies or local storage**: YES  
-   The header value being stored in browser storage (`value in storage: True`) supports the idea that this is a persistent identifier used for tracking purposes.
+The combination of these factors strongly suggests that this header is used for tracking. The destination domain being `adroll.com`, known for advertising and tracking, combined with its consistency across visits and storage in cookies/local storage, provides a high degree of certainty that it serves a tracking purpose."
+RESPONSE,x-pixel-eid,Y7AUSZECOBGM3LFYSFFHWY,11,22,20,2,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The classification of this header as a tracking header is primarily driven by the combination of several heuristics:
 
-The combination of these factors strongly suggests that `x-pixel-eid` is indeed a tracking header, as it involves third-party tracking domains, encoded values, and consistent persistence across sessions. The high confidence level reflects the strong alignment between the heuristics and typical patterns observed in tracking headers."
-RESPONSE,x-segment-eid,Q5XFNOZ4LNHRZD4YLZWDNV,13,22,19,3,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The classification of this header as a tracking header is based on the following heuristics:
+1. **Third-party destination domain**: This heuristic is marked as YES because the header value consistently points to `adroll.com`, which is known for its role in online advertising and tracking. The fact that it's not hosted on the same domain (`clclt.com`) suggests a potential tracking mechanism.
 
-1. **Third-party destination domain**: YES  
-   The header value consistently points to `adroll.com`, which is known for its role in advertising and tracking user behavior across different websites.
+2. **Length and composition**: This heuristic is also marked as YES due to the length of the header value (22 characters) and the predominance of letters over numbers or special characters, which could indicate an encoded identifier used for tracking purposes.
 
-2. **Length and composition**: NO  
-   While the value length (22) is not exceptionally long, it does contain a mix of letters and numbers, but no special characters. This alone doesn't strongly indicate tracking.
+3. **Encoded values**: This heuristic is marked as NO because while the value is Base64-encoded, this alone does not definitively classify it as a tracking header without additional context (like consistent use across visits and storage).
 
-3. **Encoded values**: YES  
-   The header value being Base64 encoded suggests that it might be obfuscating some form of identifier or data, which could be used for tracking purposes.
+4. **Consistency across visits**: This heuristic is marked as YES due to the fact that the value remains consistent across sessions and visits, which aligns with typical behavior of tracking identifiers.
 
-4. **Consistency across visits**: YES  
-   The fact that the value is consistent across sessions and visits indicates that this header is likely storing a unique identifier to track user behavior over time.
+5. **Stored in cookies or local storage**: This heuristic is marked as YES because the header value is stored in browser storage, indicating persistent tracking capabilities.
 
-5. **Stored in cookies or local storage**: YES  
-   The header being stored in browser storage means it can be accessed by multiple requests, further supporting its use for tracking purposes.
+The combination of a third-party destination domain known for tracking, consistency across visits, and storage in browser mechanisms strongly suggests that this header is used for tracking purposes. The Base64 encoding adds an additional layer of obfuscation but does not negate its potential use as a tracking mechanism."
+RESPONSE,x-segment-eid,Q5XFNOZ4LNHRZD4YLZWDNV,13,22,19,3,0,False,True,False,True,True,{'clclt.com'},{'adroll.com'},YES,85,"The classification of this header as a tracking header is primarily driven by the combination of several heuristics:
 
-The combination of these factors strongly suggests that the `x-segment-eid` header is used for tracking. While not all heuristics are fully contributing (e.g., length and composition), the presence of a third-party destination domain known for tracking, encoded values, consistency across sessions, and storage in browser cookies/local storage provide strong evidence.
+1. **Third-party destination domain**: This heuristic is marked as YES because the header value consistently points to `adroll.com`, which is known for its role in advertising and tracking user behavior across different websites.
 
-No additional factors outside these heuristics significantly influence this classification."
+2. **Length and composition**: The length (22) and composition (19 letters, 3 numbers, no special characters) of the value suggest a structured identifier that could be used for tracking purposes. However, this alone does not definitively indicate tracking without considering other factors.
+
+3. **Encoded values**: This heuristic is marked as YES because the header value is Base64 encoded (`is_base64: True`). Encoded values can often be used to obfuscate identifiers and make them harder to detect or remove by users, which aligns with the behavior of tracking headers.
+
+4. **Consistency across visits**: This heuristic is marked as YES due to the consistent value across sessions and visits (`consistent across visits: true`), indicating that this header could be used to track user activity over time.
+
+5. **Stored in cookies or local storage**: This heuristic is marked as YES because the value is stored in browser storage, which can facilitate persistent tracking of users even when they visit different websites.
+
+The combination of these factors strongly suggests that `x-segment-eid` is being used for tracking purposes. The presence of a third-party destination domain known for tracking, consistent values across sessions, and encoded data all point towards this conclusion. While the header name does not provide direct evidence, the other parameters collectively support the classification as a tracking header.
+
+The high confidence level (85) reflects that while there is no explicit naming or clear indication of intent in the header itself, the combination of heuristics provides strong evidence for its use in tracking."

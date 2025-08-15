@@ -56,9 +56,9 @@ def get_storage_information(driver):
     session_storage = parse_nested_json(driver.execute_script("return {...sessionStorage}"))
 
     # Update set with values
-    storage_values.update(extract_all_cookie_values(cookies))
-    storage_values.update(extract_all_storage_values(local_storage))
-    storage_values.update(extract_all_storage_values(session_storage))
+    storage_values.update(str(v) for v in extract_all_cookie_values(cookies))
+    storage_values.update(str(v) for v in extract_all_storage_values(local_storage))
+    storage_values.update(str(v) for v in extract_all_storage_values(session_storage))
 
     return storage_values, cookies, local_storage, session_storage
 
@@ -204,8 +204,6 @@ def process_site_data(url, base_output_folder):
     pipeline_folder = os.path.join(base_output_folder, hostname + "/pipeline")
     stats_folder = os.path.join(base_output_folder, hostname + "/stats")
 
-    all_headers, all_headers_dict_1, all_headers_dict_2, storage_values, default_headers = (None, None, None, None, None)
-
     # =====
     # Read files to process headers
     try:
@@ -255,11 +253,11 @@ def process_multiple_sites(urls, result_base_folder="log_collect_filter/results"
     for url in urls:
         retrieval_status, custom_headers_curr_url, all_headers_curr_url = process_site_data(url, result_base_folder)
         successful_website_retrievals += retrieval_status
-        all_custom_headers.append(custom_headers_curr_url)
+        all_custom_headers.extend(custom_headers_curr_url)
         num_total_headers = num_total_headers + all_headers_curr_url
     save_json(all_custom_headers, os.path.join(result_base_folder, "all_custom_headers.json"))
 
-    num_custom_headers = sum(len(headers) for headers in all_custom_headers if headers)
+    num_custom_headers = len(all_custom_headers)
 
     # Print information
     print("\n=================")
