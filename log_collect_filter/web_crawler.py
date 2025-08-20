@@ -3,12 +3,18 @@ import os
 import json
 import time
 import urllib.parse
+import logging
 
 # Selenium
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.common.exceptions import TimeoutException, WebDriverException
+
+# Threads
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Mine
 from log_collect_filter.header_utils.file_io import read_json, save_json, load_standard_headers
@@ -86,6 +92,14 @@ def capture_site_data(url, base_output_folder):
     first_visit_successful = False
     second_visit_successful = False
 
+    # Configure logger once, at the top of your script
+    logging.basicConfig(
+        filename="crawl_errors.log",  # log file name
+        filemode="w",  # append mode (use "w" to overwrite each run)
+        level=logging.ERROR,  # log only ERROR and above
+        format="%(asctime)s [%(levelname)s] %(message)s",  # timestamp + level + msg
+    )
+
     # ======
     # First visit
     driver = setup_driver()
@@ -126,11 +140,23 @@ def capture_site_data(url, base_output_folder):
         for data, filename in data_to_save:
             save_json(data, os.path.join(capture_folder, filename))
 
-        print(f"[✓] Captured: {hostname} — 1st visit")
+        # print(f"[✓] Captured: {hostname} — 1st visit")
         first_visit_successful = True
 
+    # ---- Handle specific exceptions differently ----
+    except TimeoutException as e:
+        print(f"[✗] Timeout on {url}")
+        logging.error("TimeoutException on %s: %s", url, str(e))
+
+    except WebDriverException as e:
+        print(f"[✗] WebDriver error on {url}")
+        logging.error("WebDriverException on %s: %s", url, str(e))
+
+    # ---- Catch-all for anything else ----
     except Exception as e:
         print(f"[✗] Failed: {url} — {str(e)}")
+        logging.exception("Unhandled exception on %s", url)
+
     finally:
         driver.quit()
 
@@ -166,11 +192,23 @@ def capture_site_data(url, base_output_folder):
         # Save information
         save_json(all_headers_dict_2, os.path.join(capture_folder, "all_headers_dict_2.json"))
 
-        print(f"[✓] Captured: {hostname} — 2nd visit")
+        # print(f"[✓] Captured: {hostname} — 2nd visit")
         second_visit_successful = True
 
+    # ---- Handle specific exceptions differently ----
+    except TimeoutException as e:
+        print(f"[✗] Timeout on {url}")
+        logging.error("TimeoutException on %s: %s", url, str(e))
+
+    except WebDriverException as e:
+        print(f"[✗] WebDriver error on {url}")
+        logging.error("WebDriverException on %s: %s", url, str(e))
+
+    # ---- Catch-all for anything else ----
     except Exception as e:
         print(f"[✗] Failed: {url} — {str(e)}")
+        logging.exception("Unhandled exception on %s", url)
+
     finally:
         driver.quit()
 
@@ -178,12 +216,31 @@ def capture_site_data(url, base_output_folder):
     # Return state of retrieval
     return 1 if first_visit_successful and second_visit_successful else 0
 
-def capture_multiple_sites(urls, result_base_folder="log_collect_filter/results"):
+def capture_multiple_sites(urls, max_workers, result_base_folder="log_collect_filter/results"):
     successful_crawls = 0
-    for index, url in enumerate(urls):
-        print(f"🔍 Looking into website #{index + 1}...")
-        retrieval_state = capture_site_data(url, result_base_folder)
-        successful_crawls += retrieval_state
+    visited_count = 0
+    lock = threading.Lock()
+    # for index, url in enumerate(urls):
+    #     print(f"🔍 Looking into website #{index + 1}...")
+    #     retrieval_state = capture_site_data(url, result_base_folder)
+    #     successful_crawls += retrieval_state
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Submit all crawl jobs
+        futures = {executor.submit(capture_site_data, url, result_base_folder): url for url in urls}
+
+        for future in as_completed(futures):
+            url = futures[future]
+            try:
+                retrieval_state = future.result()
+                with lock:
+                    visited_count += 1
+                    successful_crawls += retrieval_state
+                print(f"🔍 [{visited_count}/{len(urls)}] Finished: {url}")
+            except Exception as e:
+                with lock:
+                    visited_count += 1
+                print(f"🔍 [{visited_count}/{len(urls)}] Error crawling {url}: {str(e)}")
 
     # Print information
     print("\n=================")
@@ -271,18 +328,38 @@ def process_multiple_sites(urls, result_base_folder="log_collect_filter/results"
 # =====================
 # Main
 # =====================
-def perform_web_crawl(file, capture, process):
+def perform_web_crawl(file, capture, process, n_threads):
     # ======
     # Read list with websites
     websites = []
+    # with open(file, "r") as f:
+    #     for line in f:
+    #         website = f"https://www.{line.strip()}/"
+    #         websites.append(website)
+
     with open(file, "r") as f:
         for line in f:
-            website = f"https://www.{line.strip()}/"
+            raw = line.strip()
+            if not raw:
+                continue  # skip empty lines
+
+            # Add scheme if missing so urlparse works
+            if not raw.startswith("http"):
+                raw = "http://" + raw
+            parsed = urllib.parse.urlparse(raw)
+            domain = parsed.netloc or parsed.path  # handles "cnn.com" vs "www.cnn.com"
+
+            # Remove leading "www."
+            if domain.startswith("www."):
+                domain = domain[4:]
+
+            # Normalize format
+            website = f"https://www.{domain}/"
             websites.append(website)
 
     # ======
     # Capture website, process information, or both
     if capture:
-        capture_multiple_sites(websites)
+        capture_multiple_sites(websites, n_threads)
     if process:
         process_multiple_sites(websites)

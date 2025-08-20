@@ -2,3 +2,6 @@ log_collect_filter/results/
 __pycache__/
 .DS_Store
 data/custom_header_value.json
+ml_analysis/csv_files_before_models
+ml_analysis/csv_files_post_models
+crawl_errors.log

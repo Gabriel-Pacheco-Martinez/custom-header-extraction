@@ -1,5 +1,13 @@
 # 🕵️‍♂️ Detection of Tracking Custom Headers 
 
+  -h, --help     show this help message and exit
+  --capture      Enable capture phase
+  --process      Enable processing phase
+  --file FILE    Path to the text file with website URLs
+  --llm          Enable llm analysis
+  --ext_process  Read an external file and process
+
+
 ## 1. 🧪 Instructions
 
 Follow these steps to run the full tracking header analysis pipeline:

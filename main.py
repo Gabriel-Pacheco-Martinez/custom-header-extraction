@@ -17,7 +17,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Websites capture and processing.")
     parser.add_argument("--capture", action="store_true", help="Enable capture phase")
     parser.add_argument("--process", action="store_true", help="Enable processing phase")
-    parser.add_argument("--file", type=str, default="test.txt", help="Path to the text file with website URLs")
+    parser.add_argument("--file", type=str, default="5k-news-websites.txt", help="Path to the text file with website URLs")
+    parser.add_argument("--threads", type=int, default=100, help="Number of threads")
     parser.add_argument("--llm", action="store_true", help="Enable llm analysis")
     parser.add_argument("--ext_process", action="store_true", help="Read an external file and process")
     args = parser.parse_args()
@@ -27,13 +28,15 @@ if __name__ == "__main__":
     capture = args.capture
     process = args.process
     file = os.path.join("websites", args.file)
+    threads = args.threads
     analyze = args.llm
 
     external_process = args.ext_process
 
     # =====
     # Perform web crawl and process web info
-    perform_web_crawl(file, capture, process)
+    print("Number of threads:", threads)
+    perform_web_crawl(file, capture, process, threads)
 
     # =====
     # Perform processing of previously collected data
