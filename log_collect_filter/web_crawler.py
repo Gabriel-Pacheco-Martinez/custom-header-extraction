@@ -74,7 +74,7 @@ def get_storage_information(driver):
 # =====================
 def setup_driver():
     options = Options()
-    #options.add_argument("--headless=new")
+    options.add_argument("--headless=new")
     options.add_argument("--start-maximized")
     options.add_argument("--auto-open-devtools-for-tabs")
     options.add_argument("--disable-gpu")
@@ -160,6 +160,8 @@ def capture_site_data(url, base_output_folder):
 
     finally:
         driver.quit()
+        os.system("pkill chrome")
+        os.system("pkill google-chrome")
 
     # Short delay to stabilize
     time.sleep(0.1)
@@ -212,6 +214,8 @@ def capture_site_data(url, base_output_folder):
 
     finally:
         driver.quit()
+        os.system("pkill chrome")
+        os.system("pkill google-chrome")
 
     # ======
     # Return state of retrieval

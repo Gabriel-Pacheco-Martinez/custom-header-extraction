@@ -34,8 +34,8 @@ if __name__ == "__main__":
 
     # ======
     # Display information
-    print("File being used is: ", args.file)
-    print("Number of threads being used is: ", threads)
+    print("File being used: ", args.file)
+    # print("Number of threads being used is: ", threads)
 
     # =====
     # Perform web crawl and process web info
