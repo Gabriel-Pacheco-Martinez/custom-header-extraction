@@ -140,7 +140,7 @@ def capture_site_data(url, base_output_folder):
         for data, filename in data_to_save:
             save_json(data, os.path.join(capture_folder, filename))
 
-        # print(f"[✓] Captured: {hostname} — 1st visit")
+        print(f"[✓] Captured: {hostname} — 1st visit")
         first_visit_successful = True
 
     # ---- Handle specific exceptions differently ----
@@ -192,7 +192,7 @@ def capture_site_data(url, base_output_folder):
         # Save information
         save_json(all_headers_dict_2, os.path.join(capture_folder, "all_headers_dict_2.json"))
 
-        # print(f"[✓] Captured: {hostname} — 2nd visit")
+        print(f"[✓] Captured: {hostname} — 2nd visit")
         second_visit_successful = True
 
     # ---- Handle specific exceptions differently ----
@@ -218,29 +218,29 @@ def capture_site_data(url, base_output_folder):
 
 def capture_multiple_sites(urls, max_workers, result_base_folder="log_collect_filter/results"):
     successful_crawls = 0
-    visited_count = 0
-    lock = threading.Lock()
-    # for index, url in enumerate(urls):
-    #     print(f"🔍 Looking into website #{index + 1}...")
-    #     retrieval_state = capture_site_data(url, result_base_folder)
-    #     successful_crawls += retrieval_state
+    for index, url in enumerate(urls):
+        print(f"🔍 Looking into website #{index + 1}...")
+        retrieval_state = capture_site_data(url, result_base_folder)
+        successful_crawls += retrieval_state
 
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # Submit all crawl jobs
-        futures = {executor.submit(capture_site_data, url, result_base_folder): url for url in urls}
-
-        for future in as_completed(futures):
-            url = futures[future]
-            try:
-                retrieval_state = future.result()
-                with lock:
-                    visited_count += 1
-                    successful_crawls += retrieval_state
-                print(f"🔍 [{visited_count}/{len(urls)}] Finished: {url}")
-            except Exception as e:
-                with lock:
-                    visited_count += 1
-                print(f"🔍 [{visited_count}/{len(urls)}] Error crawling {url}: {str(e)}")
+    # visited_count = 0
+    # lock = threading.Lock()
+    # with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    #     # Submit all crawl jobs
+    #     futures = {executor.submit(capture_site_data, url, result_base_folder): url for url in urls}
+    #
+    #     for future in as_completed(futures):
+    #         url = futures[future]
+    #         try:
+    #             retrieval_state = future.result()
+    #             with lock:
+    #                 visited_count += 1
+    #                 successful_crawls += retrieval_state
+    #             print(f"🔍 [{visited_count}/{len(urls)}] Finished: {url}")
+    #         except Exception as e:
+    #             with lock:
+    #                 visited_count += 1
+    #             print(f"🔍 [{visited_count}/{len(urls)}] Error crawling {url}: {str(e)}")
 
     # Print information
     print("\n=================")

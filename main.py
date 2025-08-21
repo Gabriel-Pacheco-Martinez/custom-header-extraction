@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser.add_argument("--capture", action="store_true", help="Enable capture phase")
     parser.add_argument("--process", action="store_true", help="Enable processing phase")
     parser.add_argument("--file", type=str, default="5k-news-websites.txt", help="Path to the text file with website URLs")
-    parser.add_argument("--threads", type=int, default=100, help="Number of threads")
+    parser.add_argument("--threads", type=int, default=4, help="Number of threads")
     parser.add_argument("--llm", action="store_true", help="Enable llm analysis")
     parser.add_argument("--ext_process", action="store_true", help="Read an external file and process")
     args = parser.parse_args()
@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     # =====
     # Perform web crawl and process web info
-    print("Number of threads:", threads)
+    # print("Number of threads:", threads)
     perform_web_crawl(file, capture, process, threads)
 
     # =====
