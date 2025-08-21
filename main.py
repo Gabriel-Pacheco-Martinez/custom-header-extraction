@@ -30,12 +30,15 @@ if __name__ == "__main__":
     file = os.path.join("websites", args.file)
     threads = args.threads
     analyze = args.llm
-
     external_process = args.ext_process
+
+    # ======
+    # Display information
+    print("File being used is: ", args.file)
+    print("Number of threads being used is: ", threads)
 
     # =====
     # Perform web crawl and process web info
-    # print("Number of threads:", threads)
     perform_web_crawl(file, capture, process, threads)
 
     # =====

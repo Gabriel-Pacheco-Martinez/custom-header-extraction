@@ -11,6 +11,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import TimeoutException, WebDriverException
+import subprocess
 
 # Threads
 import threading
@@ -329,6 +330,10 @@ def process_multiple_sites(urls, result_base_folder="log_collect_filter/results"
 # Main
 # =====================
 def perform_web_crawl(file, capture, process, n_threads):
+    # driver_path = ChromeDriverManager().install()
+    # version_output = subprocess.run([driver_path, '--version'], capture_output=True, text=True)
+    # print(version_output.stdout)
+
     # ======
     # Read list with websites
     websites = []
