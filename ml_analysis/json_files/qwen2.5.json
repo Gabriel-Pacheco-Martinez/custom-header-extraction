@@ -1,0 +1,458 @@
+[
+  {
+    "header_name": "x-spot-id",
+    "header_value": "sp_7mUJW9YQ",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "6si-ipv6",
+    "header_value": "2607:b400:c:a180:72b5:e8ff:fed0:aeae",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "YES",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-spot-id",
+    "header_value": "sp_CluSiKko",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-spot-id",
+    "header_value": "sp_f7EV0YIq",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-geoip2-city-name",
+    "header_value": "Christiansburg",
+    "prediction": "NO",
+    "heuristics": {
+      "1. Third-party destination domain": "NO",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-advertisable-eid",
+    "header_value": "YNJJXL3HSZGX5HCII2ACSH",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-pixel-eid",
+    "header_value": "CIX4XXOAAZFJBAPNGYRAY7",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "MOE-APPKEY",
+    "header_value": "SPJUIVHAUP6GA3T6R89P77XZ",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "YES",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "MOE-APPKEY",
+    "header_value": "OE7H4UHSQ08XM0F27PQ46A3N",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "YES",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-spot-id",
+    "header_value": "sp_lndcYtHZ",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-spot-id",
+    "header_value": "sp_Sx8YukwE",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "MOE-APPKEY",
+    "header_value": "34YG51ONK78SSJ5W63AC9BY8",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "pin-unauth",
+    "header_value": "dWlkPU1UQmlOakUzTVdFdE4ySTJPUzAwTWpkbExUZzVNelF0Wm1Rd01qQTJNell5TXpNMA",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-mp-key",
+    "header_value": "us1-99f689156b88a84fbe3383020acfea25",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-mp-key",
+    "header_value": "5508ba7c7050a64b8d6b10d1d2123901",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "MOE-APPKEY",
+    "header_value": "63VYOEWYUSF2T2QC5QPCI9QM",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "MOE-APPKEY",
+    "header_value": "4514OD0Q31D8DJFBD5SX06TR",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "YES",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-mp-key",
+    "header_value": "13c1572c444c0043bd68e09b734a5374",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-bunnycdn-client-ip",
+    "header_value": "2607:b400:c:a180:72b5:e8ff:fed0:aeae",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "MOE-APPKEY",
+    "header_value": "43W6KMB4R4P0LQUXWDS4JSH1",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "YES",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-advertisable-eid",
+    "header_value": "3N3S2ATGZBB5DNBSO4VX4R",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-pixel-eid",
+    "header_value": "7QST7OEKE5B6HH4HSPWYDT",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "MOE-APPKEY",
+    "header_value": "QTD7QXC51X5DZR3CTIHK33PQ",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "YES",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-spot-id",
+    "header_value": "sp_7gr62oKd",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-geo-city",
+    "header_value": "BLACKSBURG",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-did",
+    "header_value": "0198dd9ced0d0008da8ecbf4b51e05072002206a00590",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "adthrive-deployment",
+    "header_value": "pe-280:pr6743:beta08:03b1568:100:exp",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-spot-id",
+    "header_value": "sp_Z3zhn8qO",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "partner",
+    "header_value": "olxbrclassificados",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-city",
+    "header_value": "Blacksburg",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "Device-GPU",
+    "header_value": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "YES",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-spot-id",
+    "header_value": "sp_xEkoxAFD",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-advertisable-eid",
+    "header_value": "RNMF2FYLINFB3DIYKKGIJY",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-pixel-eid",
+    "header_value": "IXTTSNQHNRHUZGCTBSJLCT",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "twc-geoip-city",
+    "header_value": "BLACKSBURG",
+    "prediction": "NO",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "ap_z",
+    "header_value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "NO",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-advertisable-eid",
+    "header_value": "PVWB4UDVGRDVJF4H5MGDJ5",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  },
+  {
+    "header_name": "x-pixel-eid",
+    "header_value": "QLV3EZBCR5ECPHQWN5KS5H",
+    "prediction": "YES",
+    "heuristics": {
+      "1. Third-party destination domain": "YES",
+      "2. Length and composition": "NO",
+      "3. Encoded values": "YES",
+      "4. Consistency across visits": "YES",
+      "5. Stored in cookies or local storage": "YES"
+    }
+  }
+]

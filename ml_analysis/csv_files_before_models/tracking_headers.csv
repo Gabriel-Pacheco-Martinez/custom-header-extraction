@@ -1,5 +1,36 @@
 method,header_name,header_value,header_name_length,header_value_length,num_letters_in_value,num_numbers_in_value,num_special_chars_in_value,value_is_uuid,value_is_base64,value_is_jwt,consistency_across_visits,stored_in_cookies_or_local,host_domains,destination_domains
-REQUEST,hola-soy-gabriel,12345678910,16,11,0,11,0,False,True,False,TRUE,TRUE,{'nautica.com'},{'gabriel.com'}
-RESPONSE,x-advertisable-eid,ZVOVNQ77GNFKZIA23DLSYC,18,22,18,4,0,False,True,False,TRUE,TRUE,{'clclt.com'},{'adroll.com'}
-RESPONSE,x-pixel-eid,Y7AUSZECOBGM3LFYSFFHWY,11,22,20,2,0,False,True,False,TRUE,TRUE,{'clclt.com'},{'adroll.com'}
-RESPONSE,x-segment-eid,Q5XFNOZ4LNHRZD4YLZWDNV,13,22,19,3,0,False,True,False,TRUE,TRUE,{'clclt.com'},{'adroll.com'}
+REQUEST,x-spot-id,sp_7mUJW9YQ,9,11,8,2,1,False,False,False,TRUE,TRUE,{'jalopnik.com'},{'spot.im'}
+RESPONSE,6si-ipv6,2607:b400:c:a180:72b5:e8ff:fed0:aeae,8,36,14,15,7,False,False,False,TRUE,TRUE,"{'dell.com', 'zendesk.com'}",{'6sc.co'}
+REQUEST,x-spot-id,sp_CluSiKko,9,11,10,0,1,False,False,False,TRUE,TRUE,{'thedailybeast.com'},{'spot.im'}
+REQUEST,x-spot-id,sp_f7EV0YIq,9,11,8,2,1,False,False,False,TRUE,TRUE,{'kooora.com'},{'spot.im'}
+RESPONSE,x-geoip2-city-name,Christiansburg,18,14,14,0,0,False,True,False,TRUE,TRUE,{'flashscore.com'},{'flashscore.ninja'}
+RESPONSE,x-advertisable-eid,YNJJXL3HSZGX5HCII2ACSH,18,22,19,3,0,False,True,False,TRUE,TRUE,{'jcpenney.com'},{'adroll.com'}
+RESPONSE,x-pixel-eid,CIX4XXOAAZFJBAPNGYRAY7,11,22,20,2,0,False,True,False,TRUE,TRUE,{'jcpenney.com'},{'adroll.com'}
+REQUEST,MOE-APPKEY,SPJUIVHAUP6GA3T6R89P77XZ,10,24,17,7,0,False,True,False,TRUE,TRUE,"{'t-mobile.com', 'sprint.com'}",{'moengage.com'}
+REQUEST,MOE-APPKEY,OE7H4UHSQ08XM0F27PQ46A3N,10,24,14,10,0,False,True,False,TRUE,TRUE,{'olx.co.id'},{'moengage.com'}
+REQUEST,x-spot-id,sp_lndcYtHZ,9,11,10,0,1,False,False,False,TRUE,TRUE,{'goal.com'},{'spot.im'}
+REQUEST,x-spot-id,sp_Sx8YukwE,9,11,9,1,1,False,False,False,TRUE,TRUE,{'nypost.com'},{'spot.im'}
+REQUEST,MOE-APPKEY,34YG51ONK78SSJ5W63AC9BY8,10,24,13,11,0,False,True,False,TRUE,TRUE,{'manoramaonline.com'},{'moengage.com'}
+REQUEST,x-mp-key,us1-99f689156b88a84fbe3383020acfea25,8,36,13,22,1,False,False,False,TRUE,TRUE,{'cnbc.com'},{'mparticle.com'}
+REQUEST,x-mp-key,5508ba7c7050a64b8d6b10d1d2123901,8,32,9,23,0,True,True,False,TRUE,TRUE,{'reverb.com'},{'mparticle.com'}
+REQUEST,MOE-APPKEY,63VYOEWYUSF2T2QC5QPCI9QM,10,24,18,6,0,False,True,False,TRUE,TRUE,"{'pch.com', 'topix.com'}",{'moengage.com'}
+REQUEST,MOE-APPKEY,4514OD0Q31D8DJFBD5SX06TR,10,24,13,11,0,False,True,False,TRUE,TRUE,{'indianexpress.com'},{'moengage.com'}
+REQUEST,x-mp-key,13c1572c444c0043bd68e09b734a5374,8,32,8,24,0,True,True,False,TRUE,TRUE,{'eonline.com'},{'mparticle.com'}
+RESPONSE,x-bunnycdn-client-ip,2607:b400:c:a180:72b5:e8ff:fed0:aeae,20,36,14,15,7,False,False,False,TRUE,TRUE,{'eset.com'},{'optimonk.com'}
+RESPONSE,x-advertisable-eid,3N3S2ATGZBB5DNBSO4VX4R,18,22,16,6,0,False,True,False,TRUE,TRUE,"{'verizonwireless.com', 'verizon.com'}",{'adroll.com'}
+RESPONSE,x-pixel-eid,7QST7OEKE5B6HH4HSPWYDT,11,22,17,5,0,False,True,False,TRUE,TRUE,"{'verizonwireless.com', 'verizon.com'}",{'adroll.com'}
+REQUEST,MOE-APPKEY,QTD7QXC51X5DZR3CTIHK33PQ,10,24,17,7,0,False,True,False,TRUE,TRUE,{'blibli.com'},{'moengage.com'}
+REQUEST,x-spot-id,sp_7gr62oKd,9,11,7,3,1,False,False,False,TRUE,TRUE,{'deadspin.com'},{'spot.im'}
+RESPONSE,x-geo-city,BLACKSBURG,10,10,10,0,0,False,True,False,TRUE,TRUE,{'att.com'},{'adobetarget.com'}
+RESPONSE,adthrive-deployment,pe-280:pr6743:beta08:03b1568:100:exp,19,36,12,18,6,False,False,False,TRUE,TRUE,{'ranker.com'},{'adthrive.com'}
+REQUEST,x-spot-id,sp_Z3zhn8qO,9,11,8,2,1,False,False,False,TRUE,TRUE,{'lifehacker.com'},{'spot.im'}
+REQUEST,partner,olxbrclassificados,7,18,18,0,0,False,True,False,TRUE,TRUE,{'olx.com.br'},{'useinsider.com'}
+RESPONSE,x-city,Blacksburg,6,10,10,0,0,False,True,False,TRUE,TRUE,{'theatlantic.com'},{'concert.io'}
+REQUEST,Device-GPU,"ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",10,92,62,9,21,False,False,False,TRUE,TRUE,{'gap.com'},{'granify.com'}
+REQUEST,x-spot-id,sp_xEkoxAFD,9,11,10,0,1,False,False,False,TRUE,TRUE,{'ign.com'},{'spot.im'}
+RESPONSE,x-advertisable-eid,RNMF2FYLINFB3DIYKKGIJY,18,22,20,2,0,False,True,False,TRUE,TRUE,{'lg.com'},{'adroll.com'}
+RESPONSE,x-pixel-eid,IXTTSNQHNRHUZGCTBSJLCT,11,22,22,0,0,False,True,False,TRUE,TRUE,{'lg.com'},{'adroll.com'}
+RESPONSE,twc-geoip-city,BLACKSBURG,14,10,10,0,0,False,True,False,TRUE,TRUE,{'wunderground.com'},{'weather.com'}
+REQUEST,ap_z,"Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15",4,114,65,20,29,False,False,False,TRUE,TRUE,{'cbssports.com'},{'adobe.com'}
+RESPONSE,x-advertisable-eid,PVWB4UDVGRDVJF4H5MGDJ5,18,22,18,4,0,False,True,False,TRUE,TRUE,{'okta.com'},{'adroll.com'}
+RESPONSE,x-pixel-eid,QLV3EZBCR5ECPHQWN5KS5H,11,22,18,4,0,False,True,False,TRUE,TRUE,{'okta.com'},{'adroll.com'}

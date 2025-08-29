@@ -17,7 +17,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Websites capture and processing.")
     parser.add_argument("--capture", action="store_true", help="Enable capture phase")
     parser.add_argument("--process", action="store_true", help="Enable processing phase")
-    parser.add_argument("--file", type=str, default="5k-news-websites.txt", help="Path to the text file with website URLs")
+    parser.add_argument("--file", type=str, default="sites.txt", help="Path to the text file with website URLs")
     parser.add_argument("--threads", type=int, default=4, help="Number of threads")
     parser.add_argument("--llm", action="store_true", help="Enable llm analysis")
     parser.add_argument("--ext_process", action="store_true", help="Read an external file and process")

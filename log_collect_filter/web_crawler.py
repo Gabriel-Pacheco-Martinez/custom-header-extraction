@@ -22,6 +22,12 @@ from log_collect_filter.header_utils.file_io import read_json, save_json, load_s
 from log_collect_filter.parser import extract_all_cookie_values, parse_nested_json, extract_all_storage_values
 from log_collect_filter.header_analysis import get_custom_headers, get_headers, get_headers_key_value_pair, get_filtering_permutation_stats
 
+# =====================
+# Classes
+# =====================
+class StorageExtractionError(Exception):
+    """Raised when extracting cookies/local/session storage fails."""
+    pass
 
 # =====================
 # Helper functions
@@ -57,17 +63,21 @@ def get_storage_information(driver):
     # Define set to store values
     storage_values = set()
 
-    # Values in cookies/local/session storage
-    cookies = driver.get_cookies()
-    local_storage = parse_nested_json(driver.execute_script("return {...localStorage}"))
-    session_storage = parse_nested_json(driver.execute_script("return {...sessionStorage}"))
+    try:
+        # Values in cookies/local/session storage
+        cookies = driver.get_cookies()
+        local_storage = parse_nested_json(driver.execute_script("return {...localStorage}"))
+        session_storage = parse_nested_json(driver.execute_script("return {...sessionStorage}"))
 
-    # Update set with values
-    storage_values.update(str(v) for v in extract_all_cookie_values(cookies))
-    storage_values.update(str(v) for v in extract_all_storage_values(local_storage))
-    storage_values.update(str(v) for v in extract_all_storage_values(session_storage))
+        # Update set with values
+        storage_values.update(str(v) for v in extract_all_cookie_values(cookies))
+        storage_values.update(str(v) for v in extract_all_storage_values(local_storage))
+        storage_values.update(str(v) for v in extract_all_storage_values(session_storage))
 
-    return storage_values, cookies, local_storage, session_storage
+        return storage_values, cookies, local_storage, session_storage
+
+    except Exception as e:
+        raise StorageExtractionError(f"Failed to extract cookies or local storage data")
 
 # =====================
 # Capture sites
@@ -152,6 +162,10 @@ def capture_site_data(url, base_output_folder):
     except WebDriverException as e:
         print(f"[✗] WebDriver error on {url}")
         logging.error("WebDriverException on %s: %s", url, str(e))
+
+    except StorageExtractionError as e:
+        print(f"[✗] Storage extraction error on {url}")
+        logging.error("StorageExtractionError on %s: %s", url, str(e))
 
     # ---- Catch-all for anything else ----
     except Exception as e:
@@ -267,26 +281,46 @@ def process_site_data(url, base_output_folder):
     stats_folder = os.path.join(base_output_folder, hostname + "/stats")
 
     # =====
-    # Read files to process headers
+    # Check if capture folder exists
+    if not os.path.exists(capture_folder):
+        print(f"⚠️ First visit folder missing: {capture_folder}")
+        return 0, [], 0  # failed status, empty custom_headers, 0 total headers
+
+    # Read files from first visit
     try:
-        all_headers = read_json(capture_folder + "/all_headers.json")
-        all_headers_dict_1 = read_json(capture_folder + "/all_headers_dict_1.json")
-        storage_values = set(read_json(capture_folder + "/storage_values.json"))
+        all_headers = read_json(os.path.join(capture_folder, "all_headers.json"))
+        all_headers_dict_1 = read_json(os.path.join(capture_folder, "all_headers_dict_1.json"))
+        storage_values = set(read_json(os.path.join(capture_folder, "storage_values.json")))
     except Exception as e:
-        print(f"⚠️Folder does not exist. Visit was not successful: {e}")
-        return 0, [], 0 # Return: failed status, empty custom_headers, 0 total headers
+        print(f"⚠️ Failed to read first visit files: {e}")
+        return 0, [], 0  # failed status, empty custom_headers, 0 total headers
+
+    # =====
+    # Check if capture2 folder exists
+    if not os.path.exists(capture_folder_2):
+        print(f"⚠️ Second visit folder missing: {capture_folder_2}")
+        return 0, [], 0  # failed status, empty custom_headers, 0 total headers
+
+    # Read file from second visit
+    all_headers_file_2 = os.path.join(capture_folder_2, "all_headers_dict_2.json")
+    if not os.path.exists(all_headers_file_2):
+        print(f"⚠️ Second visit file missing: {all_headers_file_2}")
+        return 0, [], 0  # failed status, empty custom_headers, 0 total headers
 
     try:
-        all_headers_dict_2 = read_json(capture_folder_2+"/all_headers_dict_2.json")
+        all_headers_dict_2 = read_json(all_headers_file_2)
     except Exception as e:
-        print("⚠️File not found: 'all_headers_dict_2.json' → Second visit was not successful.")
-        return 0, [], 0 # Return: failed status, empty custom_headers, 0 total headers
+        print(f"⚠️ Failed to read second visit JSON: {e}")
+        return 0, [], 0  # failed status, empty custom_headers, 0 total headers
 
+    # =====
+    # Load default standard headers
+    default_headers_file = "std_headers/standard_headers.txt"
     try:
-        default_headers = load_standard_headers("std_headers/standard_headers.txt")
+        default_headers = load_standard_headers(default_headers_file)
     except Exception as e:
-        print("⚠️ File not found: 'standard_headers.txt'")
-        return 0, [], 0 # Return: failed status, empty custom_headers, 0 total headers
+        print(f"⚠️ File not found: {default_headers_file}")
+        return 0, [], 0  # failed status, empty custom_headers, 0 total headers
 
     # =====
     # Get custom headers and save information
@@ -327,8 +361,8 @@ def process_multiple_sites(urls, result_base_folder="log_collect_filter/results"
     print("=================")
     print("total websites: ",len(urls))
     print("total successful website crawls: ", successful_website_retrievals)
-    print("total headers: ", num_total_headers)
-    print("total custom headers: ", num_custom_headers)
+    print("total headers in log: ", num_total_headers)
+    print("total tracking custom headers in log: ", num_custom_headers)
 
 # =====================
 # Main

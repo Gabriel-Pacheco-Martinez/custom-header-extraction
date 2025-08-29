@@ -110,13 +110,22 @@ def perform_feature_extraction():
     header_to_hosts = defaultdict(set)
     header_to_destinations = defaultdict(set)
 
+    # Collect all unique host domains
+    all_host_domains = set()
+
     for header in data:
         name = header.get("header_name", "")
         value = unquote(str(header.get("header_value", "")))
         host = header.get("host_domain", "")
         destination = header.get("method_domain", "")
+
+        if host:
+            all_host_domains.add(host)
+
         header_to_hosts[(name, value)].add(host)
         header_to_destinations[(name,value)].add(destination)
+
+    print(f"✅ Total host domains: {len(all_host_domains)}")
 
     # =======
     # Step 2: Keep only unique (name, value) pairs for CSV

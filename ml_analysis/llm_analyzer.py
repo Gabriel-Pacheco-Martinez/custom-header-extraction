@@ -2,6 +2,8 @@ from langchain_ollama import ChatOllama
 import re
 import os
 import pandas as pd
+import json
+from collections import Counter, defaultdict
 
 def analyse_headers_with_llm():
     # Print information
@@ -25,8 +27,10 @@ def analyse_headers_with_llm():
 
     # =======
     # Output csv
-    output_csv = f"ml_analysis/csv_files_post_models/{model_name.split(":")[0]}.csv"
+    output_csv = f"ml_analysis/csv_files_post_models/{model_name.split(':')[0]}.csv"
+    output_json = f"ml_analysis/json_files/{model_name.split(':')[0]}.json"
     os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    os.makedirs(os.path.dirname(output_json), exist_ok=True)
 
     # =======
     # Prepare new columns
@@ -34,10 +38,14 @@ def analyse_headers_with_llm():
     df["confidence"] = ""
     df["why"] = ""
 
+    # JSON results list
+    json_results = []
+
     # =======
     # Iterate
     for index, row in df.iterrows():
         header_name = str(row.get("header_name", "")).strip()
+        header_value = str(row.get("header_value", "")).strip()
 
         # =========
         # Call to LLM
@@ -135,16 +143,19 @@ def analyse_headers_with_llm():
         4. Consistency across session and visits
         5. Stored in browser storage
 
-        **Instructions:**
-        - First, evaluate all heuristics in combination before deciding YES or NO.
-        - Mark a heuristic as YES, in the <heuristics> section, if it contributed to the classification in any way — even if it is only meaningful when combined with other heuristics.
-        - Mark NO, in the <heuristics> section, only if the heuristic played no role at all in the final decision.
-        - If you identify any additional factor outside these heuristics that strongly influenced your classification, mention it clearly in the <logic> section.
+        Instructions:
+        - Base your decision only on the given heuristics and any obvious additional indicators.
+        - Your response must strictly follow the format below.
+        - The <answer> must contain only YES or NO.
+        - The <confidence> must be a number between 0 and 100.
+        - The <logic> section should explain the reasoning in full sentences. Do NOT put any reasoning in the heuristics section.
+        - In the <heuristics> section, write ONLY YES or NO for each heuristic. No extra words.
 
         **Output format**
-        <answer>YES or NO</answer>  
-        <confidence>Give a number from 0 to 100 indicating your certainty in the classification.</confidence>  
-        <logic>Your reasoning for this classification. Explicitly explain how the combination of heuristics led to your decision, and note any additional factors outside the heuristics if applicable.</logic>          <heuristics>
+        <answer>YES or NO</answer>
+        <confidence>[number between 0 and 100]</confidence>
+        <logic>[Explain how the combination of heuristics influenced your decision]</logic>
+        <heuristics>
         1. Third-party destination domain: YES/NO
         2. Length and composition: YES/NO
         3. Encoded values: YES/NO
@@ -184,19 +195,82 @@ def analyse_headers_with_llm():
         # =========
         # Extract values from response
         answer = re.search(r"<answer>(.*?)</answer>", response_text, re.DOTALL)
-        df.at[index, "is_tracking"] = answer.group(1).strip() if answer else "N/A"
+        answer_text = answer.group(1).strip() if answer else "N/A"
+        df.at[index, "is_tracking"] = answer_text
 
         confidence = re.search(r"<confidence>(.*?)</confidence>", response_text, re.DOTALL)
-        df.at[index, "confidence"] = confidence.group(1).strip() if confidence else "N/A"
+        confidence_text = confidence.group(1).strip() if confidence else "N/A"
+        df.at[index, "confidence"] = confidence_text
 
         logic = re.search(r"<logic>(.*?)</logic>", response_text, re.DOTALL)
-        df.at[index, "why"] = logic.group(1).strip() if logic else "N/A"
+        logic_text = logic.group(1).strip() if logic else "N/A"
+        df.at[index, "why"] = logic_text
+
+        heuristics_match = re.search(r"<heuristics>(.*?)</heuristics>", response_text, re.DOTALL)
+        heuristics_text = heuristics_match.group(1).strip() if heuristics_match else ""
+        # Parse heuristics lines into a dict
+        heuristics_dict = {}
+        for line in heuristics_text.splitlines():
+            if ":" in line:
+                key, value = line.split(":", 1)
+                heuristics_dict[key.strip()] = value.strip()
+
+        # Add to JSON results
+        json_results.append({
+            "header_name": header_name,
+            "header_value": header_value,
+            "prediction": answer_text,
+            "heuristics": heuristics_dict
+        })
 
     # Write updated dataframe to the same CSV file
     df.to_csv(output_csv, index=False)
+
+    # Write JSON
+    with open(output_json, "w", encoding="utf-8") as f:
+        json.dump(json_results, f, indent=2)
+    print(f"✅ JSON saved to {output_json}")
+
+def summarize_json_predictions(json_file_path="json_files/qwen2.5.json"):
+    """
+    Reads the JSON file created by the LLM analysis and summarizes:
+      - How many times each heuristic was YES or NO
+      - How many times the prediction was YES or NO
+    """
+    with open(json_file_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Counters
+    prediction_counter = Counter()
+    heuristic_counter = defaultdict(Counter)
+
+    for entry in data:
+        # Count prediction YES/NO
+        pred = entry.get("prediction", "N/A").upper()
+        if pred in ["YES", "NO"]:
+            prediction_counter[pred] += 1
+
+        # Count heuristics YES/NO
+        heuristics = entry.get("heuristics", {})
+        for key, value in heuristics.items():
+            val = value.upper()
+            if val in ["YES", "NO"]:
+                heuristic_counter[key][val] += 1
+
+    # Print summary
+    print("=== Prediction Summary ===")
+    print(f"YES: {prediction_counter.get('YES',0)}")
+    print(f"NO: {prediction_counter.get('NO',0)}\n")
+
+    print("=== Heuristic Summary ===")
+    for h, counts in heuristic_counter.items():
+        print(f"{h}: YES={counts.get('YES',0)}, NO={counts.get('NO',0)}")
+
+    return prediction_counter, heuristic_counter
 
 # =====================
 # Main
 # =====================
 if __name__ == "__main__":
     analyse_headers_with_llm()
+    summarize_json_predictions()
